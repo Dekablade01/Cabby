@@ -9,7 +9,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    @IBOutlet weak var LoginButton: UIButton!
+
 
     @IBOutlet weak var usernameTextField: TextField!
     @IBOutlet weak var passwordTextField: TextField!
@@ -26,7 +26,22 @@ class LoginViewController: UIViewController {
     }
 
     
-    
+    func setupNavigationController ()
+    {
+        self.navigationController?
+            .navigationBar
+            .setBackgroundImage(UIImage(),
+                                for: .default)
+        self.navigationController?
+            .navigationBar
+            .shadowImage = UIImage()
+        self.navigationController?
+            .navigationBar
+            .isTranslucent = true
+        self.navigationController?
+            .view
+            .backgroundColor = .clear
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -34,17 +49,34 @@ class LoginViewController: UIViewController {
                        placeHolderString: "Username")
         setupTextField(textField: passwordTextField,
                        placeHolderString: "Password")
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = .clear
+        setupNavigationController()
         
+    
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
+    @IBAction func pressLoginButtonHandler(_ sender: Any)
+    {
+        let mainViewController = MainViewController()
+        let navigationController = UINavigationController(rootViewController: mainViewController)
+        self.present(navigationController,
+                     animated: true,
+                     completion: nil)
+    }
+    @IBAction func pressSignUpHandler(_ sender: Any) {
+    }
+    @IBAction func pressForgetPasswordHandler(_ sender: Any) {
+    }
+    @IBAction func pressFacebookHandler(_ sender: Any) {
+    }
+    @IBAction func pressGoogleHandler(_ sender: Any) {
+    }
+    
+    
 
 
 }

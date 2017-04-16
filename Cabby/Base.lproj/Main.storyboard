@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6l5-48-9lD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -52,7 +52,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="uEk-Z8-dZe" kind="show" id="PLu-bK-FuZ"/>
+                                    <action selector="pressLoginButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mfw-oP-kRM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWS-FD-fFQ">
@@ -62,10 +62,16 @@
                                     <constraint firstAttribute="width" constant="127" id="szg-ZB-0CC"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressSignUpHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xui-oG-nOI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuN-Kp-fra">
                                 <rect key="frame" x="189" y="536" width="127" height="62"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressForgetPasswordHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QTn-jw-IMu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXh-DR-KQC">
                                 <rect key="frame" x="72" y="218" width="79" height="79"/>
@@ -74,6 +80,9 @@
                                     <constraint firstAttribute="width" constant="79" id="Y4i-b8-yb6"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressFacebookHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3iW-Qo-gug"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJt-BX-HQj">
                                 <rect key="frame" x="213" y="218" width="79" height="79"/>
@@ -82,6 +91,9 @@
                                     <constraint firstAttribute="width" secondItem="MJt-BX-HQj" secondAttribute="height" multiplier="1:1" id="XOm-kr-3fu"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressGoogleHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GxW-HN-BU6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -116,7 +128,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="sbf-9h-61T"/>
                     <connections>
-                        <outlet property="LoginButton" destination="5I6-dp-fLI" id="nl2-R6-twa"/>
                         <outlet property="passwordTextField" destination="Joi-9I-BS3" id="Emo-0a-cRL"/>
                         <outlet property="usernameTextField" destination="qUd-Lp-U3i" id="iop-hT-Qsj"/>
                     </connections>
@@ -125,41 +136,23 @@
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="dxN-ve-SeS">
+        <!--Main View Controller-->
+        <scene sceneID="Eoe-ym-SwA">
             <objects>
-                <viewController id="uEk-Z8-dZe" sceneMemberID="viewController">
+                <viewController id="vvu-cR-ysp" customClass="MainViewController" customModule="Cabby" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tKC-4i-EI7"/>
-                        <viewControllerLayoutGuide type="bottom" id="tG2-Ba-dOj"/>
+                        <viewControllerLayoutGuide type="top" id="i81-Ns-kmQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="UUx-do-ijx"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="UE7-zc-SdD">
+                    <view key="view" contentMode="scaleToFill" id="TOZ-O3-yWh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cq7-3C-5ju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZy-PS-VCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1936.8" y="138.98050974512745"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="4at-xJ-syq">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6l5-48-9lD" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nLE-5h-m1m">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VDM-vY-aqy"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sho-TA-9uV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1977" y="139"/>
         </scene>
     </scenes>
     <resources>
