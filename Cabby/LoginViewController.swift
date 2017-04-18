@@ -16,16 +16,6 @@ class LoginViewController: UIViewController {
     let placeHolder = NSMutableAttributedString()
     let whiteColor: UIColor = .white
     
-    func setupTextField (textField: UITextField, placeHolderString: String)
-    {
-       
-        textField.attributedPlaceholder = NSAttributedString(string:placeHolderString   ,
-                                                             attributes:[NSForegroundColorAttributeName: UIColor.white])
-        textField.layer.borderColor = whiteColor.cgColor
-        textField.layer.borderWidth = 1.0
-    }
-
-    
     func setupNavigationController ()
     {
         self.navigationController?
@@ -45,14 +35,19 @@ class LoginViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        setupTextField(textField: usernameTextField,
-                       placeHolderString: "Username")
-        setupTextField(textField: passwordTextField,
-                       placeHolderString: "Password")
-        setupNavigationController()
         
+        setupTextField(textField: usernameTextField,
+                       placeHolderString: "Username", placeHolderColor: .white)
+        setupTextField(textField: passwordTextField,
+                       placeHolderString: "Password", placeHolderColor: .white)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(UIViewController.hideKeyboard))
+        tapGesture.cancelsTouchesInView = true
+        self.view.addGestureRecognizer(tapGesture)
     
     }
+
+
+
 
     override func didReceiveMemoryWarning()
     {
@@ -61,11 +56,12 @@ class LoginViewController: UIViewController {
     }
     @IBAction func pressLoginButtonHandler(_ sender: Any)
     {
-        let mainViewController = MainViewController()
-        let navigationController = UINavigationController(rootViewController: mainViewController)
-        self.present(navigationController,
-                     animated: true,
-                     completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        let rootViewController = storyboard.instantiateViewController(withIdentifier: "RootViewController")
+        
+        self.present(rootViewController, animated: true, completion: nil)
+        
     }
     @IBAction func pressSignUpHandler(_ sender: Any) {
     }
@@ -75,9 +71,6 @@ class LoginViewController: UIViewController {
     }
     @IBAction func pressGoogleHandler(_ sender: Any) {
     }
-    
-    
-
 
 }
 

@@ -1,3 +1,29 @@
-PODFILE CHECKSUM: e8b4295a3d123b45a95f379d16a1a6c01d076240
+PODS:
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.2.0):
+    - GoogleMaps/Base (= 2.2.0)
+  - IQKeyboardManagerSwift (4.0.9)
+  - LFSideViewController (2.0.0)
+  - Then (2.1.0)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
+  - IQKeyboardManagerSwift
+  - LFSideViewController (~> 2.0.0)
+  - Then (~> 2.1)
+
+SPEC CHECKSUMS:
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
+  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
+  LFSideViewController: 35c31bb53735f809180518beab09c9e6dc377a77
+  Then: 8496793c8fcac95482b943909b440724c7d8d82c
+
+PODFILE CHECKSUM: 5cca748f67566efecafa157d15da2a552a4b2cb9
 
 COCOAPODS: 1.2.1
