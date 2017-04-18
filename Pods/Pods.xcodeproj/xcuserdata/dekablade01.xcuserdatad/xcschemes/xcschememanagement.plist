@@ -4,27 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>HNKGooglePlacesAutocomplete.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>LFSideViewController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,7 +32,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1BEDC5C2FB751149AD7F760A5FA76B7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4DC059E04CBA98AEDDB5C34E02D551E9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5EEBDE07683279B10CB14C2FF8FFF6DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,32 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88FE151DB86558D26EB5C33548EFFD83</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8EFF2C516C5EA8F2CD34F5294EC21545</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A2210439C6FDF324C6C8C80DC225BD3E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A7D8F3960814E3C56B3A58C7712B6DB0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA3BBA8A401507729781742355344C0D</key>
+		<key>8722667E2E148DAAC49239FAD03AE127</key>
 		<dict>
 			<key>primary</key>
 			<true/>
