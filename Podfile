@@ -10,7 +10,6 @@ target 'Cabby' do
     pod 'GooglePlaces'
     pod 'Then', '~> 2.1'
     pod 'SnapKit'
-    pod 'HNKGooglePlacesAutocomplete', '~> 1.1'
 
     # Pods for Cabby
     
