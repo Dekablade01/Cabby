@@ -287,15 +287,23 @@
                                 <rect key="frame" x="0.0" y="505.5" width="375" height="161.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3P-NY-75W">
+                                <rect key="frame" x="0.0" y="194" width="375" height="312"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="ZOR-HF-o2H" firstAttribute="top" secondItem="k3P-NY-75W" secondAttribute="bottom" id="01g-dh-QBt"/>
                             <constraint firstItem="U0H-fp-9Rk" firstAttribute="centerX" secondItem="TOZ-O3-yWh" secondAttribute="centerX" id="258-sU-oRD"/>
+                            <constraint firstItem="k3P-NY-75W" firstAttribute="leading" secondItem="TOZ-O3-yWh" secondAttribute="leading" id="2MJ-Hl-ujE"/>
                             <constraint firstItem="ZOR-HF-o2H" firstAttribute="height" secondItem="oJd-9D-fUx" secondAttribute="height" multiplier="2.5:3" id="2Sz-og-YTD"/>
                             <constraint firstItem="U0H-fp-9Rk" firstAttribute="centerY" secondItem="TOZ-O3-yWh" secondAttribute="centerY" id="JPS-p6-rYz"/>
                             <constraint firstItem="UUx-do-ijx" firstAttribute="top" secondItem="ZOR-HF-o2H" secondAttribute="bottom" id="NSU-2k-JE9"/>
                             <constraint firstAttribute="trailing" secondItem="ZOR-HF-o2H" secondAttribute="trailing" id="PXU-zC-tyj"/>
+                            <constraint firstAttribute="trailing" secondItem="k3P-NY-75W" secondAttribute="trailing" id="bUQ-D1-Vvv"/>
                             <constraint firstAttribute="trailing" secondItem="oJd-9D-fUx" secondAttribute="trailing" id="cAU-FE-qkF"/>
+                            <constraint firstItem="k3P-NY-75W" firstAttribute="top" secondItem="oJd-9D-fUx" secondAttribute="bottom" id="fBN-5D-91H"/>
                             <constraint firstItem="oJd-9D-fUx" firstAttribute="top" secondItem="TOZ-O3-yWh" secondAttribute="top" id="g3D-lw-qqV"/>
                             <constraint firstItem="aGx-Ur-rMe" firstAttribute="top" secondItem="i81-Ns-kmQ" secondAttribute="bottom" constant="15" id="r6T-KI-vYc"/>
                             <constraint firstItem="oJd-9D-fUx" firstAttribute="leading" secondItem="TOZ-O3-yWh" secondAttribute="leading" id="sSX-99-ea6"/>
@@ -314,6 +322,7 @@
                         <outlet property="accountBarButtonItem" destination="k2s-8j-yG2" id="8RF-ee-o0R"/>
                         <outlet property="destinationTextField" destination="WLK-oT-hVz" id="UG5-yh-3fU"/>
                         <outlet property="originTextField" destination="aGx-Ur-rMe" id="E0P-Jd-lfo"/>
+                        <outlet property="viewForMapView" destination="k3P-NY-75W" id="frv-v1-X9w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZy-PS-VCi" userLabel="First Responder" sceneMemberID="firstResponder"/>

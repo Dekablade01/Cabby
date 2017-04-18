@@ -8,6 +8,9 @@
 
 import UIKit
 import Then
+import GoogleMaps
+import SnapKit
+
 
 class BookingViewController: UIViewController {
     
@@ -15,6 +18,7 @@ class BookingViewController: UIViewController {
     @IBOutlet weak var originTextField: TextField!
     @IBOutlet weak var destinationTextField: TextField!
 
+    @IBOutlet weak var viewForMapView: UIView!
     
     var origin:String { return originTextField.text ?? ""}
     var destination:String { return destinationTextField.text ?? ""}
@@ -24,12 +28,9 @@ class BookingViewController: UIViewController {
     
     override func viewDidLoad() {
         setupNavigationBar()
-        originTextField.layer.borderColor = UIColor.black.cgColor
-        originTextField.layer.borderWidth = 30
-        destinationTextField.layer.borderColor = UIColor.black.cgColor
+        setupMapView()
+        setupTextFieldForThisViewController()
         
-        self.setupTextField(textField: originTextField, placeHolderString: "จุดนัดพบ",placeHolderColor: .black)
-        self.setupTextField(textField: destinationTextField, placeHolderString: "จุดหมายปลายทาง", placeHolderColor: .black)
     }
     @IBAction func leftSideMenuPressed() {
 //        self.sideViewController()!.toogleLeftViewController()
@@ -59,4 +60,44 @@ class BookingViewController: UIViewController {
     override var prefersStatusBarHidden : Bool {
         return true
     }
+    func setupMapView()
+    {
+        let camera = GMSCameraPosition.camera(withLatitude: 37.80948,
+                                              longitude: 5.965699,
+                                              zoom: 2)
+        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+        mapView.isMyLocationEnabled = true
+
+        
+        viewForMapView.addSubview(mapView)
+        
+        mapView.snp.makeConstraints(){
+            $0.size.equalTo(mapView.superview!)
+            $0.center.equalTo(mapView.superview!)
+        }
+    }
+    func googleMapAutoComplete(){
+        
+    }
+    func textFieldDidChange()
+    {
+        print("hello")
+    }
+    func setupTextFieldForThisViewController()
+    {
+        textFieldForThisViewController(textField: originTextField)
+        textFieldForThisViewController(textField: destinationTextField)
+        
+        self.setupTextField(textField: originTextField, placeHolderString: "จุดนัดพบ",placeHolderColor: .black)
+        self.setupTextField(textField: destinationTextField, placeHolderString: "จุดหมายปลายทาง", placeHolderColor: .black)
+    }
+    func textFieldForThisViewController(textField: UITextField)
+    {
+        textField.layer.borderColor = UIColor.black.cgColor
+        textField.addTarget(self,
+                            action: #selector(BookingViewController.textFieldDidChange),
+                            for: .editingChanged)
+        
+    }
 }
+
