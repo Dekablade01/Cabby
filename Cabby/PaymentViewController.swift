@@ -20,7 +20,13 @@ class PaymentViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func dissmissViewControllerHandler(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    override var prefersStatusBarHidden : Bool {
+        return true
+    }
+
 
     /*
     // MARK: - Navigation

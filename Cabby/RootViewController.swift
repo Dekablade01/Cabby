@@ -23,5 +23,14 @@ class RootViewController: LFSideViewController, LFSideViewDelegate {
             sideViewController.delegate = self
         }
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    override var prefersStatusBarHidden : Bool {
+        return true
+    }
+
+    
+    
     
 }

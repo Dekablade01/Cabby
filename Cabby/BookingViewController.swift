@@ -14,6 +14,7 @@ class BookingViewController: UIViewController {
     
     @IBOutlet weak var originTextField: TextField!
     @IBOutlet weak var destinationTextField: TextField!
+
     
     var origin:String { return originTextField.text ?? ""}
     var destination:String { return destinationTextField.text ?? ""}
@@ -24,6 +25,7 @@ class BookingViewController: UIViewController {
     override func viewDidLoad() {
         setupNavigationBar()
         originTextField.layer.borderColor = UIColor.black.cgColor
+        originTextField.layer.borderWidth = 30
         destinationTextField.layer.borderColor = UIColor.black.cgColor
         
         self.setupTextField(textField: originTextField, placeHolderString: "จุดนัดพบ",placeHolderColor: .black)
@@ -53,5 +55,8 @@ class BookingViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = UIColor.clear
+    }
+    override var prefersStatusBarHidden : Bool {
+        return true
     }
 }

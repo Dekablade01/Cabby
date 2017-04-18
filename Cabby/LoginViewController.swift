@@ -13,9 +13,11 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: TextField!
     @IBOutlet weak var passwordTextField: TextField!
-    let placeHolder = NSMutableAttributedString()
     let whiteColor: UIColor = .white
-    
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     func setupNavigationController ()
     {
         self.navigationController?
@@ -45,7 +47,9 @@ class LoginViewController: UIViewController {
         self.view.addGestureRecognizer(tapGesture)
     
     }
-
+    override var prefersStatusBarHidden : Bool {
+        return true
+    }
 
 
 

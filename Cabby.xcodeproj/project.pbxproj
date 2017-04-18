@@ -13,6 +13,7 @@
 		9E37A4601EA5F65500BA2C1D /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37A45F1EA5F65500BA2C1D /* BookingViewController.swift */; };
 		9E37A4661EA6002F00BA2C1D /* DismissKeyboard+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37A4651EA6002F00BA2C1D /* DismissKeyboard+UIViewController.swift */; };
 		9E37A46C1EA60C0D00BA2C1D /* SetupTextField+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37A46B1EA60C0D00BA2C1D /* SetupTextField+UIViewController.swift */; };
+		9E37A4701EA6216800BA2C1D /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37A46F1EA6216800BA2C1D /* PaymentViewController.swift */; };
 		9E819FEF1EA4073F00792638 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E819FEE1EA4073F00792638 /* TextField.swift */; };
 		9EF7585C1EA3FC650087AFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7585B1EA3FC650087AFA4 /* AppDelegate.swift */; };
 		9EF7585E1EA3FC650087AFA4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7585D1EA3FC650087AFA4 /* LoginViewController.swift */; };
@@ -29,6 +30,7 @@
 		9E37A45F1EA5F65500BA2C1D /* BookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
 		9E37A4651EA6002F00BA2C1D /* DismissKeyboard+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DismissKeyboard+UIViewController.swift"; path = "Extensions/DismissKeyboard+UIViewController.swift"; sourceTree = "<group>"; };
 		9E37A46B1EA60C0D00BA2C1D /* SetupTextField+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SetupTextField+UIViewController.swift"; path = "Extensions/SetupTextField+UIViewController.swift"; sourceTree = "<group>"; };
+		9E37A46F1EA6216800BA2C1D /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		9E819FEE1EA4073F00792638 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = SubClass/TextField.swift; sourceTree = "<group>"; };
 		9EF758581EA3FC650087AFA4 /* Cabby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cabby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF7585B1EA3FC650087AFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				9EF758621EA3FC650087AFA4 /* Assets.xcassets */,
 				9EF758641EA3FC650087AFA4 /* LaunchScreen.storyboard */,
 				9EF758671EA3FC650087AFA4 /* Info.plist */,
+				9E37A46F1EA6216800BA2C1D /* PaymentViewController.swift */,
 			);
 			path = Cabby;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				9E37A4661EA6002F00BA2C1D /* DismissKeyboard+UIViewController.swift in Sources */,
 				9E37A4581EA5E60000BA2C1D /* RootViewController.swift in Sources */,
 				9E819FEF1EA4073F00792638 /* TextField.swift in Sources */,
+				9E37A4701EA6216800BA2C1D /* PaymentViewController.swift in Sources */,
 				9EF7585E1EA3FC650087AFA4 /* LoginViewController.swift in Sources */,
 				9E37A4601EA5F65500BA2C1D /* BookingViewController.swift in Sources */,
 				9E37A46C1EA60C0D00BA2C1D /* SetupTextField+UIViewController.swift in Sources */,

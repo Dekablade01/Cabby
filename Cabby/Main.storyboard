@@ -24,6 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -201,6 +202,7 @@
                             <constraint firstItem="T2M-Al-eau" firstAttribute="width" secondItem="T2M-Al-eau" secondAttribute="height" multiplier="1:1" id="zO3-og-gdz"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zyS-fo-TBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
