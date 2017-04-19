@@ -33,13 +33,13 @@ class BookingViewController: UIViewController {
         
     }
     @IBAction func leftSideMenuPressed() {
-//        self.sideViewController()!.toogleLeftViewController()
+        self.sideViewController()!.toogleLeftViewController()
         
-        if self.sideViewController()!.leftViewControllerVisible {
-            self.sideViewController()!.hideLeftViewController()
-        } else {
-            self.sideViewController()!.presentLeftViewController(0.5, dampingRatio: 0.4, velocity: 10, options: .curveEaseIn)
-        }
+//        if self.sideViewController()!.leftViewControllerVisible {
+//            self.sideViewController()!.hideLeftViewController()
+//        } else {
+//            self.sideViewController()!.presentLeftViewController(0.5, dampingRatio: 0.4, velocity: 10, options: .curveEaseIn)
+//        }
     }
     
     @IBAction func rightSideMenuPressed() {
