@@ -11,8 +11,10 @@ import Realm
 import RealmSwift
 
 class Trip: Object {
-    dynamic var origin:Location = Location(lat: 0.0, long: 0.0)
-    dynamic var destination:Location = Location(lat: 0.0, long: 0.0)
+    dynamic var origin:Location? = Location(lat: 0.0, long: 0.0, name: "")
+    dynamic var destination:Location? = Location(lat: 0.0, long: 0.0, name: "")
+    
+
     
     init(origin: Location, destination: Location) {
         self.origin = origin

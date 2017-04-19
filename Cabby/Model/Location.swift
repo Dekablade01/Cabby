@@ -13,11 +13,12 @@ import Realm
 class Location: Object {
     dynamic var lat:Double = 0.0
     dynamic var long:Double = 0.0
+    dynamic var name:String = ""
     
-    init(lat: Double, long: Double) {
+    init(lat: Double, long: Double, name: String) {
         self.lat = lat
         self.long = long
-        
+        self.name = name
         super.init()
     }
     

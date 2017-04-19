@@ -19,9 +19,9 @@ class BookingViewController: UIViewController {
     let googleMapAPIKey = "AIzaSyAI97m4eAMhz_7-qIoVWo7b-0cA4cnfNic"
     var path = GMSMutablePath()
     
-    var origin = Location()
-    var destination = Location()
-    var point: [Location] = []
+    var origin = Location(lat: 0, long: 0, name: "")
+    var destination = Location(lat: 0, long: 0, name: "")
+    var trip = Trip()
     var markets: [GMSMarker] = []
     
     var polyLine = GMSPolyline()
@@ -44,8 +44,9 @@ class BookingViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        point = [origin, destination]
         markets = [GMSMarker(), GMSMarker()]
+        trip.origin = origin
+        trip.destination = destination
         setupNavigationBar()
         setupMapView()
         setupTextFieldForThisViewController()
@@ -141,36 +142,45 @@ class BookingViewController: UIViewController {
         
         
     }
+    
+    func removeMarkerAndRoutingDirection ()
+    {
+        mapView.clear()
+    }
     func reloadMapRoute()
     {
         
         if (originTextField.text != "" && destinationTextField.text != "")
         {
-            mapView.clear()
-            
-            
-            path.removeAllCoordinates()
+            addMarkers()
             drawPath()
         }
     }
     
-    func addMarkers()
+    func addMarker(_ location: Location)
     {
-        
+            origin = Location(lat: location.lat, long: location.long, name: location.name)
+            trip.origin = origin
+            
+            let marker = GMSMarker()
+            marker.position = CLLocationCoordinate2D(latitude: location.lat, longitude: location.long)
+            marker.title = location.name
+            // marker.snippet = "Australia"
+            
+            marker.map = mapView
+
     }
     
     func drawPath()
     {
-        let origin = "\((point.first?.lat)!),\((point.first?.long)!)"
-        let destination = "\((point.last?.lat)!),\((point.last?.long)!)"
+        let originCoordinate = "\((trip.origin?.lat)!),\((trip.origin?.long)!)"
+        let destinationCoordinate = "\((trip.destination?.lat)!),\((trip.destination?.long)!)"
     
-        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination)&mode=driving&key=\(googleMapAPIKey)"
+        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(originCoordinate)&destination=\(destinationCoordinate)&mode=driving&key=\(googleMapAPIKey)"
         
         Alamofire.request(url).responseJSON { response in
-            print(response.request ?? "")  // original URL request
-            print(response.response ?? "") // HTTP URL response
-            print(response.data ?? "")     // server data
-            print(response.result)   // result of response serialization
+
+            print(response)   // result of response serialization
             
             let json = JSON(data: response.data!)
             let routes = json["routes"].arrayValue
@@ -187,6 +197,23 @@ class BookingViewController: UIViewController {
             }
         }
     }
+    func isTripCompleted()-> Bool
+    {
+
+        if (origin.name != "" && destination.name != "")
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
+    func addMarkers()
+    {
+        addMarker(origin)
+        addMarker(destination)
+    }
 }
 
 extension BookingViewController: GMSAutocompleteViewControllerDelegate
@@ -194,47 +221,39 @@ extension BookingViewController: GMSAutocompleteViewControllerDelegate
     func viewController(_ viewController: GMSAutocompleteViewController,
                         didAutocompleteWith place: GMSPlace) {
         
+        removeMarkerAndRoutingDirection()
+        
         let lat = place.coordinate.latitude
         let long = place.coordinate.longitude
+        let name = place.name
         
         let camera = GMSCameraPosition.camera(withLatitude: lat,
                                               longitude: long,
                                               zoom: 15.0)
     
-        selectedTextField.text = place.name
+        selectedTextField.text = name
         
         if (selectedTextField == originTextField)
         {
-           origin = Location(lat: lat, long: long)
-            point[0] = origin
-            
-            let marker = GMSMarker()
-            marker.position = CLLocationCoordinate2D(latitude: lat, longitude: long)
-            marker.title = place.name
-//            marker.snippet = "Australia"
-            markets[0] = marker
-            
-            markets[0].map = mapView
-            
-            reloadMapRoute()
-            
+            origin.lat = lat
+            origin.long = long
+            origin.name = name
+            trip.origin = origin
+    
         }
         else if (selectedTextField == destinationTextField)
         {
-            destination = Location(lat: lat, long: long)
-            point[1] = destination
-            
-            let marker = GMSMarker()
-            marker.position = CLLocationCoordinate2D(latitude: lat, longitude: long)
-            marker.title = place.name
-            //            marker.snippet = "Australia"
-            markets[1] = marker
-            
-            markets[1].map = mapView
-            
-            reloadMapRoute()
-            
+            destination.lat = lat
+            destination.long = long
+            destination.name = name
+            trip.destination = destination
         }
+        if (isTripCompleted() == true)
+        {
+            reloadMapRoute()
+        }
+        
+        
         
         self.googleMapsView.camera = camera
         self.dismiss(animated: true, completion: nil) // dismiss after select place
