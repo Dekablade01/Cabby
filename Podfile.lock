@@ -6,27 +6,18 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.2.0):
     - GoogleMaps/Base (= 2.2.0)
-  - IQKeyboardManagerSwift (4.0.9)
   - LFSideViewController (2.0.0)
-  - SnapKit (3.2.0)
-  - Then (2.1.0)
 
 DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
-  - IQKeyboardManagerSwift
   - LFSideViewController (~> 2.0.0)
-  - SnapKit
-  - Then (~> 2.1)
 
 SPEC CHECKSUMS:
   GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
   GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
-  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
   LFSideViewController: 35c31bb53735f809180518beab09c9e6dc377a77
-  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
-  Then: 8496793c8fcac95482b943909b440724c7d8d82c
 
-PODFILE CHECKSUM: 38dc5248cd936261444d858759d9de27cbdb2399
+PODFILE CHECKSUM: 5cda6fcf4fdf326b5efae4c32da7d61fff5a26e7
 
 COCOAPODS: 1.2.1
