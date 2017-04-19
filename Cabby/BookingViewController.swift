@@ -23,6 +23,8 @@ class BookingViewController: UIViewController {
     var destination = Location()
     var point: [Location] = []
     var markets: [GMSMarker] = []
+    
+    var polyLine = GMSPolyline()
 
     
     @IBOutlet weak var originTextField: TextField!
@@ -144,18 +146,24 @@ class BookingViewController: UIViewController {
         
         if (originTextField.text != "" && destinationTextField.text != "")
         {
+            mapView.clear()
+            
+            
             path.removeAllCoordinates()
             drawPath()
-            
         }
+    }
+    
+    func addMarkers()
+    {
+        
     }
     
     func drawPath()
     {
-        let origin = "\(point.first?.lat),\(point.first?.long)"
-        let destination = "\(point.last?.lat),\(point.last?.long)"
-        
-        
+        let origin = "\((point.first?.lat)!),\((point.first?.long)!)"
+        let destination = "\((point.last?.lat)!),\((point.last?.long)!)"
+    
         let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination)&mode=driving&key=\(googleMapAPIKey)"
         
         Alamofire.request(url).responseJSON { response in
@@ -172,8 +180,10 @@ class BookingViewController: UIViewController {
                 let routeOverviewPolyline = route["overview_polyline"].dictionary
                 let points = routeOverviewPolyline?["points"]?.stringValue
                 let path = GMSPath.init(fromEncodedPath: points!)
-                let polyline = GMSPolyline.init(path: path)
-                polyline.map = self.mapView
+                self.polyLine = GMSPolyline.init(path: path)
+                self.polyLine.strokeWidth = 3.0
+                self.polyLine.strokeColor = #colorLiteral(red: 0.3019607843, green: 0.6274509804, blue: 0.9960784314, alpha: 1)
+                self.polyLine.map = self.mapView
             }
         }
     }
