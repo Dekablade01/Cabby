@@ -7,27 +7,40 @@
 //
 
 import UIKit
+import RealmSwift
 
 class PaymentViewController: UIViewController {
     
     @IBOutlet weak var paymentCollectionView: UICollectionView!
     
+    var cards = [Card]()
     
-    
-    var card = Card(cardNumber: "XXXX-5678", cardStatus: true)
-    var cards: [Card] = []
     var numberOfCards: Int { return cards.count }
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        loadCards()
+        
         setupCollectionView()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        loadCards()
+    }
 
-    override func didReceiveMemoryWarning()
+    func loadCards()
     {
-        super.didReceiveMemoryWarning()
-
+        cards.removeAll()
+        let realm = try! Realm()
+        
+        let result = realm.objects(Card.self)
+        
+        for card in result
+        {
+            cards.append(card)
+        }
+        paymentCollectionView.reloadData()
     }
     @IBAction func dissmissViewControllerHandler(_ sender: UIButton)
     {
@@ -76,8 +89,8 @@ extension PaymentViewController: UICollectionViewDataSource
         {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cardCell", for: indexPath) as! CardCollectionViewCell
         
-            cell.status = cards[indexPath.item].cardStatus
-            cell.cardNumber = cards[indexPath.item].cardNumber
+            cell.status = cards[indexPath.item].status
+            cell.cardNumber = cards[indexPath.item].displayCardNumber
             
             realCell = cell
         }

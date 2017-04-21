@@ -18,11 +18,12 @@ class BookingViewController: UIViewController {
     
     let googleMapAPIKey = "AIzaSyAI97m4eAMhz_7-qIoVWo7b-0cA4cnfNic"
     var path = GMSMutablePath()
+    var bounds = GMSCoordinateBounds()
+
+
     
-    var origin = Location(lat: 0, long: 0, name: "")
-    var destination = Location(lat: 0, long: 0, name: "")
     var trip = Trip()
-    var markets: [GMSMarker] = []
+    var markers: [GMSMarker] = []
     
     var polyLine = GMSPolyline()
 
@@ -44,9 +45,9 @@ class BookingViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        markets = [GMSMarker(), GMSMarker()]
-        trip.origin = origin
-        trip.destination = destination
+        markers = [GMSMarker(), GMSMarker()]
+        trip.origin = Location()
+        trip.destination = Location()
         setupNavigationBar()
         setupMapView()
         setupTextFieldForThisViewController()
@@ -60,6 +61,7 @@ class BookingViewController: UIViewController {
         setupMapView()
         
     }
+
     @IBAction func leftSideMenuPressed() {
         self.sideViewController()!.toogleLeftViewController()
     }
@@ -84,7 +86,8 @@ class BookingViewController: UIViewController {
     }
     func setupMapView()
     {
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+        let camera = GMSCameraPosition.camera(withLatitude: (locationManager.location?.coordinate.latitude)!,
+                                              longitude: (locationManager.location?.coordinate.longitude)!, zoom: 15)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
         self.googleMapsView.camera = camera
@@ -94,14 +97,6 @@ class BookingViewController: UIViewController {
         self.googleMapsView.settings.myLocationButton = true
         
         
-        // Creates a marker in the center of the map.
-//        let marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-//        marker.title = "Sydney"
-//        marker.snippet = "Australia"
-//        marker.map = mapView
-
-        
         viewForMapView.addSubview(mapView)
         
         mapView.snp.makeConstraints(){
@@ -110,26 +105,25 @@ class BookingViewController: UIViewController {
         }
     }
 
-    func textFieldDidChange()
-    {
-//        showAutoCompleteViewController()
-    }
+
     func setupTextFieldForThisViewController()
     {
         textFieldForThisViewController(textField: originTextField)
         textFieldForThisViewController(textField: destinationTextField)
         
-        self.setupTextField(textField: originTextField, placeHolderString: "จุดนัดพบ",placeHolderColor: .black)
-        self.setupTextField(textField: destinationTextField, placeHolderString: "จุดหมายปลายทาง", placeHolderColor: .black)
+        self.setupTextField(textField: originTextField,
+                            placeHolderString: "จุดนัดพบ",
+                            placeHolderColor: .black)
+        self.setupTextField(textField: destinationTextField,
+                            placeHolderString: "จุดหมายปลายทาง",
+                            placeHolderColor: .black)
         
         
     }
     func textFieldForThisViewController(textField: UITextField)
     {
         textField.layer.borderColor = UIColor.black.cgColor
-        textField.addTarget(self,
-                            action: #selector(BookingViewController.textFieldDidChange),
-                            for: .editingChanged)
+
         textField.delegate = self
     }
     func showAutoCompleteViewController()
@@ -138,7 +132,9 @@ class BookingViewController: UIViewController {
         
         autoCompleteViewController.delegate = self
         
-        self.present(autoCompleteViewController, animated: true, completion: nil)
+        self.present(autoCompleteViewController,
+                     animated: true,
+                     completion: nil)
         
         
     }
@@ -153,21 +149,39 @@ class BookingViewController: UIViewController {
         if (originTextField.text != "" && destinationTextField.text != "")
         {
             addMarkers()
+            newZoom()
+//            focusMapToShowAllMarkers()
             drawPath()
+        }
+        
+    }
+    func focusMapToShowAllMarkers() {
+        let myLocation: CLLocationCoordinate2D = self.markers.first!.position
+        var bounds: GMSCoordinateBounds = GMSCoordinateBounds(coordinate: myLocation, coordinate: myLocation)
+        
+        for marker in self.markers {
+            bounds = bounds.includingCoordinate(marker.position)
+            self.mapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 15.0))
         }
     }
     
+    
+    func newZoom()
+    {
+        let update = GMSCameraUpdate.fit(bounds,
+                                               withPadding: 15)
+        mapView.animate(with: update)
+    }
+    
+    
     func addMarker(_ location: Location)
     {
-            origin = Location(lat: location.lat, long: location.long, name: location.name)
-            trip.origin = origin
-            
             let marker = GMSMarker()
-            marker.position = CLLocationCoordinate2D(latitude: location.lat, longitude: location.long)
+            marker.position = CLLocationCoordinate2D(latitude: location.lat,
+                                                     longitude: location.long)
             marker.title = location.name
-            // marker.snippet = "Australia"
-            
             marker.map = mapView
+            bounds = bounds.includingCoordinate(marker.position)
 
     }
     
@@ -200,7 +214,7 @@ class BookingViewController: UIViewController {
     func isTripCompleted()-> Bool
     {
 
-        if (origin.name != "" && destination.name != "")
+        if (trip.origin?.name != "" && trip.destination?.name != "")
         {
             return true
         }
@@ -211,8 +225,8 @@ class BookingViewController: UIViewController {
     }
     func addMarkers()
     {
-        addMarker(origin)
-        addMarker(destination)
+        addMarker(trip.origin!)
+        addMarker(trip.destination!)
     }
 }
 
@@ -221,35 +235,34 @@ extension BookingViewController: GMSAutocompleteViewControllerDelegate
     func viewController(_ viewController: GMSAutocompleteViewController,
                         didAutocompleteWith place: GMSPlace) {
         
-        removeMarkerAndRoutingDirection()
+
         
-        let lat = place.coordinate.latitude
-        let long = place.coordinate.longitude
-        let name = place.name
-        
-        let camera = GMSCameraPosition.camera(withLatitude: lat,
-                                              longitude: long,
+        let camera = GMSCameraPosition.camera(withLatitude: place.coordinate.latitude,
+                                              longitude: place.coordinate.longitude,
                                               zoom: 15.0)
     
-        selectedTextField.text = name
+        selectedTextField.text = place.name
         
         if (selectedTextField == originTextField)
         {
-            origin.lat = lat
-            origin.long = long
-            origin.name = name
-            trip.origin = origin
+            trip.origin?.lat = place.coordinate.latitude
+            trip.origin?.long = place.coordinate.longitude
+            trip.origin?.name = place.name
+            
+            print(trip)
     
         }
         else if (selectedTextField == destinationTextField)
         {
-            destination.lat = lat
-            destination.long = long
-            destination.name = name
-            trip.destination = destination
+            trip.destination?.lat = place.coordinate.latitude
+            trip.destination?.long = place.coordinate.longitude
+            trip.destination?.name = place.name
+            print(trip)
         }
         if (isTripCompleted() == true)
         {
+            
+            removeMarkerAndRoutingDirection()
             reloadMapRoute()
         }
         
@@ -258,7 +271,8 @@ extension BookingViewController: GMSAutocompleteViewControllerDelegate
         self.googleMapsView.camera = camera
         self.dismiss(animated: true, completion: nil) // dismiss after select place
     }
-    func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
+    func viewController(_ viewController: GMSAutocompleteViewController,
+                        didFailAutocompleteWithError error: Error) {
         print("ERROR AUTO COMPLETE \(error)")
 
     }
@@ -298,7 +312,8 @@ extension BookingViewController: CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last
         
-        let camera = GMSCameraPosition.camera(withLatitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!, zoom: 17.0)
+        let camera = GMSCameraPosition.camera(withLatitude: (location?.coordinate.latitude)!,
+                                              longitude: (location?.coordinate.longitude)!, zoom: 17.0)
         
         self.googleMapsView.animate(to: camera)
         self.locationManager.stopUpdatingLocation()
