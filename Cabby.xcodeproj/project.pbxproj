@@ -8,6 +8,55 @@
 
 /* Begin PBXBuildFile section */
 		34594A829BEA432B3D8C579C /* Pods_Cabby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F29B5F5503378DC08A02EAC /* Pods_Cabby.framework */; };
+		9E09EB391EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB131EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf */; };
+		9E09EB3A1EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB141EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf */; };
+		9E09EB3B1EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB151EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf */; };
+		9E09EB3C1EAB5BEB00641178 /* DB Helvethaica X Bd Ext.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB161EAB5BEB00641178 /* DB Helvethaica X Bd Ext.ttf */; };
+		9E09EB3D1EAB5BEB00641178 /* DB Helvethaica X Bd It v3.2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB171EAB5BEB00641178 /* DB Helvethaica X Bd It v3.2.ttf */; };
+		9E09EB3E1EAB5BEB00641178 /* DB Helvethaica X Bd It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB181EAB5BEB00641178 /* DB Helvethaica X Bd It.ttf */; };
+		9E09EB3F1EAB5BEB00641178 /* DB Helvethaica X Bd v3.2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB191EAB5BEB00641178 /* DB Helvethaica X Bd v3.2.ttf */; };
+		9E09EB401EAB5BEB00641178 /* DB Helvethaica X Bd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB1A1EAB5BEB00641178 /* DB Helvethaica X Bd.ttf */; };
+		9E09EB411EAB5BEB00641178 /* DB Helvethaica X Blk Cond It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB1B1EAB5BEB00641178 /* DB Helvethaica X Blk Cond It.ttf */; };
+		9E09EB421EAB5BEB00641178 /* DB Helvethaica X Blk Cond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB1C1EAB5BEB00641178 /* DB Helvethaica X Blk Cond.ttf */; };
+		9E09EB431EAB5BEB00641178 /* DB Helvethaica X Blk Ext It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB1D1EAB5BEB00641178 /* DB Helvethaica X Blk Ext It.ttf */; };
+		9E09EB441EAB5BEB00641178 /* DB Helvethaica X Blk Ext.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB1E1EAB5BEB00641178 /* DB Helvethaica X Blk Ext.ttf */; };
+		9E09EB451EAB5BEB00641178 /* DB Helvethaica X Blk It v3.2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB1F1EAB5BEB00641178 /* DB Helvethaica X Blk It v3.2.ttf */; };
+		9E09EB461EAB5BEB00641178 /* DB Helvethaica X Blk It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB201EAB5BEB00641178 /* DB Helvethaica X Blk It.ttf */; };
+		9E09EB471EAB5BEB00641178 /* DB Helvethaica X Blk v3.2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB211EAB5BEB00641178 /* DB Helvethaica X Blk v3.2.ttf */; };
+		9E09EB481EAB5BEB00641178 /* DB Helvethaica X Blk.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB221EAB5BEB00641178 /* DB Helvethaica X Blk.ttf */; };
+		9E09EB491EAB5BEB00641178 /* DB Helvethaica X Cond It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB231EAB5BEB00641178 /* DB Helvethaica X Cond It.ttf */; };
+		9E09EB4A1EAB5BEB00641178 /* DB Helvethaica X Ext It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB241EAB5BEB00641178 /* DB Helvethaica X Ext It.ttf */; };
+		9E09EB4B1EAB5BEB00641178 /* DB Helvethaica X Ext.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB251EAB5BEB00641178 /* DB Helvethaica X Ext.ttf */; };
+		9E09EB4C1EAB5BEB00641178 /* DB Helvethaica X Li Ext It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB261EAB5BEB00641178 /* DB Helvethaica X Li Ext It.ttf */; };
+		9E09EB4D1EAB5BEB00641178 /* DB Helvethaica X Li Ext.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB271EAB5BEB00641178 /* DB Helvethaica X Li Ext.ttf */; };
+		9E09EB4E1EAB5BEB00641178 /* DB Helvethaica X Med Cond It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB281EAB5BEB00641178 /* DB Helvethaica X Med Cond It.ttf */; };
+		9E09EB4F1EAB5BEB00641178 /* DB Helvethaica X Med Ext It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB291EAB5BEB00641178 /* DB Helvethaica X Med Ext It.ttf */; };
+		9E09EB501EAB5BEB00641178 /* DB Helvethaica X Med Ext.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB2A1EAB5BEB00641178 /* DB Helvethaica X Med Ext.ttf */; };
+		9E09EB511EAB5BEB00641178 /* DB Helvethaica X Med v3.2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB2B1EAB5BEB00641178 /* DB Helvethaica X Med v3.2.ttf */; };
+		9E09EB521EAB5BEB00641178 /* DB Helvethaica X Thin Cond It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB2C1EAB5BEB00641178 /* DB Helvethaica X Thin Cond It.ttf */; };
+		9E09EB531EAB5BEB00641178 /* DB Helvethaica X Thin Cond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB2D1EAB5BEB00641178 /* DB Helvethaica X Thin Cond.ttf */; };
+		9E09EB541EAB5BEB00641178 /* DB Helvethaica X Thin Ext It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB2E1EAB5BEB00641178 /* DB Helvethaica X Thin Ext It.ttf */; };
+		9E09EB551EAB5BEB00641178 /* DB Helvethaica X Thin Ext.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB2F1EAB5BEB00641178 /* DB Helvethaica X Thin Ext.ttf */; };
+		9E09EB561EAB5BEB00641178 /* DB Helvethaica X Thin It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB301EAB5BEB00641178 /* DB Helvethaica X Thin It.ttf */; };
+		9E09EB571EAB5BEB00641178 /* DB Helvethaica X Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB311EAB5BEB00641178 /* DB Helvethaica X Thin.ttf */; };
+		9E09EB581EAB5BEB00641178 /* DB Helvethaica X UlLi Cond It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB321EAB5BEB00641178 /* DB Helvethaica X UlLi Cond It.ttf */; };
+		9E09EB591EAB5BEB00641178 /* DB Helvethaica X UlLi Cond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB331EAB5BEB00641178 /* DB Helvethaica X UlLi Cond.ttf */; };
+		9E09EB5A1EAB5BEB00641178 /* DB Helvethaica X UlLi Ext It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB341EAB5BEB00641178 /* DB Helvethaica X UlLi Ext It.ttf */; };
+		9E09EB5B1EAB5BEB00641178 /* DB Helvethaica X UlLi Ext.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB351EAB5BEB00641178 /* DB Helvethaica X UlLi Ext.ttf */; };
+		9E09EB5C1EAB5BEB00641178 /* DB Helvethaica X UlLi It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB361EAB5BEB00641178 /* DB Helvethaica X UlLi It.ttf */; };
+		9E09EB5D1EAB5BEB00641178 /* DB Helvethaica X UlLi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB371EAB5BEB00641178 /* DB Helvethaica X UlLi.ttf */; };
+		9E09EB5E1EAB5BEB00641178 /* DB Helvethaica X.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB381EAB5BEB00641178 /* DB Helvethaica X.ttf */; };
+		9E09EB6A1EAB5C0300641178 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB601EAB5C0300641178 /* Montserrat-Black.otf */; };
+		9E09EB6B1EAB5C0300641178 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB611EAB5C0300641178 /* Montserrat-Bold.otf */; };
+		9E09EB6C1EAB5C0300641178 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB621EAB5C0300641178 /* Montserrat-ExtraBold.otf */; };
+		9E09EB6D1EAB5C0300641178 /* Montserrat-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB631EAB5C0300641178 /* Montserrat-ExtraLight.otf */; };
+		9E09EB6E1EAB5C0300641178 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB641EAB5C0300641178 /* Montserrat-Hairline.otf */; };
+		9E09EB6F1EAB5C0300641178 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB651EAB5C0300641178 /* Montserrat-Light.otf */; };
+		9E09EB701EAB5C0300641178 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB661EAB5C0300641178 /* Montserrat-Medium.otf */; };
+		9E09EB711EAB5C0300641178 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB671EAB5C0300641178 /* Montserrat-Regular.otf */; };
+		9E09EB721EAB5C0300641178 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB681EAB5C0300641178 /* Montserrat-SemiBold.otf */; };
+		9E09EB731EAB5C0300641178 /* Montserrat-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB691EAB5C0300641178 /* Montserrat-Thin.otf */; };
+		9E09EB761EAB5C1D00641178 /* OCRAStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB751EAB5C1D00641178 /* OCRAStd.otf */; };
 		9E1677671EA78CB300940978 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1677661EA78CB300940978 /* CardCollectionViewCell.swift */; };
 		9E37A4581EA5E60000BA2C1D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37A4571EA5E60000BA2C1D /* RootViewController.swift */; };
 		9E37A45E1EA5EF3100BA2C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E37A45D1EA5EF3100BA2C1D /* Main.storyboard */; };
@@ -17,6 +66,7 @@
 		9E37A4701EA6216800BA2C1D /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37A46F1EA6216800BA2C1D /* PaymentViewController.swift */; };
 		9E3A30B61EA9E4EA008CD335 /* CompletedViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A30B51EA9E4EA008CD335 /* CompletedViewViewController.swift */; };
 		9E3A30B81EAA69CD008CD335 /* AddPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */; };
+		9E7CF1A91EAB68C40095B48A /* DBHelvethaicaX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CF1A81EAB68C40095B48A /* DBHelvethaicaX.swift */; };
 		9E819FEF1EA4073F00792638 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E819FEE1EA4073F00792638 /* TextField.swift */; };
 		9E8DF8491EA79B2800ECACB3 /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8DF8361EA7996B00ECACB3 /* IQKeyboardManager.framework */; };
 		9E8DF84A1EA79B2800ECACB3 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8DF8371EA7996B00ECACB3 /* IQKeyboardManagerSwift.framework */; };
@@ -40,6 +90,55 @@
 /* Begin PBXFileReference section */
 		1F29B5F5503378DC08A02EAC /* Pods_Cabby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cabby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		675CFCF33921D8E606760072 /* Pods-Cabby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cabby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cabby/Pods-Cabby.debug.xcconfig"; sourceTree = "<group>"; };
+		9E09EB131EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Cond It.ttf"; sourceTree = "<group>"; };
+		9E09EB141EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Cond.ttf"; sourceTree = "<group>"; };
+		9E09EB151EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Ext It.ttf"; sourceTree = "<group>"; };
+		9E09EB161EAB5BEB00641178 /* DB Helvethaica X Bd Ext.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Ext.ttf"; sourceTree = "<group>"; };
+		9E09EB171EAB5BEB00641178 /* DB Helvethaica X Bd It v3.2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd It v3.2.ttf"; sourceTree = "<group>"; };
+		9E09EB181EAB5BEB00641178 /* DB Helvethaica X Bd It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd It.ttf"; sourceTree = "<group>"; };
+		9E09EB191EAB5BEB00641178 /* DB Helvethaica X Bd v3.2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd v3.2.ttf"; sourceTree = "<group>"; };
+		9E09EB1A1EAB5BEB00641178 /* DB Helvethaica X Bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd.ttf"; sourceTree = "<group>"; };
+		9E09EB1B1EAB5BEB00641178 /* DB Helvethaica X Blk Cond It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Blk Cond It.ttf"; sourceTree = "<group>"; };
+		9E09EB1C1EAB5BEB00641178 /* DB Helvethaica X Blk Cond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Blk Cond.ttf"; sourceTree = "<group>"; };
+		9E09EB1D1EAB5BEB00641178 /* DB Helvethaica X Blk Ext It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Blk Ext It.ttf"; sourceTree = "<group>"; };
+		9E09EB1E1EAB5BEB00641178 /* DB Helvethaica X Blk Ext.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Blk Ext.ttf"; sourceTree = "<group>"; };
+		9E09EB1F1EAB5BEB00641178 /* DB Helvethaica X Blk It v3.2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Blk It v3.2.ttf"; sourceTree = "<group>"; };
+		9E09EB201EAB5BEB00641178 /* DB Helvethaica X Blk It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Blk It.ttf"; sourceTree = "<group>"; };
+		9E09EB211EAB5BEB00641178 /* DB Helvethaica X Blk v3.2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Blk v3.2.ttf"; sourceTree = "<group>"; };
+		9E09EB221EAB5BEB00641178 /* DB Helvethaica X Blk.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Blk.ttf"; sourceTree = "<group>"; };
+		9E09EB231EAB5BEB00641178 /* DB Helvethaica X Cond It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Cond It.ttf"; sourceTree = "<group>"; };
+		9E09EB241EAB5BEB00641178 /* DB Helvethaica X Ext It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Ext It.ttf"; sourceTree = "<group>"; };
+		9E09EB251EAB5BEB00641178 /* DB Helvethaica X Ext.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Ext.ttf"; sourceTree = "<group>"; };
+		9E09EB261EAB5BEB00641178 /* DB Helvethaica X Li Ext It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Li Ext It.ttf"; sourceTree = "<group>"; };
+		9E09EB271EAB5BEB00641178 /* DB Helvethaica X Li Ext.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Li Ext.ttf"; sourceTree = "<group>"; };
+		9E09EB281EAB5BEB00641178 /* DB Helvethaica X Med Cond It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Med Cond It.ttf"; sourceTree = "<group>"; };
+		9E09EB291EAB5BEB00641178 /* DB Helvethaica X Med Ext It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Med Ext It.ttf"; sourceTree = "<group>"; };
+		9E09EB2A1EAB5BEB00641178 /* DB Helvethaica X Med Ext.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Med Ext.ttf"; sourceTree = "<group>"; };
+		9E09EB2B1EAB5BEB00641178 /* DB Helvethaica X Med v3.2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Med v3.2.ttf"; sourceTree = "<group>"; };
+		9E09EB2C1EAB5BEB00641178 /* DB Helvethaica X Thin Cond It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Thin Cond It.ttf"; sourceTree = "<group>"; };
+		9E09EB2D1EAB5BEB00641178 /* DB Helvethaica X Thin Cond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Thin Cond.ttf"; sourceTree = "<group>"; };
+		9E09EB2E1EAB5BEB00641178 /* DB Helvethaica X Thin Ext It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Thin Ext It.ttf"; sourceTree = "<group>"; };
+		9E09EB2F1EAB5BEB00641178 /* DB Helvethaica X Thin Ext.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Thin Ext.ttf"; sourceTree = "<group>"; };
+		9E09EB301EAB5BEB00641178 /* DB Helvethaica X Thin It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Thin It.ttf"; sourceTree = "<group>"; };
+		9E09EB311EAB5BEB00641178 /* DB Helvethaica X Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Thin.ttf"; sourceTree = "<group>"; };
+		9E09EB321EAB5BEB00641178 /* DB Helvethaica X UlLi Cond It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X UlLi Cond It.ttf"; sourceTree = "<group>"; };
+		9E09EB331EAB5BEB00641178 /* DB Helvethaica X UlLi Cond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X UlLi Cond.ttf"; sourceTree = "<group>"; };
+		9E09EB341EAB5BEB00641178 /* DB Helvethaica X UlLi Ext It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X UlLi Ext It.ttf"; sourceTree = "<group>"; };
+		9E09EB351EAB5BEB00641178 /* DB Helvethaica X UlLi Ext.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X UlLi Ext.ttf"; sourceTree = "<group>"; };
+		9E09EB361EAB5BEB00641178 /* DB Helvethaica X UlLi It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X UlLi It.ttf"; sourceTree = "<group>"; };
+		9E09EB371EAB5BEB00641178 /* DB Helvethaica X UlLi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X UlLi.ttf"; sourceTree = "<group>"; };
+		9E09EB381EAB5BEB00641178 /* DB Helvethaica X.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X.ttf"; sourceTree = "<group>"; };
+		9E09EB601EAB5C0300641178 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
+		9E09EB611EAB5C0300641178 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		9E09EB621EAB5C0300641178 /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		9E09EB631EAB5C0300641178 /* Montserrat-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.otf"; sourceTree = "<group>"; };
+		9E09EB641EAB5C0300641178 /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Hairline.otf"; sourceTree = "<group>"; };
+		9E09EB651EAB5C0300641178 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		9E09EB661EAB5C0300641178 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		9E09EB671EAB5C0300641178 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		9E09EB681EAB5C0300641178 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
+		9E09EB691EAB5C0300641178 /* Montserrat-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.otf"; sourceTree = "<group>"; };
+		9E09EB751EAB5C1D00641178 /* OCRAStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OCRAStd.otf; sourceTree = "<group>"; };
 		9E1677661EA78CB300940978 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardCollectionViewCell.swift; path = UICollectionViewCell/CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		9E37A4571EA5E60000BA2C1D /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		9E37A45D1EA5EF3100BA2C1D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -49,6 +148,7 @@
 		9E37A46F1EA6216800BA2C1D /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		9E3A30B51EA9E4EA008CD335 /* CompletedViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedViewViewController.swift; sourceTree = "<group>"; };
 		9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentViewController.swift; sourceTree = "<group>"; };
+		9E7CF1A81EAB68C40095B48A /* DBHelvethaicaX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBHelvethaicaX.swift; path = Extensions/UIFont/DBHelvethaicaX.swift; sourceTree = "<group>"; };
 		9E819FEE1EA4073F00792638 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = SubClass/TextField.swift; sourceTree = "<group>"; };
 		9E8DF8361EA7996B00ECACB3 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManager.framework; path = Carthage/Build/iOS/IQKeyboardManager.framework; sourceTree = "<group>"; };
 		9E8DF8371EA7996B00ECACB3 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
@@ -104,13 +204,102 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9E09EABF1EAB5B8700641178 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9E09EB741EAB5C1600641178 /* OCRAStd */,
+				9E09EB5F1EAB5BF900641178 /* monserrat */,
+				9E09EB121EAB5BDC00641178 /* DB Helvethaica X */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		9E09EB121EAB5BDC00641178 /* DB Helvethaica X */ = {
+			isa = PBXGroup;
+			children = (
+				9E09EB131EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf */,
+				9E09EB141EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf */,
+				9E09EB151EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf */,
+				9E09EB161EAB5BEB00641178 /* DB Helvethaica X Bd Ext.ttf */,
+				9E09EB171EAB5BEB00641178 /* DB Helvethaica X Bd It v3.2.ttf */,
+				9E09EB181EAB5BEB00641178 /* DB Helvethaica X Bd It.ttf */,
+				9E09EB191EAB5BEB00641178 /* DB Helvethaica X Bd v3.2.ttf */,
+				9E09EB1A1EAB5BEB00641178 /* DB Helvethaica X Bd.ttf */,
+				9E09EB1B1EAB5BEB00641178 /* DB Helvethaica X Blk Cond It.ttf */,
+				9E09EB1C1EAB5BEB00641178 /* DB Helvethaica X Blk Cond.ttf */,
+				9E09EB1D1EAB5BEB00641178 /* DB Helvethaica X Blk Ext It.ttf */,
+				9E09EB1E1EAB5BEB00641178 /* DB Helvethaica X Blk Ext.ttf */,
+				9E09EB1F1EAB5BEB00641178 /* DB Helvethaica X Blk It v3.2.ttf */,
+				9E09EB201EAB5BEB00641178 /* DB Helvethaica X Blk It.ttf */,
+				9E09EB211EAB5BEB00641178 /* DB Helvethaica X Blk v3.2.ttf */,
+				9E09EB221EAB5BEB00641178 /* DB Helvethaica X Blk.ttf */,
+				9E09EB231EAB5BEB00641178 /* DB Helvethaica X Cond It.ttf */,
+				9E09EB241EAB5BEB00641178 /* DB Helvethaica X Ext It.ttf */,
+				9E09EB251EAB5BEB00641178 /* DB Helvethaica X Ext.ttf */,
+				9E09EB261EAB5BEB00641178 /* DB Helvethaica X Li Ext It.ttf */,
+				9E09EB271EAB5BEB00641178 /* DB Helvethaica X Li Ext.ttf */,
+				9E09EB281EAB5BEB00641178 /* DB Helvethaica X Med Cond It.ttf */,
+				9E09EB291EAB5BEB00641178 /* DB Helvethaica X Med Ext It.ttf */,
+				9E09EB2A1EAB5BEB00641178 /* DB Helvethaica X Med Ext.ttf */,
+				9E09EB2B1EAB5BEB00641178 /* DB Helvethaica X Med v3.2.ttf */,
+				9E09EB2C1EAB5BEB00641178 /* DB Helvethaica X Thin Cond It.ttf */,
+				9E09EB2D1EAB5BEB00641178 /* DB Helvethaica X Thin Cond.ttf */,
+				9E09EB2E1EAB5BEB00641178 /* DB Helvethaica X Thin Ext It.ttf */,
+				9E09EB2F1EAB5BEB00641178 /* DB Helvethaica X Thin Ext.ttf */,
+				9E09EB301EAB5BEB00641178 /* DB Helvethaica X Thin It.ttf */,
+				9E09EB311EAB5BEB00641178 /* DB Helvethaica X Thin.ttf */,
+				9E09EB321EAB5BEB00641178 /* DB Helvethaica X UlLi Cond It.ttf */,
+				9E09EB331EAB5BEB00641178 /* DB Helvethaica X UlLi Cond.ttf */,
+				9E09EB341EAB5BEB00641178 /* DB Helvethaica X UlLi Ext It.ttf */,
+				9E09EB351EAB5BEB00641178 /* DB Helvethaica X UlLi Ext.ttf */,
+				9E09EB361EAB5BEB00641178 /* DB Helvethaica X UlLi It.ttf */,
+				9E09EB371EAB5BEB00641178 /* DB Helvethaica X UlLi.ttf */,
+				9E09EB381EAB5BEB00641178 /* DB Helvethaica X.ttf */,
+			);
+			name = "DB Helvethaica X";
+			sourceTree = "<group>";
+		};
+		9E09EB5F1EAB5BF900641178 /* monserrat */ = {
+			isa = PBXGroup;
+			children = (
+				9E09EB601EAB5C0300641178 /* Montserrat-Black.otf */,
+				9E09EB611EAB5C0300641178 /* Montserrat-Bold.otf */,
+				9E09EB621EAB5C0300641178 /* Montserrat-ExtraBold.otf */,
+				9E09EB631EAB5C0300641178 /* Montserrat-ExtraLight.otf */,
+				9E09EB641EAB5C0300641178 /* Montserrat-Hairline.otf */,
+				9E09EB651EAB5C0300641178 /* Montserrat-Light.otf */,
+				9E09EB661EAB5C0300641178 /* Montserrat-Medium.otf */,
+				9E09EB671EAB5C0300641178 /* Montserrat-Regular.otf */,
+				9E09EB681EAB5C0300641178 /* Montserrat-SemiBold.otf */,
+				9E09EB691EAB5C0300641178 /* Montserrat-Thin.otf */,
+			);
+			name = monserrat;
+			sourceTree = "<group>";
+		};
+		9E09EB741EAB5C1600641178 /* OCRAStd */ = {
+			isa = PBXGroup;
+			children = (
+				9E09EB751EAB5C1D00641178 /* OCRAStd.otf */,
+			);
+			name = OCRAStd;
+			sourceTree = "<group>";
+		};
 		9E37A4641EA6001200BA2C1D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9E7CF1A71EAB68900095B48A /* UIFont */,
 				9E37A4651EA6002F00BA2C1D /* DismissKeyboard+UIViewController.swift */,
 				9E37A46B1EA60C0D00BA2C1D /* SetupTextField+UIViewController.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		9E7CF1A71EAB68900095B48A /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				9E7CF1A81EAB68C40095B48A /* DBHelvethaicaX.swift */,
+			);
+			name = UIFont;
 			sourceTree = "<group>";
 		};
 		9E819FED1EA4071200792638 /* Subclass */ = {
@@ -152,6 +341,7 @@
 		9EF7585A1EA3FC650087AFA4 /* Cabby */ = {
 			isa = PBXGroup;
 			children = (
+				9E09EABF1EAB5B8700641178 /* Fonts */,
 				9E8F18511EA77A1F00D6E5F8 /* Model */,
 				9EF7585B1EA3FC650087AFA4 /* AppDelegate.swift */,
 				9E37A4641EA6001200BA2C1D /* Extensions */,
@@ -227,6 +417,7 @@
 				TargetAttributes = {
 					9EF758571EA3FC650087AFA4 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = RJA42UD9TG;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -254,10 +445,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E09EB3C1EAB5BEB00641178 /* DB Helvethaica X Bd Ext.ttf in Resources */,
+				9E09EB451EAB5BEB00641178 /* DB Helvethaica X Blk It v3.2.ttf in Resources */,
+				9E09EB471EAB5BEB00641178 /* DB Helvethaica X Blk v3.2.ttf in Resources */,
+				9E09EB551EAB5BEB00641178 /* DB Helvethaica X Thin Ext.ttf in Resources */,
+				9E09EB561EAB5BEB00641178 /* DB Helvethaica X Thin It.ttf in Resources */,
+				9E09EB4D1EAB5BEB00641178 /* DB Helvethaica X Li Ext.ttf in Resources */,
+				9E09EB701EAB5C0300641178 /* Montserrat-Medium.otf in Resources */,
+				9E09EB4E1EAB5BEB00641178 /* DB Helvethaica X Med Cond It.ttf in Resources */,
+				9E09EB531EAB5BEB00641178 /* DB Helvethaica X Thin Cond.ttf in Resources */,
+				9E09EB6B1EAB5C0300641178 /* Montserrat-Bold.otf in Resources */,
+				9E09EB4F1EAB5BEB00641178 /* DB Helvethaica X Med Ext It.ttf in Resources */,
+				9E09EB541EAB5BEB00641178 /* DB Helvethaica X Thin Ext It.ttf in Resources */,
+				9E09EB491EAB5BEB00641178 /* DB Helvethaica X Cond It.ttf in Resources */,
+				9E09EB3F1EAB5BEB00641178 /* DB Helvethaica X Bd v3.2.ttf in Resources */,
+				9E09EB521EAB5BEB00641178 /* DB Helvethaica X Thin Cond It.ttf in Resources */,
+				9E09EB441EAB5BEB00641178 /* DB Helvethaica X Blk Ext.ttf in Resources */,
+				9E09EB6E1EAB5C0300641178 /* Montserrat-Hairline.otf in Resources */,
+				9E09EB591EAB5BEB00641178 /* DB Helvethaica X UlLi Cond.ttf in Resources */,
+				9E09EB411EAB5BEB00641178 /* DB Helvethaica X Blk Cond It.ttf in Resources */,
+				9E09EB4A1EAB5BEB00641178 /* DB Helvethaica X Ext It.ttf in Resources */,
+				9E09EB461EAB5BEB00641178 /* DB Helvethaica X Blk It.ttf in Resources */,
+				9E09EB5B1EAB5BEB00641178 /* DB Helvethaica X UlLi Ext.ttf in Resources */,
+				9E09EB3E1EAB5BEB00641178 /* DB Helvethaica X Bd It.ttf in Resources */,
+				9E09EB6C1EAB5C0300641178 /* Montserrat-ExtraBold.otf in Resources */,
 				9EF758661EA3FC650087AFA4 /* LaunchScreen.storyboard in Resources */,
+				9E09EB6F1EAB5C0300641178 /* Montserrat-Light.otf in Resources */,
+				9E09EB5D1EAB5BEB00641178 /* DB Helvethaica X UlLi.ttf in Resources */,
+				9E09EB4C1EAB5BEB00641178 /* DB Helvethaica X Li Ext It.ttf in Resources */,
+				9E09EB481EAB5BEB00641178 /* DB Helvethaica X Blk.ttf in Resources */,
+				9E09EB731EAB5C0300641178 /* Montserrat-Thin.otf in Resources */,
+				9E09EB711EAB5C0300641178 /* Montserrat-Regular.otf in Resources */,
+				9E09EB761EAB5C1D00641178 /* OCRAStd.otf in Resources */,
+				9E09EB5C1EAB5BEB00641178 /* DB Helvethaica X UlLi It.ttf in Resources */,
 				9E37A45E1EA5EF3100BA2C1D /* Main.storyboard in Resources */,
+				9E09EB511EAB5BEB00641178 /* DB Helvethaica X Med v3.2.ttf in Resources */,
+				9E09EB401EAB5BEB00641178 /* DB Helvethaica X Bd.ttf in Resources */,
+				9E09EB581EAB5BEB00641178 /* DB Helvethaica X UlLi Cond It.ttf in Resources */,
+				9E09EB6A1EAB5C0300641178 /* Montserrat-Black.otf in Resources */,
+				9E09EB3A1EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf in Resources */,
 				9EF758631EA3FC650087AFA4 /* Assets.xcassets in Resources */,
+				9E09EB5A1EAB5BEB00641178 /* DB Helvethaica X UlLi Ext It.ttf in Resources */,
+				9E09EB391EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf in Resources */,
+				9E09EB5E1EAB5BEB00641178 /* DB Helvethaica X.ttf in Resources */,
+				9E09EB3B1EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf in Resources */,
+				9E09EB6D1EAB5C0300641178 /* Montserrat-ExtraLight.otf in Resources */,
 				9EF758611EA3FC650087AFA4 /* My.storyboard in Resources */,
+				9E09EB571EAB5BEB00641178 /* DB Helvethaica X Thin.ttf in Resources */,
+				9E09EB3D1EAB5BEB00641178 /* DB Helvethaica X Bd It v3.2.ttf in Resources */,
+				9E09EB4B1EAB5BEB00641178 /* DB Helvethaica X Ext.ttf in Resources */,
+				9E09EB501EAB5BEB00641178 /* DB Helvethaica X Med Ext.ttf in Resources */,
+				9E09EB721EAB5C0300641178 /* Montserrat-SemiBold.otf in Resources */,
+				9E09EB431EAB5BEB00641178 /* DB Helvethaica X Blk Ext It.ttf in Resources */,
+				9E09EB421EAB5BEB00641178 /* DB Helvethaica X Blk Cond.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +589,7 @@
 				9E819FEF1EA4073F00792638 /* TextField.swift in Sources */,
 				9E37A4701EA6216800BA2C1D /* PaymentViewController.swift in Sources */,
 				9EF7585E1EA3FC650087AFA4 /* LoginViewController.swift in Sources */,
+				9E7CF1A91EAB68C40095B48A /* DBHelvethaicaX.swift in Sources */,
 				9E37A4601EA5F65500BA2C1D /* BookingViewController.swift in Sources */,
 				9E37A46C1EA60C0D00BA2C1D /* SetupTextField+UIViewController.swift in Sources */,
 				9E1677671EA78CB300940978 /* CardCollectionViewCell.swift in Sources */,
@@ -479,7 +720,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RJA42UD9TG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -500,7 +741,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RJA42UD9TG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

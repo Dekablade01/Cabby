@@ -10,11 +10,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-
     @IBOutlet weak var usernameTextField: TextField!
     @IBOutlet weak var passwordTextField: TextField!
     let whiteColor: UIColor = .white
 
+    @IBOutlet weak var loginButton: UIButton!
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -34,15 +35,28 @@ class LoginViewController: UIViewController {
             .view
             .backgroundColor = .clear
     }
+    
+    func setupButtonView()
+    {
+        loginButton.titleEdgeInsets.bottom = 0
+        loginButton.titleEdgeInsets.top = 0
+        loginButton.titleEdgeInsets.left = 0
+        loginButton.titleEdgeInsets.right = 0
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+        
+        setupButtonView()
         setupTextField(textField: usernameTextField,
-                       placeHolderString: "Username", placeHolderColor: .white)
+                       placeHolderString: "Username",
+                       placeHolderColor: .white, borderColor: .white, borderWidth: 1.0)
         setupTextField(textField: passwordTextField,
-                       placeHolderString: "Password", placeHolderColor: .white)
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(UIViewController.hideKeyboard))
+                       placeHolderString: "Password",
+                       placeHolderColor: .white, borderColor: .white, borderWidth: 1.0)
+        let tapGesture = UITapGestureRecognizer(target: self,
+                                                action: #selector(UIViewController.hideKeyboard))
         tapGesture.cancelsTouchesInView = true
         self.view.addGestureRecognizer(tapGesture)
     
@@ -50,8 +64,6 @@ class LoginViewController: UIViewController {
     override var prefersStatusBarHidden : Bool {
         return true
     }
-
-
 
     override func didReceiveMemoryWarning()
     {

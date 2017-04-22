@@ -2,6 +2,59 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>DB Helvethaica X Bd Cond It.ttf</string>
+		<string>DB Helvethaica X Bd Cond.ttf</string>
+		<string>DB Helvethaica X Bd Ext It.ttf</string>
+		<string>DB Helvethaica X Bd Ext.ttf</string>
+		<string>DB Helvethaica X Bd It v3.2.ttf</string>
+		<string>DB Helvethaica X Bd It.ttf</string>
+		<string>DB Helvethaica X Bd v3.2.ttf</string>
+		<string>DB Helvethaica X Bd.ttf</string>
+		<string>DB Helvethaica X Blk Cond It.ttf</string>
+		<string>DB Helvethaica X Blk Cond.ttf</string>
+		<string>DB Helvethaica X Blk Ext It.ttf</string>
+		<string>DB Helvethaica X Blk Ext.ttf</string>
+		<string>DB Helvethaica X Blk It v3.2.ttf</string>
+		<string>DB Helvethaica X Blk It.ttf</string>
+		<string>DB Helvethaica X Blk v3.2.ttf</string>
+		<string>DB Helvethaica X Blk.ttf</string>
+		<string>DB Helvethaica X Cond It.ttf</string>
+		<string>DB Helvethaica X Ext It.ttf</string>
+		<string>DB Helvethaica X Ext.ttf</string>
+		<string>DB Helvethaica X Li Ext It.ttf</string>
+		<string>DB Helvethaica X Li Ext.ttf</string>
+		<string>DB Helvethaica X Med Cond It.ttf</string>
+		<string>DB Helvethaica X Med Ext It.ttf</string>
+		<string>DB Helvethaica X Med Ext.ttf</string>
+		<string>DB Helvethaica X Med v3.2.ttf</string>
+		<string>DB Helvethaica X Thin Cond It.ttf</string>
+		<string>DB Helvethaica X Thin Cond.ttf</string>
+		<string>DB Helvethaica X Thin Ext It.ttf</string>
+		<string>DB Helvethaica X Thin Ext.ttf</string>
+		<string>DB Helvethaica X Thin It.ttf</string>
+		<string>DB Helvethaica X Thin.ttf</string>
+		<string>DB Helvethaica X UlLi Cond It.ttf</string>
+		<string>DB Helvethaica X UlLi Cond.ttf</string>
+		<string>DB Helvethaica X UlLi Ext It.ttf</string>
+		<string>DB Helvethaica X UlLi Ext.ttf</string>
+		<string>DB Helvethaica X UlLi It.ttf</string>
+		<string>DB Helvethaica X UlLi.ttf</string>
+		<string>DB Helvethaica X.ttf</string>
+		<string>Montserrat-Black.otf</string>
+		<string>Montserrat-Bold.otf</string>
+		<string>Montserrat-ExtraBold.otf</string>
+		<string>Montserrat-ExtraLight.otf</string>
+		<string>Montserrat-Hairline.otf</string>
+		<string>Montserrat-Light.otf</string>
+		<string>Montserrat-Medium.otf</string>
+		<string>Montserrat-Regular.otf</string>
+		<string>Montserrat-SemiBold.otf</string>
+		<string>Montserrat-Thin.otf</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

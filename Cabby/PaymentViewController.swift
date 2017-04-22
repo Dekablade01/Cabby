@@ -52,7 +52,7 @@ class PaymentViewController: UIViewController {
     }
 
     @IBAction func saveButtonHandler(_ sender: Any) {
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
     func setupCollectionView()

@@ -9,12 +9,13 @@
 import UIKit
 
 extension UIViewController {
-    func setupTextField (textField: UITextField, placeHolderString: String, placeHolderColor: UIColor)
+    func setupTextField (textField: UITextField, placeHolderString: String, placeHolderColor: UIColor, borderColor: UIColor, borderWidth: CGFloat)
     {
+        let cgColor = borderColor.cgColor
         
         textField.attributedPlaceholder = NSAttributedString(string:placeHolderString   ,
                                                              attributes:[NSForegroundColorAttributeName: placeHolderColor])
-        textField.layer.borderColor = UIColor.white.cgColor
-        textField.layer.borderWidth = 1.0
+        textField.layer.borderColor = cgColor
+        textField.layer.borderWidth = borderWidth
     }
 }

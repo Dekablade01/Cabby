@@ -52,8 +52,12 @@ class AddPaymentViewController: UIViewController
         if (cardNumber.characters.count > 16)
         {
             let first16Chars = String(cardNumber.characters.prefix(16))
-            
             cardNumber = first16Chars
+        }
+        else
+        {
+            let newChars = customStringFormatting(of: cardNumber)
+            cardNumber = newChars
         }
     }
     func correctMonth()
@@ -151,9 +155,23 @@ class AddPaymentViewController: UIViewController
         self.present(actionSheetController, animated: true, completion: nil)
     }
     
+    func customStringFormatting(of str: String) -> String {
+        return str.characters.chunk(n: 4)
+            .map{ String($0) }.joined(separator: " ")
+    }
+    
 }
 
-extension AddPaymentViewController: UITextFieldDelegate
-{
-    
+extension Collection {
+    public func chunk(n: IndexDistance) -> [SubSequence] {
+        var res: [SubSequence] = []
+        var i = startIndex
+        var j: Index
+        while i != endIndex {
+            j = index(i, offsetBy: n, limitedBy: endIndex) ?? endIndex
+            res.append(self[i..<j])
+            i = j
+        }
+        return res
+    }
 }

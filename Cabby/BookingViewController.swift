@@ -34,7 +34,8 @@ class BookingViewController: UIViewController {
     var selectedTextField = UITextField()
     
     var googleMapsView = GMSMapView()
-    var mapView = GMSMapView.map(withFrame: .zero, camera: GMSCameraPosition())
+    var mapView = GMSMapView.map(withFrame: .zero,
+                                 camera: GMSCameraPosition())
 
     @IBOutlet weak var viewForMapView: UIView!
     var locationManager = CLLocationManager()
@@ -45,20 +46,21 @@ class BookingViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        
+  
+        
         markers = [GMSMarker(), GMSMarker()]
         trip.origin = Location()
         trip.destination = Location()
         setupNavigationBar()
-        setupMapView()
         setupTextFieldForThisViewController()
         
-        locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         locationManager.startMonitoringSignificantLocationChanges()
+
         
-        setupMapView()
         
     }
 
@@ -70,7 +72,10 @@ class BookingViewController: UIViewController {
         if self.sideViewController()!.rightViewControllerVisible {
             self.sideViewController()!.hideRightViewController()
         } else {
-            self.sideViewController()!.presentRightViewController(0.5, dampingRatio: 0.4, velocity: 10, options: .curveEaseIn)
+            self.sideViewController()!.presentRightViewController(0.5,
+                                                                  dampingRatio: 0.4,
+                                                                  velocity: 10,
+                                                                  options: .curveEaseIn)
         }
     }
     
@@ -108,35 +113,40 @@ class BookingViewController: UIViewController {
 
     func setupTextFieldForThisViewController()
     {
-        textFieldForThisViewController(textField: originTextField)
-        textFieldForThisViewController(textField: destinationTextField)
+        
+        originTextField.text = ""
+        destinationTextField.text = ""
+        originTextField.padding = UIEdgeInsets(top: 8, left: 15, bottom: 0, right: 15)
+        destinationTextField.padding = UIEdgeInsets(top: 8, left: 15, bottom: 0, right: 15)
+
         
         self.setupTextField(textField: originTextField,
                             placeHolderString: "จุดนัดพบ",
-                            placeHolderColor: .black)
+                            placeHolderColor: .black,
+                            borderColor: .black, borderWidth: 1.0)
+        
         self.setupTextField(textField: destinationTextField,
                             placeHolderString: "จุดหมายปลายทาง",
-                            placeHolderColor: .black)
+                            placeHolderColor: .black,
+                            borderColor: .black, borderWidth: 1.0)
+        
+        destinationTextField.delegate = self
+        originTextField.delegate = self
         
         
     }
-    func textFieldForThisViewController(textField: UITextField)
-    {
-        textField.layer.borderColor = UIColor.black.cgColor
 
-        textField.delegate = self
-    }
     func showAutoCompleteViewController()
     {
         let autoCompleteViewController = GMSAutocompleteViewController()
+        
+
         
         autoCompleteViewController.delegate = self
         
         self.present(autoCompleteViewController,
                      animated: true,
                      completion: nil)
-        
-        
     }
     
     func removeMarkerAndRoutingDirection ()
@@ -317,6 +327,8 @@ extension BookingViewController: CLLocationManagerDelegate
         
         self.googleMapsView.animate(to: camera)
         self.locationManager.stopUpdatingLocation()
+        setupMapView()
         
     }
 }
+

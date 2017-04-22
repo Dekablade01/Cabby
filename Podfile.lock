@@ -1,4 +1,5 @@
 PODS:
+  - Caishen (2.0.1)
   - GoogleMaps (2.2.0):
     - GoogleMaps/Maps (= 2.2.0)
   - GoogleMaps/Base (2.2.0)
@@ -9,15 +10,17 @@ PODS:
   - LFSideViewController (2.0.0)
 
 DEPENDENCIES:
+  - Caishen
   - GoogleMaps
   - GooglePlaces
   - LFSideViewController (~> 2.0.0)
 
 SPEC CHECKSUMS:
+  Caishen: e27ae02c0e4a30f3e2442730e7ee144d9e6adc72
   GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
   GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
   LFSideViewController: 35c31bb53735f809180518beab09c9e6dc377a77
 
-PODFILE CHECKSUM: 5cda6fcf4fdf326b5efae4c32da7d61fff5a26e7
+PODFILE CHECKSUM: 5ef973302754d3514ec769b4257b3c33cb997b8c
 
 COCOAPODS: 1.2.1
