@@ -16,24 +16,70 @@ class AddPaymentViewController: UIViewController
     @IBOutlet weak var yearTextField: UITextField!
     @IBOutlet weak var ownerNameTextField: UITextField!
     
+    var cardNumber: String {
+        get { return cardNumberTextField.text ?? "" }
+        set { cardNumberTextField.text = newValue }
+    }
+    var month: String {
+        get { return monthTextField.text ?? ""}
+        set { monthTextField.text = newValue }
+    }
+    var year: String {
+        get { return yearTextField.text ?? "" }
+        set { yearTextField.text = newValue }
+    }
+    var owner: String {
+        get { return ownerNameTextField.text ?? "" }
+        set { ownerNameTextField.text = newValue }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
 
-
+        cardNumberTextField.addTarget(self,
+                                      action: #selector(AddPaymentViewController.correctCard),
+                                      for: .editingChanged)
+        monthTextField.addTarget(self,
+                                 action: #selector(AddPaymentViewController.correctMonth),
+                                 for: .editingChanged)
+        yearTextField.addTarget(self,
+                                action: #selector(AddPaymentViewController.correctYear),
+                                for: .editingChanged)
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-
+    func correctCard(){
+        if (cardNumber.characters.count > 16)
+        {
+            let first16Chars = String(cardNumber.characters.prefix(16))
+            
+            cardNumber = first16Chars
+        }
     }
-    
+    func correctMonth()
+    {
+        if (month.characters.count > 2)
+        {
+            let first2Chars = String(month.characters.prefix(2))
+
+            month = first2Chars
+        }
+    }
+    func correctYear()
+    {
+        if (year.characters.count > 4)
+        {
+            let first4chars = String(year.characters.prefix(4))
+            
+            year = first4chars
+        }
+    }
     @IBAction func insertPaymentHandler(_ sender: UIButton)
     {
-        if( (cardNumberTextField.text?.characters.count)! == 16 &&
-            Int(monthTextField.text!)! >= 12  &&
-            (yearTextField.text?.characters.count)! == 4  &&
-            isFilled(textField: ownerNameTextField)  )
+        if( cardNumber.characters.count == 16 &&
+            Int(month)! <= 12  &&
+            year.characters.count == 4  &&
+            owner.characters.count > 0  )
         {
             createCard(cardNumber: cardNumberTextField.text!,
                        month: monthTextField.text!,
@@ -42,6 +88,11 @@ class AddPaymentViewController: UIViewController
         }
         else
         {
+            print("cardNumber: \(cardNumber.characters.count)")
+            print("month: \(Int(month)!)")
+            print("year: \(year.characters.count)")
+            print("owner: \(owner.characters.count)")
+
             showAlertMessage(title: "Something went wrong",
                              message: "Please Enter Correct Information",
                              button: "OK")
@@ -99,5 +150,10 @@ class AddPaymentViewController: UIViewController
         
         self.present(actionSheetController, animated: true, completion: nil)
     }
+    
+}
+
+extension AddPaymentViewController: UITextFieldDelegate
+{
     
 }
