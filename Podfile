@@ -7,8 +7,7 @@ target 'Cabby' do
     pod 'LFSideViewController', '~> 2.0.0'
     pod 'GoogleMaps'
     pod 'GooglePlaces'
-    pod 'Caishen'
-
+    pod 'FormTextField'
 
     
     # Pods for Cabby

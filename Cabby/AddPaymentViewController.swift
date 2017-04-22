@@ -6,131 +6,109 @@
 //  Copyright © 2560 Issarapong Poesua. All rights reserved.
 //
 
-import UIKit
 import RealmSwift
+import UIKit
+import FormTextField
+import Formatter
+import InputValidator
+import Validation
+
 
 class AddPaymentViewController: UIViewController
 {
-    @IBOutlet weak var cardNumberTextField: UITextField!
-    @IBOutlet weak var monthTextField: UITextField!
-    @IBOutlet weak var yearTextField: UITextField!
-    @IBOutlet weak var ownerNameTextField: UITextField!
+    @IBOutlet weak var cardNumberTextField: WhiteFormTextField!
+    @IBOutlet weak var cvvTextField: WhiteFormTextField!
+    @IBOutlet weak var expireDateTextField: WhiteFormTextField!
     
+    let fields = Field.fields()
+
     var cardNumber: String {
         get { return cardNumberTextField.text ?? "" }
         set { cardNumberTextField.text = newValue }
     }
-    var month: String {
-        get { return monthTextField.text ?? ""}
-        set { monthTextField.text = newValue }
+    var expireDate: String {
+        get { return expireDateTextField.text ?? ""}
+        set { expireDateTextField.text = newValue }
     }
-    var year: String {
-        get { return yearTextField.text ?? "" }
-        set { yearTextField.text = newValue }
-    }
-    var owner: String {
-        get { return ownerNameTextField.text ?? "" }
-        set { ownerNameTextField.text = newValue }
+
+    var cvv: String {
+        get { return cvvTextField.text ?? "" }
+        set { cvvTextField.text = newValue }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        cardNumberTextField.addTarget(self,
-                                      action: #selector(AddPaymentViewController.correctCard),
-                                      for: .editingChanged)
-        monthTextField.addTarget(self,
-                                 action: #selector(AddPaymentViewController.correctMonth),
-                                 for: .editingChanged)
-        yearTextField.addTarget(self,
-                                action: #selector(AddPaymentViewController.correctYear),
-                                for: .editingChanged)
+        let cField = self.fields[4]
+        let eField = self.fields[5]
+        let vField = self.fields[6]
+        setupFormTextField(formTextField: cardNumberTextField, with: cField)
+        
+        setupFormTextField(formTextField: expireDateTextField, with: eField)
+        setupFormTextField(formTextField: cvvTextField, with: vField)
+//        setTextFieldColor()
         
         
+        
+
+    }
+    
+    func setTextFieldColor()
+    {
+        self.setupTextField(textField: cardNumberTextField, placeHolderString: "", placeHolderColor: .white, borderColor: .white, borderWidth: 1)
+        self.setupTextField(textField: expireDateTextField, placeHolderString: "", placeHolderColor: .white, borderColor: .white, borderWidth: 1)
+        self.setupTextField(textField: cvvTextField, placeHolderString: "", placeHolderColor: .white, borderColor: .white, borderWidth: 1)
+    }
+    func setupFormTextField(formTextField: FormTextField, with field: Field)
+    {
+        formTextField.inputValidator = field.inputValidator
+        formTextField.inputType = field.inputType
+        formTextField.formatter = field.formatter
+
     }
 
-    func correctCard(){
-        if (cardNumber.characters.count > 16)
-        {
-            let first16Chars = String(cardNumber.characters.prefix(16))
-            cardNumber = first16Chars
-        }
-        else
-        {
-            let newChars = customStringFormatting(of: cardNumber)
-            cardNumber = newChars
-        }
-    }
-    func correctMonth()
-    {
-        if (month.characters.count > 2)
-        {
-            let first2Chars = String(month.characters.prefix(2))
 
-            month = first2Chars
-        }
-    }
-    func correctYear()
+     func submit()
     {
-        if (year.characters.count > 4)
+        if( cardNumber.characters.count == 19 &&
+            expireDate.characters.count == 5  &&
+            cvv.characters.count == 3)
         {
-            let first4chars = String(year.characters.prefix(4))
+            let card = createCardFrom(cardNumber: cardNumber,
+                                      expireDate: expireDate,
+                                      cvv: cvv)
             
-            year = first4chars
-        }
-    }
-    @IBAction func insertPaymentHandler(_ sender: UIButton)
-    {
-        if( cardNumber.characters.count == 16 &&
-            Int(month)! <= 12  &&
-            year.characters.count == 4  &&
-            owner.characters.count > 0  )
-        {
-            createCard(cardNumber: cardNumberTextField.text!,
-                       month: monthTextField.text!,
-                       year: yearTextField.text!,
-                       ownerName: ownerNameTextField.text!)
+            addCardToRealm(card: card)
+            
         }
         else
         {
-            print("cardNumber: \(cardNumber.characters.count)")
-            print("month: \(Int(month)!)")
-            print("year: \(year.characters.count)")
-            print("owner: \(owner.characters.count)")
 
             showAlertMessage(title: "Something went wrong",
                              message: "Please Enter Correct Information",
                              button: "OK")
         }
     }
-    func isFilled(textField: UITextField) -> Bool
+
+    func getLast(n: Int, of string:String) -> String
     {
-        if (textField.text != "")
-        {
-            return true
-        }
-        else
-        {
-            return false
-        }
+        let last = string.substring(from:string.index(string.endIndex,
+                                                       offsetBy: n * -1))
+        
+        return last
     }
     
     
-    
 
     
-    func createCard(cardNumber: String, month: String, year: String, ownerName: String)
+    func createCardFrom(cardNumber: String, expireDate: String, cvv: String) -> Card
     {
         let card = Card()
         card.cardNumber = cardNumber
+        card.expireDate = expireDate
+        card.cvv = cvv
+        card.displayCardNumber = getLast(n: 4, of: cardNumber)
         
-        let last4 = cardNumber.substring(from:cardNumber.index(cardNumber.endIndex, offsetBy: -4))
-        card.displayCardNumber = "XXXX-" + last4
-
-        card.month = month
-        card.year = year
-        card.ownerName = ownerName
+        return card
         
-        addCardToRealm(card: card)
     }
     
     func addCardToRealm(card: Card)
@@ -159,8 +137,17 @@ class AddPaymentViewController: UIViewController
         return str.characters.chunk(n: 4)
             .map{ String($0) }.joined(separator: " ")
     }
+    @IBAction func dismissViewController(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
+    @IBAction func saveButtonHandler(_ sender: Any) {
+        submit()
+
+    }
 }
+
+
 
 extension Collection {
     public func chunk(n: IndexDistance) -> [SubSequence] {

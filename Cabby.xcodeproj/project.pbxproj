@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		34594A829BEA432B3D8C579C /* Pods_Cabby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F29B5F5503378DC08A02EAC /* Pods_Cabby.framework */; };
+		9E0463E31EABFA53007220B9 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463E21EABFA53007220B9 /* CardViewController.swift */; };
 		9E09EB391EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB131EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf */; };
 		9E09EB3A1EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB141EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf */; };
 		9E09EB3B1EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB151EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf */; };
@@ -66,7 +67,10 @@
 		9E37A4701EA6216800BA2C1D /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37A46F1EA6216800BA2C1D /* PaymentViewController.swift */; };
 		9E3A30B61EA9E4EA008CD335 /* CompletedViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A30B51EA9E4EA008CD335 /* CompletedViewViewController.swift */; };
 		9E3A30B81EAA69CD008CD335 /* AddPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */; };
+		9E4756821EABE352001111CC /* WhiteFormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4756811EABE352001111CC /* WhiteFormTextField.swift */; };
 		9E7CF1A91EAB68C40095B48A /* DBHelvethaicaX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CF1A81EAB68C40095B48A /* DBHelvethaicaX.swift */; };
+		9E7CF1AB1EABB00A0095B48A /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CF1AA1EABB00A0095B48A /* SideMenuViewController.swift */; };
+		9E7CF1AF1EABC38F0095B48A /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CF1AE1EABC38F0095B48A /* Field.swift */; };
 		9E819FEF1EA4073F00792638 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E819FEE1EA4073F00792638 /* TextField.swift */; };
 		9E8DF8491EA79B2800ECACB3 /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8DF8361EA7996B00ECACB3 /* IQKeyboardManager.framework */; };
 		9E8DF84A1EA79B2800ECACB3 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8DF8371EA7996B00ECACB3 /* IQKeyboardManagerSwift.framework */; };
@@ -90,6 +94,7 @@
 /* Begin PBXFileReference section */
 		1F29B5F5503378DC08A02EAC /* Pods_Cabby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cabby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		675CFCF33921D8E606760072 /* Pods-Cabby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cabby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cabby/Pods-Cabby.debug.xcconfig"; sourceTree = "<group>"; };
+		9E0463E21EABFA53007220B9 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		9E09EB131EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Cond It.ttf"; sourceTree = "<group>"; };
 		9E09EB141EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Cond.ttf"; sourceTree = "<group>"; };
 		9E09EB151EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Ext It.ttf"; sourceTree = "<group>"; };
@@ -148,7 +153,10 @@
 		9E37A46F1EA6216800BA2C1D /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		9E3A30B51EA9E4EA008CD335 /* CompletedViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedViewViewController.swift; sourceTree = "<group>"; };
 		9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentViewController.swift; sourceTree = "<group>"; };
+		9E4756811EABE352001111CC /* WhiteFormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhiteFormTextField.swift; path = SubClass/WhiteFormTextField.swift; sourceTree = "<group>"; };
 		9E7CF1A81EAB68C40095B48A /* DBHelvethaicaX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBHelvethaicaX.swift; path = Extensions/UIFont/DBHelvethaicaX.swift; sourceTree = "<group>"; };
+		9E7CF1AA1EABB00A0095B48A /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		9E7CF1AE1EABC38F0095B48A /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		9E819FEE1EA4073F00792638 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = SubClass/TextField.swift; sourceTree = "<group>"; };
 		9E8DF8361EA7996B00ECACB3 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManager.framework; path = Carthage/Build/iOS/IQKeyboardManager.framework; sourceTree = "<group>"; };
 		9E8DF8371EA7996B00ECACB3 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
@@ -302,10 +310,34 @@
 			name = UIFont;
 			sourceTree = "<group>";
 		};
+		9E7CF1B01EABCC2B0095B48A /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9E1677661EA78CB300940978 /* CardCollectionViewCell.swift */,
+			);
+			name = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
+		9E7CF1B11EABCC420095B48A /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9E37A45F1EA5F65500BA2C1D /* BookingViewController.swift */,
+				9E3A30B51EA9E4EA008CD335 /* CompletedViewViewController.swift */,
+				9EF7585D1EA3FC650087AFA4 /* LoginViewController.swift */,
+				9E37A4571EA5E60000BA2C1D /* RootViewController.swift */,
+				9E37A46F1EA6216800BA2C1D /* PaymentViewController.swift */,
+				9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */,
+				9E7CF1AA1EABB00A0095B48A /* SideMenuViewController.swift */,
+				9E0463E21EABFA53007220B9 /* CardViewController.swift */,
+			);
+			name = UIViewController;
+			sourceTree = "<group>";
+		};
 		9E819FED1EA4071200792638 /* Subclass */ = {
 			isa = PBXGroup;
 			children = (
 				9E819FEE1EA4073F00792638 /* TextField.swift */,
+				9E4756811EABE352001111CC /* WhiteFormTextField.swift */,
 			);
 			name = Subclass;
 			sourceTree = "<group>";
@@ -346,18 +378,14 @@
 				9EF7585B1EA3FC650087AFA4 /* AppDelegate.swift */,
 				9E37A4641EA6001200BA2C1D /* Extensions */,
 				9E819FED1EA4071200792638 /* Subclass */,
-				9E37A45F1EA5F65500BA2C1D /* BookingViewController.swift */,
-				9E3A30B51EA9E4EA008CD335 /* CompletedViewViewController.swift */,
-				9EF7585D1EA3FC650087AFA4 /* LoginViewController.swift */,
-				9E37A4571EA5E60000BA2C1D /* RootViewController.swift */,
+				9E7CF1B11EABCC420095B48A /* UIViewController */,
 				9E37A45D1EA5EF3100BA2C1D /* Main.storyboard */,
 				9EF7585F1EA3FC650087AFA4 /* My.storyboard */,
 				9EF758621EA3FC650087AFA4 /* Assets.xcassets */,
 				9EF758641EA3FC650087AFA4 /* LaunchScreen.storyboard */,
 				9EF758671EA3FC650087AFA4 /* Info.plist */,
-				9E37A46F1EA6216800BA2C1D /* PaymentViewController.swift */,
-				9E1677661EA78CB300940978 /* CardCollectionViewCell.swift */,
-				9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */,
+				9E7CF1B01EABCC2B0095B48A /* UICollectionViewCell */,
+				9E7CF1AE1EABC38F0095B48A /* Field.swift */,
 			);
 			path = Cabby;
 			sourceTree = "<group>";
@@ -579,7 +607,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E7CF1AB1EABB00A0095B48A /* SideMenuViewController.swift in Sources */,
 				9E8DF8531EA7AE9B00ECACB3 /* Trip.swift in Sources */,
+				9E4756821EABE352001111CC /* WhiteFormTextField.swift in Sources */,
+				9E0463E31EABFA53007220B9 /* CardViewController.swift in Sources */,
 				9E37A4661EA6002F00BA2C1D /* DismissKeyboard+UIViewController.swift in Sources */,
 				9E8DF8511EA7AE6300ECACB3 /* Location.swift in Sources */,
 				9E8F18531EA77A3900D6E5F8 /* Card.swift in Sources */,
@@ -591,6 +622,7 @@
 				9EF7585E1EA3FC650087AFA4 /* LoginViewController.swift in Sources */,
 				9E7CF1A91EAB68C40095B48A /* DBHelvethaicaX.swift in Sources */,
 				9E37A4601EA5F65500BA2C1D /* BookingViewController.swift in Sources */,
+				9E7CF1AF1EABC38F0095B48A /* Field.swift in Sources */,
 				9E37A46C1EA60C0D00BA2C1D /* SetupTextField+UIViewController.swift in Sources */,
 				9E1677671EA78CB300940978 /* CardCollectionViewCell.swift in Sources */,
 				9EF7585C1EA3FC650087AFA4 /* AppDelegate.swift in Sources */,
