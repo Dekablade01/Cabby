@@ -86,12 +86,9 @@ class BookingViewController: UIViewController {
     }
     func setupMapView()
     {
-        let camera = GMSCameraPosition
-            .camera(withLatitude: (locationManager.location?.coordinate.latitude)!,
-                    longitude: (locationManager.location?.coordinate.longitude)!,
-                    zoom: 15)
-        mapView = GMSMapView.map(withFrame: .zero,
-                                 camera: camera)
+        let camera = GMSCameraPosition.camera(withLatitude: (locationManager.location?.coordinate.latitude)!,
+                                              longitude: (locationManager.location?.coordinate.longitude)!, zoom: 15)
+        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
         self.googleMapsView.camera = camera
         
