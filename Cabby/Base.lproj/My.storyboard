@@ -1029,7 +1029,7 @@
         <!--Card View Controller-->
         <scene sceneID="r6M-UR-Je7">
             <objects>
-                <viewController id="QiI-Oa-Fyg" customClass="CardViewController" customModule="Cabby" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CardViewController" id="QiI-Oa-Fyg" customClass="CardViewController" customModule="Cabby" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MAi-3S-2fC"/>
                         <viewControllerLayoutGuide type="bottom" id="1JV-Fw-1PK"/>

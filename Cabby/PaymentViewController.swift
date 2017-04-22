@@ -90,7 +90,7 @@ extension PaymentViewController: UICollectionViewDataSource
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cardCell", for: indexPath) as! CardCollectionViewCell
         
             cell.status = cards[indexPath.item].status
-            cell.cardNumber = cards[indexPath.item].displayCardNumber
+            cell.cardNumber = "XXXX \(cards[indexPath.item].displayCardNumber)"
             
             realCell = cell
         }
@@ -106,10 +106,17 @@ extension PaymentViewController: UICollectionViewDelegateFlowLayout
     {
         if (indexPath.section == 0)
         {
-            let viewController = CardViewController()
-        
+            let storyboard = UIStoryboard(name: "My", bundle: nil)
             
-            self.present(viewController, animated: true, completion: nil)
+            if let viewController = storyboard.instantiateViewController(withIdentifier: "CardViewController") as? CardViewController
+            {
+                viewController.displayCardNumber = cards[indexPath.item].displayCardNumber
+                self.present(viewController, animated: true, completion: nil)
+            }
+            
+            
+            
+            
         }
     }
 
