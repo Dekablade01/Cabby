@@ -18,6 +18,7 @@
 		9E0463F11EAC9284007220B9 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463F01EAC9284007220B9 /* ContactViewController.swift */; };
 		9E0463F31EACAF24007220B9 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463F21EACAF24007220B9 /* NewsCollectionViewCell.swift */; };
 		9E0463F51EACB0B4007220B9 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463F41EACB0B4007220B9 /* News.swift */; };
+		9E0464181EACC05D007220B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E0464171EACC05D007220B9 /* LaunchScreen.storyboard */; };
 		9E09EB391EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB131EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf */; };
 		9E09EB3A1EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB141EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf */; };
 		9E09EB3B1EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB151EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf */; };
@@ -97,7 +98,6 @@
 		9EF7585E1EA3FC650087AFA4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7585D1EA3FC650087AFA4 /* LoginViewController.swift */; };
 		9EF758611EA3FC650087AFA4 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF7585F1EA3FC650087AFA4 /* My.storyboard */; };
 		9EF758631EA3FC650087AFA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EF758621EA3FC650087AFA4 /* Assets.xcassets */; };
-		9EF758661EA3FC650087AFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF758641EA3FC650087AFA4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +113,7 @@
 		9E0463F01EAC9284007220B9 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		9E0463F21EACAF24007220B9 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsCollectionViewCell.swift; path = UICollectionViewCell/NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		9E0463F41EACB0B4007220B9 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = News.swift; path = Model/News.swift; sourceTree = "<group>"; };
+		9E0464161EACC05D007220B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E09EB131EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Cond It.ttf"; sourceTree = "<group>"; };
 		9E09EB141EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Cond.ttf"; sourceTree = "<group>"; };
 		9E09EB151EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Ext It.ttf"; sourceTree = "<group>"; };
@@ -195,7 +196,6 @@
 		9EF7585D1EA3FC650087AFA4 /* LoginViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9EF758601EA3FC650087AFA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/My.storyboard; sourceTree = "<group>"; };
 		9EF758621EA3FC650087AFA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9EF758651EA3FC650087AFA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EF758671EA3FC650087AFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7D29E55C59E56F51B70E134 /* Pods-Cabby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cabby.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cabby/Pods-Cabby.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -409,7 +409,7 @@
 				9E37A45D1EA5EF3100BA2C1D /* Main.storyboard */,
 				9EF7585F1EA3FC650087AFA4 /* My.storyboard */,
 				9EF758621EA3FC650087AFA4 /* Assets.xcassets */,
-				9EF758641EA3FC650087AFA4 /* LaunchScreen.storyboard */,
+				9E0464171EACC05D007220B9 /* LaunchScreen.storyboard */,
 				9EF758671EA3FC650087AFA4 /* Info.plist */,
 				9E7CF1B01EABCC2B0095B48A /* UICollectionViewCell */,
 				9E7CF1AE1EABC38F0095B48A /* Field.swift */,
@@ -524,9 +524,9 @@
 				9E09EB5B1EAB5BEB00641178 /* DB Helvethaica X UlLi Ext.ttf in Resources */,
 				9E09EB3E1EAB5BEB00641178 /* DB Helvethaica X Bd It.ttf in Resources */,
 				9E09EB6C1EAB5C0300641178 /* Montserrat-ExtraBold.otf in Resources */,
-				9EF758661EA3FC650087AFA4 /* LaunchScreen.storyboard in Resources */,
 				9E09EB6F1EAB5C0300641178 /* Montserrat-Light.otf in Resources */,
 				9E09EB5D1EAB5BEB00641178 /* DB Helvethaica X UlLi.ttf in Resources */,
+				9E0464181EACC05D007220B9 /* LaunchScreen.storyboard in Resources */,
 				9E09EB4C1EAB5BEB00641178 /* DB Helvethaica X Li Ext It.ttf in Resources */,
 				9E09EB481EAB5BEB00641178 /* DB Helvethaica X Blk.ttf in Resources */,
 				9E09EB731EAB5C0300641178 /* Montserrat-Thin.otf in Resources */,
@@ -668,20 +668,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9E0464171EACC05D007220B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E0464161EACC05D007220B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../../test/test;
+			sourceTree = "<group>";
+		};
 		9EF7585F1EA3FC650087AFA4 /* My.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9EF758601EA3FC650087AFA4 /* Base */,
 			);
 			name = My.storyboard;
-			sourceTree = "<group>";
-		};
-		9EF758641EA3FC650087AFA4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9EF758651EA3FC650087AFA4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
