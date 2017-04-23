@@ -16,6 +16,8 @@
 		9E0463ED1EAC8766007220B9 /* Caller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463EC1EAC8766007220B9 /* Caller.swift */; };
 		9E0463EF1EAC9030007220B9 /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463EE1EAC9030007220B9 /* SignOutViewController.swift */; };
 		9E0463F11EAC9284007220B9 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463F01EAC9284007220B9 /* ContactViewController.swift */; };
+		9E0463F31EACAF24007220B9 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463F21EACAF24007220B9 /* NewsCollectionViewCell.swift */; };
+		9E0463F51EACB0B4007220B9 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463F41EACB0B4007220B9 /* News.swift */; };
 		9E09EB391EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB131EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf */; };
 		9E09EB3A1EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB141EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf */; };
 		9E09EB3B1EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB151EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf */; };
@@ -109,6 +111,8 @@
 		9E0463EC1EAC8766007220B9 /* Caller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caller.swift; sourceTree = "<group>"; };
 		9E0463EE1EAC9030007220B9 /* SignOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
 		9E0463F01EAC9284007220B9 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		9E0463F21EACAF24007220B9 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsCollectionViewCell.swift; path = UICollectionViewCell/NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		9E0463F41EACB0B4007220B9 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = News.swift; path = Model/News.swift; sourceTree = "<group>"; };
 		9E09EB131EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Cond It.ttf"; sourceTree = "<group>"; };
 		9E09EB141EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Cond.ttf"; sourceTree = "<group>"; };
 		9E09EB151EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Ext It.ttf"; sourceTree = "<group>"; };
@@ -329,6 +333,7 @@
 			children = (
 				9E1677661EA78CB300940978 /* CardCollectionViewCell.swift */,
 				9E0463EA1EAC86C1007220B9 /* EmergencyCollectionViewCell.swift */,
+				9E0463F21EACAF24007220B9 /* NewsCollectionViewCell.swift */,
 			);
 			name = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -369,6 +374,7 @@
 				9E8DF8501EA7AE6300ECACB3 /* Location.swift */,
 				9E8DF8521EA7AE9B00ECACB3 /* Trip.swift */,
 				9E0463EC1EAC8766007220B9 /* Caller.swift */,
+				9E0463F41EACB0B4007220B9 /* News.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -644,7 +650,9 @@
 				9E3A30B61EA9E4EA008CD335 /* CompletedViewViewController.swift in Sources */,
 				9E819FEF1EA4073F00792638 /* TextField.swift in Sources */,
 				9E0463F11EAC9284007220B9 /* ContactViewController.swift in Sources */,
+				9E0463F31EACAF24007220B9 /* NewsCollectionViewCell.swift in Sources */,
 				9E37A4701EA6216800BA2C1D /* PaymentViewController.swift in Sources */,
+				9E0463F51EACB0B4007220B9 /* News.swift in Sources */,
 				9EF7585E1EA3FC650087AFA4 /* LoginViewController.swift in Sources */,
 				9E7CF1A91EAB68C40095B48A /* DBHelvethaicaX.swift in Sources */,
 				9E0463E51EAC05B6007220B9 /* EmergenyCallListViewController.swift in Sources */,
