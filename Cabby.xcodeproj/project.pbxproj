@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		34594A829BEA432B3D8C579C /* Pods_Cabby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F29B5F5503378DC08A02EAC /* Pods_Cabby.framework */; };
 		9E0463E31EABFA53007220B9 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463E21EABFA53007220B9 /* CardViewController.swift */; };
+		9E0463E51EAC05B6007220B9 /* EmergenyCallListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463E41EAC05B6007220B9 /* EmergenyCallListViewController.swift */; };
+		9E0463E71EAC81F0007220B9 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463E61EAC81F0007220B9 /* NewsViewController.swift */; };
+		9E0463E91EAC84FB007220B9 /* AddEmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463E81EAC84FB007220B9 /* AddEmergencyViewController.swift */; };
+		9E0463EB1EAC86C1007220B9 /* EmergencyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463EA1EAC86C1007220B9 /* EmergencyCollectionViewCell.swift */; };
+		9E0463ED1EAC8766007220B9 /* Caller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0463EC1EAC8766007220B9 /* Caller.swift */; };
 		9E09EB391EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB131EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf */; };
 		9E09EB3A1EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB141EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf */; };
 		9E09EB3B1EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB151EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf */; };
@@ -95,6 +100,11 @@
 		1F29B5F5503378DC08A02EAC /* Pods_Cabby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cabby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		675CFCF33921D8E606760072 /* Pods-Cabby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cabby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cabby/Pods-Cabby.debug.xcconfig"; sourceTree = "<group>"; };
 		9E0463E21EABFA53007220B9 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		9E0463E41EAC05B6007220B9 /* EmergenyCallListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergenyCallListViewController.swift; sourceTree = "<group>"; };
+		9E0463E61EAC81F0007220B9 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		9E0463E81EAC84FB007220B9 /* AddEmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmergencyViewController.swift; sourceTree = "<group>"; };
+		9E0463EA1EAC86C1007220B9 /* EmergencyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmergencyCollectionViewCell.swift; path = UICollectionViewCell/EmergencyCollectionViewCell.swift; sourceTree = "<group>"; };
+		9E0463EC1EAC8766007220B9 /* Caller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caller.swift; sourceTree = "<group>"; };
 		9E09EB131EAB5BEB00641178 /* DB Helvethaica X Bd Cond It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Cond It.ttf"; sourceTree = "<group>"; };
 		9E09EB141EAB5BEB00641178 /* DB Helvethaica X Bd Cond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Cond.ttf"; sourceTree = "<group>"; };
 		9E09EB151EAB5BEB00641178 /* DB Helvethaica X Bd Ext It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Helvethaica X Bd Ext It.ttf"; sourceTree = "<group>"; };
@@ -314,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				9E1677661EA78CB300940978 /* CardCollectionViewCell.swift */,
+				9E0463EA1EAC86C1007220B9 /* EmergencyCollectionViewCell.swift */,
 			);
 			name = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -329,6 +340,9 @@
 				9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */,
 				9E7CF1AA1EABB00A0095B48A /* SideMenuViewController.swift */,
 				9E0463E21EABFA53007220B9 /* CardViewController.swift */,
+				9E0463E41EAC05B6007220B9 /* EmergenyCallListViewController.swift */,
+				9E0463E61EAC81F0007220B9 /* NewsViewController.swift */,
+				9E0463E81EAC84FB007220B9 /* AddEmergencyViewController.swift */,
 			);
 			name = UIViewController;
 			sourceTree = "<group>";
@@ -348,6 +362,7 @@
 				9E8F18521EA77A3900D6E5F8 /* Card.swift */,
 				9E8DF8501EA7AE6300ECACB3 /* Location.swift */,
 				9E8DF8521EA7AE9B00ECACB3 /* Trip.swift */,
+				9E0463EC1EAC8766007220B9 /* Caller.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -608,22 +623,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E7CF1AB1EABB00A0095B48A /* SideMenuViewController.swift in Sources */,
+				9E0463EB1EAC86C1007220B9 /* EmergencyCollectionViewCell.swift in Sources */,
 				9E8DF8531EA7AE9B00ECACB3 /* Trip.swift in Sources */,
 				9E4756821EABE352001111CC /* WhiteFormTextField.swift in Sources */,
 				9E0463E31EABFA53007220B9 /* CardViewController.swift in Sources */,
 				9E37A4661EA6002F00BA2C1D /* DismissKeyboard+UIViewController.swift in Sources */,
 				9E8DF8511EA7AE6300ECACB3 /* Location.swift in Sources */,
+				9E0463E91EAC84FB007220B9 /* AddEmergencyViewController.swift in Sources */,
 				9E8F18531EA77A3900D6E5F8 /* Card.swift in Sources */,
 				9E37A4581EA5E60000BA2C1D /* RootViewController.swift in Sources */,
+				9E0463ED1EAC8766007220B9 /* Caller.swift in Sources */,
 				9E3A30B81EAA69CD008CD335 /* AddPaymentViewController.swift in Sources */,
 				9E3A30B61EA9E4EA008CD335 /* CompletedViewViewController.swift in Sources */,
 				9E819FEF1EA4073F00792638 /* TextField.swift in Sources */,
 				9E37A4701EA6216800BA2C1D /* PaymentViewController.swift in Sources */,
 				9EF7585E1EA3FC650087AFA4 /* LoginViewController.swift in Sources */,
 				9E7CF1A91EAB68C40095B48A /* DBHelvethaicaX.swift in Sources */,
+				9E0463E51EAC05B6007220B9 /* EmergenyCallListViewController.swift in Sources */,
 				9E37A4601EA5F65500BA2C1D /* BookingViewController.swift in Sources */,
 				9E7CF1AF1EABC38F0095B48A /* Field.swift in Sources */,
 				9E37A46C1EA60C0D00BA2C1D /* SetupTextField+UIViewController.swift in Sources */,
+				9E0463E71EAC81F0007220B9 /* NewsViewController.swift in Sources */,
 				9E1677671EA78CB300940978 /* CardCollectionViewCell.swift in Sources */,
 				9EF7585C1EA3FC650087AFA4 /* AppDelegate.swift in Sources */,
 			);
