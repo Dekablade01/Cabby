@@ -37,7 +37,7 @@
         <!--Login View Controller-->
         <scene sceneID="no8-NS-lgq">
             <objects>
-                <viewController id="m1H-9i-xj4" customClass="LoginViewController" customModule="Cabby" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="m1H-9i-xj4" customClass="LoginViewController" customModule="Cabby" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d2s-Nq-72u"/>
                         <viewControllerLayoutGuide type="bottom" id="c4k-W1-1JZ"/>
