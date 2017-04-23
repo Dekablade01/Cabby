@@ -366,7 +366,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayi-jh-ZP3">
-                                        <rect key="frame" x="67" y="189.5" width="117.5" height="14"/>
+                                        <rect key="frame" x="66.5" y="189.5" width="117.5" height="14"/>
                                         <attributedString key="attributedText">
                                             <fragment content="STEPHANIE CURTIS">
                                                 <attributes>
@@ -378,13 +378,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+66804951925" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEb-fp-lDE">
-                                        <rect key="frame" x="83.5" y="208.5" width="84.5" height="14"/>
+                                        <rect key="frame" x="83" y="208.5" width="84.5" height="14"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit-profile-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Rtf-zt-kHY">
-                                        <rect key="frame" x="194.5" y="189.5" width="14" height="14"/>
+                                        <rect key="frame" x="194" y="189.5" width="14" height="14"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Rtf-zt-kHY" secondAttribute="height" multiplier="1:1" id="wcp-K7-0eQ"/>
                                         </constraints>
@@ -534,7 +534,7 @@
                                 <rect key="frame" x="125.5" y="45" width="124.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueC-o6-Tiq">
-                                        <rect key="frame" x="45" y="3.5" width="79.5" height="23.5"/>
+                                        <rect key="frame" x="45" y="4" width="79.5" height="23.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="การชำระเงิน">
                                                 <attributes>
@@ -745,7 +745,7 @@
             <objects>
                 <navigationController storyboardIdentifier="NavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="Xvr-O6-IVq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="jSQ-fl-aNG">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jSQ-fl-aNG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -761,7 +761,6 @@
         <!--Emergeny Call List View Controller-->
         <scene sceneID="B1d-ZW-OXL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pZ3-nz-jk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="FrE-hW-rhy" customClass="EmergenyCallListViewController" customModule="Cabby" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2jp-Hj-7Cb"/>
@@ -783,10 +782,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMK-Ac-SiL">
-                                <rect key="frame" x="113.5" y="45" width="149.5" height="30"/>
+                                <rect key="frame" x="113" y="45" width="149.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEI-3o-olt">
-                                        <rect key="frame" x="45" y="2.5" width="104.5" height="26"/>
+                                        <rect key="frame" x="45" y="3" width="104.5" height="26"/>
                                         <attributedString key="attributedText">
                                             <fragment content="เบอร์โทรฉุกเฉิน">
                                                 <attributes>
@@ -858,7 +857,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-ip-I8M">
-                                                    <rect key="frame" x="39.5" y="51.5" width="98" height="17"/>
+                                                    <rect key="frame" x="39.5" y="51" width="98" height="17"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="JOSEPHINE R.">
                                                             <attributes>
@@ -890,7 +889,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ok2-s8-sBQ">
-                                                    <rect key="frame" x="54.5" y="72.5" width="24.5" height="19"/>
+                                                    <rect key="frame" x="54.5" y="73" width="24.5" height="19"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="เพื่อน">
                                                             <attributes>
@@ -986,6 +985,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZ3-nz-jk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4569" y="1028"/>
         </scene>
@@ -1277,7 +1277,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4d2-xS-9dp">
-                                <rect key="frame" x="41" y="214" width="77.5" height="19.5"/>
+                                <rect key="frame" x="41" y="214" width="77.5" height="20"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Name ">
                                         <attributes>
@@ -1295,19 +1295,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lk1-Vd-cUD">
-                                <rect key="frame" x="46.5" y="303.5" width="66" height="20"/>
+                                <rect key="frame" x="46.5" y="304" width="66" height="19"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IUM-u5-Mbs" customClass="WhiteFormTextField" customModule="Cabby" customModuleProvider="target">
-                                <rect key="frame" x="46.5" y="333.5" width="281.5" height="40"/>
+                                <rect key="frame" x="46.5" y="333" width="281.5" height="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="quj-EV-Ez6" customClass="WhiteFormTextField" customModule="Cabby" customModuleProvider="target">
-                                <rect key="frame" x="47" y="243.5" width="281" height="40"/>
+                                <rect key="frame" x="47" y="244" width="281" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dOp-p5-0y3"/>
                                 </constraints>
@@ -1353,7 +1353,7 @@
                                 <rect key="frame" x="164.5" y="118.5" width="46.5" height="47"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESV-c9-XPS">
-                                <rect key="frame" x="47" y="393.5" width="96.5" height="19.5"/>
+                                <rect key="frame" x="47" y="393" width="96.5" height="20"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Status ">
                                         <attributes>
@@ -1443,7 +1443,6 @@
         <!--Sign Out View Controller-->
         <scene sceneID="odR-6d-eIe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A71-cZ-vJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="5hT-aD-CoO" customClass="SignOutViewController" customModule="Cabby" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cCe-tA-kjO"/>
@@ -1465,10 +1464,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRQ-CN-x26">
-                                <rect key="frame" x="99.5" y="45" width="177.5" height="30"/>
+                                <rect key="frame" x="99" y="45" width="177.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8m-qM-HSV">
-                                        <rect key="frame" x="45" y="2.5" width="132.5" height="26"/>
+                                        <rect key="frame" x="45" y="2" width="132.5" height="26"/>
                                         <attributedString key="attributedText">
                                             <fragment content="ลงชื่อออกจากระบบ">
                                                 <attributes>
@@ -1521,7 +1520,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoB-9i-QOG">
-                                <rect key="frame" x="129" y="413" width="117.5" height="14"/>
+                                <rect key="frame" x="129.5" y="413" width="117.5" height="14"/>
                                 <attributedString key="attributedText">
                                     <fragment content="STEPHANIE CURTIS">
                                         <attributes>
@@ -1533,7 +1532,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+66804951925" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGJ-8U-JLj">
-                                <rect key="frame" x="146" y="432" width="84.5" height="14"/>
+                                <rect key="frame" x="145.5" y="432" width="84.5" height="14"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1549,10 +1548,9 @@
                         <constraints>
                             <constraint firstItem="KkF-14-Sqx" firstAttribute="width" secondItem="KkF-14-Sqx" secondAttribute="height" multiplier="1:1" id="0N5-8e-jUg"/>
                             <constraint firstItem="KkF-14-Sqx" firstAttribute="centerX" secondItem="TkT-Ag-ivH" secondAttribute="centerX" id="2K2-s9-Reu"/>
-                            <constraint firstItem="HGJ-8U-JLj" firstAttribute="centerX" secondItem="TkT-Ag-ivH" secondAttribute="centerX" id="34A-Dt-eIl"/>
+                            <constraint firstItem="HGJ-8U-JLj" firstAttribute="centerX" secondItem="TkT-Ag-ivH" secondAttribute="centerX" id="7Ct-00-Fxp"/>
+                            <constraint firstItem="VoB-9i-QOG" firstAttribute="centerX" secondItem="TkT-Ag-ivH" secondAttribute="centerX" id="Ai4-b3-KVI"/>
                             <constraint firstAttribute="leadingMargin" secondItem="rj3-6b-5Rb" secondAttribute="leading" constant="-5" id="Bqs-vj-1ET"/>
-                            <constraint firstItem="VoB-9i-QOG" firstAttribute="centerX" secondItem="HGJ-8U-JLj" secondAttribute="centerX" id="D7g-ol-w3E"/>
-                            <constraint firstItem="VoB-9i-QOG" firstAttribute="centerX" secondItem="TkT-Ag-ivH" secondAttribute="centerX" id="DTt-TS-aHe"/>
                             <constraint firstItem="KkF-14-Sqx" firstAttribute="width" secondItem="TkT-Ag-ivH" secondAttribute="width" multiplier="1:3" id="IDZ-Mx-TV3"/>
                             <constraint firstItem="VON-kM-zkG" firstAttribute="centerX" secondItem="TkT-Ag-ivH" secondAttribute="centerX" id="L7s-8J-DV1"/>
                             <constraint firstItem="HGJ-8U-JLj" firstAttribute="height" secondItem="VoB-9i-QOG" secondAttribute="height" id="MM1-fR-VAO"/>
@@ -1572,13 +1570,13 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A71-cZ-vJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3079" y="1028"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="RTd-Iu-Nrn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vNW-3V-7Jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="rlv-Uo-GY6" customClass="ContactViewController" customModule="Cabby" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M5w-zb-qpU"/>
@@ -1603,7 +1601,7 @@
                                 <rect key="frame" x="104.5" y="45" width="166" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whT-Rn-xKM">
-                                        <rect key="frame" x="45" y="2.5" width="121" height="26"/>
+                                        <rect key="frame" x="45" y="3" width="121" height="26"/>
                                         <attributedString key="attributedText">
                                             <fragment content="ติดต่อศูนย์บริการ">
                                                 <attributes>
@@ -1676,7 +1674,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2J-ec-xmc">
-                                <rect key="frame" x="178.5" y="440" width="18" height="12"/>
+                                <rect key="frame" x="179" y="440" width="18" height="12"/>
                                 <attributedString key="attributedText">
                                     <fragment content="หรือ">
                                         <attributes>
@@ -1718,13 +1716,13 @@
                         <outlet property="textField" destination="RK3-zH-K6e" id="QlW-Ci-2dc"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNW-3V-7Jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3828" y="1028"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="0n3-Wb-tau">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="etw-n6-lyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="7QS-ru-LW8" customClass="NewsViewController" customModule="Cabby" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NxF-l2-zEM"/>
@@ -1746,10 +1744,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKc-FC-Da2">
-                                <rect key="frame" x="82" y="45" width="211" height="30"/>
+                                <rect key="frame" x="82.5" y="45" width="210.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdz-jp-7CW">
-                                        <rect key="frame" x="45" y="2.5" width="166" height="26"/>
+                                        <rect key="frame" x="45" y="3" width="165.5" height="26"/>
                                         <attributedString key="attributedText">
                                             <fragment content="ข่าวสารและการแจ้งเตือน">
                                                 <attributes>
@@ -1782,24 +1780,24 @@
                                 <rect key="frame" x="46.5" y="91" width="281" height="30"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KD9-9r-UUn">
-                                <rect key="frame" x="47" y="121" width="281" height="450.5"/>
+                                <rect key="frame" x="19" y="121" width="337" height="450.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Apy-Rz-m5c">
-                                    <size key="itemSize" width="281" height="109"/>
+                                    <size key="itemSize" width="309" height="109"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="WRw-lL-Jjc" customClass="NewsCollectionViewCell" customModule="Cabby" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="10" width="281" height="109"/>
+                                        <rect key="frame" x="14" y="10" width="309" height="109"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="281" height="109"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="309" height="109"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlx-d1-oVI">
-                                                    <rect key="frame" x="15" y="8" width="258" height="25"/>
+                                                    <rect key="frame" x="15" y="8" width="286" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="wLw-jO-44e"/>
                                                     </constraints>
@@ -1821,7 +1819,7 @@ uJrguYnguLLguJkg4LmD4LiK4LmJ4LmC4LiE4LmJ4LiUIGNhYmJ5MDEg4Lil4LiU4LiX4Lix4LiZ4LiX
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dby-Nh-RgF">
-                                                    <rect key="frame" x="15" y="68" width="134.5" height="14.5"/>
+                                                    <rect key="frame" x="15" y="68" width="134.5" height="14"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="18 Apr 2017 , 11 : 30 AM.">
                                                             <attributes>
@@ -1834,7 +1832,7 @@ uJrguYnguLLguJkg4LmD4LiK4LmJ4LmC4LiE4LmJ4LiUIGNhYmJ5MDEg4Lil4LiU4LiX4Lix4LiZ4LiX
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxn-w9-ghj">
-                                                    <rect key="frame" x="209" y="82.5" width="64" height="12"/>
+                                                    <rect key="frame" x="237" y="82" width="64" height="12"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="read more &gt;&gt;">
                                                             <attributes>
@@ -1847,14 +1845,14 @@ uJrguYnguLLguJkg4LmD4LiK4LmJ4LmC4LiE4LmJ4LiUIGNhYmJ5MDEg4Lil4LiU4LiX4Lix4LiZ4LiX
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7Y-R1-W8N">
-                                                    <rect key="frame" x="0.0" y="100" width="281" height="1"/>
+                                                    <rect key="frame" x="0.0" y="100" width="309" height="1"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="EjA-zP-Srn"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eL-1V-lG3">
-                                                    <rect key="frame" x="15" y="38" width="258" height="25"/>
+                                                    <rect key="frame" x="15" y="38" width="286" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="K1H-HZ-J8R"/>
                                                     </constraints>
@@ -1893,7 +1891,7 @@ uJrguYnguLLguJkg4LmD4LiK4LmJ4LmC4LiE4LmJ4LiUIGNhYmJ5MDEg4Lil4LiU4LiX4Lix4LiZ4LiX
                                             <constraint firstItem="5eL-1V-lG3" firstAttribute="trailing" secondItem="Xlx-d1-oVI" secondAttribute="trailing" id="qUI-QG-zVB"/>
                                             <constraint firstItem="Xxn-w9-ghj" firstAttribute="trailing" secondItem="Xlx-d1-oVI" secondAttribute="trailing" id="wHm-QK-YS2"/>
                                         </constraints>
-                                        <size key="customSize" width="281" height="109"/>
+                                        <size key="customSize" width="309" height="109"/>
                                         <connections>
                                             <outlet property="dateAndTimeLabel" destination="dby-Nh-RgF" id="124-rW-8WR"/>
                                             <outlet property="heading1Label" destination="Xlx-d1-oVI" id="TAs-4Z-Is3"/>
@@ -1906,37 +1904,17 @@ uJrguYnguLLguJkg4LmD4LiK4LmJ4LmC4LiE4LmJ4LiUIGNhYmJ5MDEg4Lil4LiU4LiX4Lix4LiZ4LiX
                                     <outlet property="delegate" destination="7QS-ru-LW8" id="N7y-gZ-Zam"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iLc-M3-W0x">
-                                <rect key="frame" x="47.5" y="600.5" width="281" height="46.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="iLc-M3-W0x" secondAttribute="height" multiplier="614:102" id="DqF-hn-QRZ"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="pink-button">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="เพิ่มเบอร์โทรฉุกเฉิน">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="25" name="DBHelvethaicaX"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="11" lineHeightMultiple="4" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="iLc-M3-W0x" firstAttribute="centerX" secondItem="Tql-m2-FpZ" secondAttribute="centerX" id="6EX-6l-yGn"/>
-                            <constraint firstItem="iLc-M3-W0x" firstAttribute="width" secondItem="KD9-9r-UUn" secondAttribute="width" id="8tX-gW-Ico"/>
-                            <constraint firstItem="KD9-9r-UUn" firstAttribute="width" secondItem="WXo-DH-1PB" secondAttribute="width" id="BUp-pL-ZwQ"/>
+                            <constraint firstItem="KD9-9r-UUn" firstAttribute="width" secondItem="WXo-DH-1PB" secondAttribute="width" multiplier="1.2:1" id="BUp-pL-ZwQ"/>
                             <constraint firstItem="AKc-FC-Da2" firstAttribute="centerY" secondItem="1A9-ew-20R" secondAttribute="centerY" id="QG2-9I-0hM"/>
-                            <constraint firstItem="iLc-M3-W0x" firstAttribute="top" secondItem="KD9-9r-UUn" secondAttribute="bottom" constant="29" id="QQX-yL-g4e"/>
                             <constraint firstItem="1A9-ew-20R" firstAttribute="top" secondItem="NxF-l2-zEM" secondAttribute="bottom" constant="30" id="QoY-fL-8N1"/>
-                            <constraint firstItem="Qn3-JZ-JVL" firstAttribute="top" secondItem="iLc-M3-W0x" secondAttribute="bottom" constant="20" id="W4W-Gb-Xxs"/>
                             <constraint firstItem="WXo-DH-1PB" firstAttribute="top" secondItem="AKc-FC-Da2" secondAttribute="bottom" constant="16" id="YRU-CY-AJa"/>
                             <constraint firstItem="WXo-DH-1PB" firstAttribute="centerX" secondItem="Tql-m2-FpZ" secondAttribute="centerX" id="afH-CA-Vmj"/>
                             <constraint firstAttribute="leadingMargin" secondItem="1A9-ew-20R" secondAttribute="leading" constant="-5" id="bSO-Bn-ZZJ"/>
                             <constraint firstItem="ax4-EW-ZqK" firstAttribute="height" secondItem="1A9-ew-20R" secondAttribute="height" multiplier="1.5" id="cGi-nK-2ef"/>
+                            <constraint firstItem="Qn3-JZ-JVL" firstAttribute="top" secondItem="KD9-9r-UUn" secondAttribute="bottom" constant="95.5" id="gmv-Zt-NZC"/>
                             <constraint firstItem="KD9-9r-UUn" firstAttribute="centerX" secondItem="Tql-m2-FpZ" secondAttribute="centerX" id="h6d-FJ-suz"/>
                             <constraint firstItem="AKc-FC-Da2" firstAttribute="centerX" secondItem="Tql-m2-FpZ" secondAttribute="centerX" id="mql-cd-uM9"/>
                             <constraint firstItem="WXo-DH-1PB" firstAttribute="width" secondItem="Tql-m2-FpZ" secondAttribute="width" multiplier="3:4" id="p9e-vQ-k3M"/>
@@ -1945,6 +1923,7 @@ uJrguYnguLLguJkg4LmD4LiK4LmJ4LmC4LiE4LmJ4LiUIGNhYmJ5MDEg4Lil4LiU4LiX4Lix4LiZ4LiX
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="etw-n6-lyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5349.6000000000004" y="357.57121439280365"/>
         </scene>
