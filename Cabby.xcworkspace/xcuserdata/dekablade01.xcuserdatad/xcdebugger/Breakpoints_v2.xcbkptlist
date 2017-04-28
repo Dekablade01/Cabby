@@ -42,12 +42,12 @@
                   moduleName = "Cabby"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dekablade01/Repositories/Cabby/Cabby/AddPaymentViewController.swift"
-                  timestampString = "514586513.121352"
+                  timestampString = "514885220.336405"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "26"
                   endingLineNumber = "26"
-                  offsetFromSymbolStart = "32">
+                  offsetFromSymbolStart = "30">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -57,12 +57,12 @@
                   moduleName = "Cabby"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dekablade01/Repositories/Cabby/Cabby/AddPaymentViewController.swift"
-                  timestampString = "514586513.12287"
+                  timestampString = "514885220.338049"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "26"
                   endingLineNumber = "26"
-                  offsetFromSymbolStart = "16">
+                  offsetFromSymbolStart = "12">
                </Location>
             </Locations>
          </BreakpointContent>

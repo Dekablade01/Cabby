@@ -69,6 +69,9 @@
 		9E09EB731EAB5C0300641178 /* Montserrat-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB691EAB5C0300641178 /* Montserrat-Thin.otf */; };
 		9E09EB761EAB5C1D00641178 /* OCRAStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E09EB751EAB5C1D00641178 /* OCRAStd.otf */; };
 		9E1677671EA78CB300940978 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1677661EA78CB300940978 /* CardCollectionViewCell.swift */; };
+		9E266FD71EACE52E00E0249C /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E266FD61EACE52E00E0249C /* ScheduleViewController.swift */; };
+		9E266FD91EACE5B700E0249C /* TimerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E266FD81EACE5B700E0249C /* TimerCollectionViewCell.swift */; };
+		9E26BB111EB08873009098AA /* ScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E26BB101EB08873009098AA /* ScheduleCollectionViewCell.swift */; };
 		9E37A4581EA5E60000BA2C1D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37A4571EA5E60000BA2C1D /* RootViewController.swift */; };
 		9E37A45E1EA5EF3100BA2C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E37A45D1EA5EF3100BA2C1D /* Main.storyboard */; };
 		9E37A4601EA5F65500BA2C1D /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E37A45F1EA5F65500BA2C1D /* BookingViewController.swift */; };
@@ -164,6 +167,9 @@
 		9E09EB691EAB5C0300641178 /* Montserrat-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.otf"; sourceTree = "<group>"; };
 		9E09EB751EAB5C1D00641178 /* OCRAStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OCRAStd.otf; sourceTree = "<group>"; };
 		9E1677661EA78CB300940978 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardCollectionViewCell.swift; path = UICollectionViewCell/CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		9E266FD61EACE52E00E0249C /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		9E266FD81EACE5B700E0249C /* TimerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerCollectionViewCell.swift; path = UICollectionViewCell/TimerCollectionViewCell.swift; sourceTree = "<group>"; };
+		9E26BB101EB08873009098AA /* ScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleCollectionViewCell.swift; path = UICollectionViewCell/ScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
 		9E37A4571EA5E60000BA2C1D /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		9E37A45D1EA5EF3100BA2C1D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9E37A45F1EA5F65500BA2C1D /* BookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
@@ -334,6 +340,8 @@
 				9E1677661EA78CB300940978 /* CardCollectionViewCell.swift */,
 				9E0463EA1EAC86C1007220B9 /* EmergencyCollectionViewCell.swift */,
 				9E0463F21EACAF24007220B9 /* NewsCollectionViewCell.swift */,
+				9E266FD81EACE5B700E0249C /* TimerCollectionViewCell.swift */,
+				9E26BB101EB08873009098AA /* ScheduleCollectionViewCell.swift */,
 			);
 			name = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -413,6 +421,7 @@
 				9EF758671EA3FC650087AFA4 /* Info.plist */,
 				9E7CF1B01EABCC2B0095B48A /* UICollectionViewCell */,
 				9E7CF1AE1EABC38F0095B48A /* Field.swift */,
+				9E266FD61EACE52E00E0249C /* ScheduleViewController.swift */,
 			);
 			path = Cabby;
 			sourceTree = "<group>";
@@ -639,10 +648,12 @@
 				9E0463EF1EAC9030007220B9 /* SignOutViewController.swift in Sources */,
 				9E8DF8531EA7AE9B00ECACB3 /* Trip.swift in Sources */,
 				9E4756821EABE352001111CC /* WhiteFormTextField.swift in Sources */,
+				9E266FD71EACE52E00E0249C /* ScheduleViewController.swift in Sources */,
 				9E0463E31EABFA53007220B9 /* CardViewController.swift in Sources */,
 				9E37A4661EA6002F00BA2C1D /* DismissKeyboard+UIViewController.swift in Sources */,
 				9E8DF8511EA7AE6300ECACB3 /* Location.swift in Sources */,
 				9E0463E91EAC84FB007220B9 /* AddEmergencyViewController.swift in Sources */,
+				9E266FD91EACE5B700E0249C /* TimerCollectionViewCell.swift in Sources */,
 				9E8F18531EA77A3900D6E5F8 /* Card.swift in Sources */,
 				9E37A4581EA5E60000BA2C1D /* RootViewController.swift in Sources */,
 				9E0463ED1EAC8766007220B9 /* Caller.swift in Sources */,
@@ -651,6 +662,7 @@
 				9E819FEF1EA4073F00792638 /* TextField.swift in Sources */,
 				9E0463F11EAC9284007220B9 /* ContactViewController.swift in Sources */,
 				9E0463F31EACAF24007220B9 /* NewsCollectionViewCell.swift in Sources */,
+				9E26BB111EB08873009098AA /* ScheduleCollectionViewCell.swift in Sources */,
 				9E37A4701EA6216800BA2C1D /* PaymentViewController.swift in Sources */,
 				9E0463F51EACB0B4007220B9 /* News.swift in Sources */,
 				9EF7585E1EA3FC650087AFA4 /* LoginViewController.swift in Sources */,
