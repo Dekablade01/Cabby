@@ -81,6 +81,9 @@
 		9E3A30B81EAA69CD008CD335 /* AddPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */; };
 		9E4756821EABE352001111CC /* WhiteFormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4756811EABE352001111CC /* WhiteFormTextField.swift */; };
 		9E663C8B1EB49F2F00127D28 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E663C8A1EB49F2F00127D28 /* FavouriteViewController.swift */; };
+		9E663C8D1EB4AB4200127D28 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E663C8C1EB4AB4200127D28 /* HistoryViewController.swift */; };
+		9E663C8F1EB4ABAA00127D28 /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E663C8E1EB4ABAA00127D28 /* HistoryCollectionViewCell.swift */; };
+		9E663C911EB4B02200127D28 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E663C901EB4B02200127D28 /* History.swift */; };
 		9E7CF1A91EAB68C40095B48A /* DBHelvethaicaX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CF1A81EAB68C40095B48A /* DBHelvethaicaX.swift */; };
 		9E7CF1AB1EABB00A0095B48A /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CF1AA1EABB00A0095B48A /* SideMenuViewController.swift */; };
 		9E7CF1AF1EABC38F0095B48A /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CF1AE1EABC38F0095B48A /* Field.swift */; };
@@ -99,6 +102,8 @@
 		9E8F18531EA77A3900D6E5F8 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8F18521EA77A3900D6E5F8 /* Card.swift */; };
 		9EB061C91EB48C720045CE75 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB061C81EB48C720045CE75 /* SideMenu.storyboard */; };
 		9EB061CB1EB48D580045CE75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB061CA1EB48D580045CE75 /* LaunchScreen.storyboard */; };
+		9EB1C4A21EB4CDE400E8F3C1 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1C4A11EB4CDE400E8F3C1 /* DatePickerViewController.swift */; };
+		9EB1C4A41EB4FFBE00E8F3C1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1C4A31EB4FFBE00E8F3C1 /* EmergencyViewController.swift */; };
 		9EF7585C1EA3FC650087AFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7585B1EA3FC650087AFA4 /* AppDelegate.swift */; };
 		9EF7585E1EA3FC650087AFA4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7585D1EA3FC650087AFA4 /* LoginViewController.swift */; };
 		9EF758611EA3FC650087AFA4 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF7585F1EA3FC650087AFA4 /* My.storyboard */; };
@@ -181,6 +186,9 @@
 		9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentViewController.swift; sourceTree = "<group>"; };
 		9E4756811EABE352001111CC /* WhiteFormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhiteFormTextField.swift; path = SubClass/WhiteFormTextField.swift; sourceTree = "<group>"; };
 		9E663C8A1EB49F2F00127D28 /* FavouriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		9E663C8C1EB4AB4200127D28 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		9E663C8E1EB4ABAA00127D28 /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryCollectionViewCell.swift; path = UICollectionViewCell/HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		9E663C901EB4B02200127D28 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = History.swift; path = Model/History.swift; sourceTree = "<group>"; };
 		9E7CF1A81EAB68C40095B48A /* DBHelvethaicaX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBHelvethaicaX.swift; path = Extensions/UIFont/DBHelvethaicaX.swift; sourceTree = "<group>"; };
 		9E7CF1AA1EABB00A0095B48A /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		9E7CF1AE1EABC38F0095B48A /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
@@ -201,6 +209,8 @@
 		9E8F18521EA77A3900D6E5F8 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
 		9EB061C81EB48C720045CE75 /* SideMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
 		9EB061CA1EB48D580045CE75 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EB1C4A11EB4CDE400E8F3C1 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		9EB1C4A31EB4FFBE00E8F3C1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		9EF758581EA3FC650087AFA4 /* Cabby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cabby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF7585B1EA3FC650087AFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EF7585D1EA3FC650087AFA4 /* LoginViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -346,6 +356,7 @@
 				9E0463F21EACAF24007220B9 /* NewsCollectionViewCell.swift */,
 				9E266FD81EACE5B700E0249C /* TimerCollectionViewCell.swift */,
 				9E26BB101EB08873009098AA /* ScheduleCollectionViewCell.swift */,
+				9E663C8E1EB4ABAA00127D28 /* HistoryCollectionViewCell.swift */,
 			);
 			name = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -367,6 +378,10 @@
 				9E0463EE1EAC9030007220B9 /* SignOutViewController.swift */,
 				9E0463F01EAC9284007220B9 /* ContactViewController.swift */,
 				9E663C8A1EB49F2F00127D28 /* FavouriteViewController.swift */,
+				9E266FD61EACE52E00E0249C /* ScheduleViewController.swift */,
+				9E663C8C1EB4AB4200127D28 /* HistoryViewController.swift */,
+				9EB1C4A11EB4CDE400E8F3C1 /* DatePickerViewController.swift */,
+				9EB1C4A31EB4FFBE00E8F3C1 /* EmergencyViewController.swift */,
 			);
 			name = UIViewController;
 			sourceTree = "<group>";
@@ -388,6 +403,7 @@
 				9E8DF8521EA7AE9B00ECACB3 /* Trip.swift */,
 				9E0463EC1EAC8766007220B9 /* Caller.swift */,
 				9E0463F41EACB0B4007220B9 /* News.swift */,
+				9E663C901EB4B02200127D28 /* History.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -427,7 +443,6 @@
 				9EF758671EA3FC650087AFA4 /* Info.plist */,
 				9E7CF1B01EABCC2B0095B48A /* UICollectionViewCell */,
 				9E7CF1AE1EABC38F0095B48A /* Field.swift */,
-				9E266FD61EACE52E00E0249C /* ScheduleViewController.swift */,
 			);
 			path = Cabby;
 			sourceTree = "<group>";
@@ -659,6 +674,7 @@
 				9E0463E31EABFA53007220B9 /* CardViewController.swift in Sources */,
 				9E37A4661EA6002F00BA2C1D /* DismissKeyboard+UIViewController.swift in Sources */,
 				9E8DF8511EA7AE6300ECACB3 /* Location.swift in Sources */,
+				9E663C911EB4B02200127D28 /* History.swift in Sources */,
 				9E0463E91EAC84FB007220B9 /* AddEmergencyViewController.swift in Sources */,
 				9E266FD91EACE5B700E0249C /* TimerCollectionViewCell.swift in Sources */,
 				9E8F18531EA77A3900D6E5F8 /* Card.swift in Sources */,
@@ -669,6 +685,8 @@
 				9E3A30B61EA9E4EA008CD335 /* CompletedViewViewController.swift in Sources */,
 				9E819FEF1EA4073F00792638 /* TextField.swift in Sources */,
 				9E0463F11EAC9284007220B9 /* ContactViewController.swift in Sources */,
+				9EB1C4A21EB4CDE400E8F3C1 /* DatePickerViewController.swift in Sources */,
+				9EB1C4A41EB4FFBE00E8F3C1 /* EmergencyViewController.swift in Sources */,
 				9E0463F31EACAF24007220B9 /* NewsCollectionViewCell.swift in Sources */,
 				9E26BB111EB08873009098AA /* ScheduleCollectionViewCell.swift in Sources */,
 				9E37A4701EA6216800BA2C1D /* PaymentViewController.swift in Sources */,
@@ -677,7 +695,9 @@
 				9E7CF1A91EAB68C40095B48A /* DBHelvethaicaX.swift in Sources */,
 				9E0463E51EAC05B6007220B9 /* EmergenyCallListViewController.swift in Sources */,
 				9E37A4601EA5F65500BA2C1D /* BookingViewController.swift in Sources */,
+				9E663C8D1EB4AB4200127D28 /* HistoryViewController.swift in Sources */,
 				9E7CF1AF1EABC38F0095B48A /* Field.swift in Sources */,
+				9E663C8F1EB4ABAA00127D28 /* HistoryCollectionViewCell.swift in Sources */,
 				9E37A46C1EA60C0D00BA2C1D /* SetupTextField+UIViewController.swift in Sources */,
 				9E0463E71EAC81F0007220B9 /* NewsViewController.swift in Sources */,
 				9E1677671EA78CB300940978 /* CardCollectionViewCell.swift in Sources */,

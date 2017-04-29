@@ -15,40 +15,143 @@ import SwiftyJSON
 
 
 class BookingViewController: UIViewController {
+    enum Container {
+        case blank
+        case locationed
+        case complated
+    }
     
+    @IBOutlet weak var selectedLocationView: UIView!
     let googleMapAPIKey = "AIzaSyAI97m4eAMhz_7-qIoVWo7b-0cA4cnfNic"
+    var isAddedConstraintForDetailedContainerView = false
     var path = GMSMutablePath()
     var bounds = GMSCoordinateBounds()
-
-
+    var showingContainer:Container = .blank
     
+    var setDate = false {
+        didSet {
+            if (setEmergency == true && setDate == true)
+            {
+                hideLocationContainer()
+                showDetailedContainer()
+            }
+        }
+    }
+    var setEmergency = false {
+        didSet {
+            if (setEmergency == true && setDate == true)
+            {
+                hideLocationContainer()
+                showDetailedContainer()
+            }
+            
+        }
+    }
+    func hideDetailContainer()
+    {
+        
+        self.detailedBookingView.center.y = 749.5
+        
+    }
+    func showDetailedContainer()
+    {
+        
+        self.detailedBookingView.center.y = 584.5
+        
+        showingContainer = .complated
+        
+    }
+    func showBlankContainer()
+    {
+        
+        self.blankBookingView.center.y = 300
+        print(blankBookingView.center.y)
+        showingContainer = .blank
+        
+    }
+    func hideBlankContainer()
+    {
+
+        self.blankBookingView.center.y = 0
+        print(blankBookingView.center.y)
+
+        
+    }
+    func showLocationedContainer()
+    {
+        
+        self.selectedLocationView.center.y = 584.5
+        
+        showingContainer = .locationed
+        
+    }
+    func hideLocationContainer()
+    {
+        
+        self.selectedLocationView.center.y = 749.5
+        
+    }
+    
+    
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    var date: String {
+        get { return dateLabel.text ?? "" }
+        set { dateLabel.text = newValue }
+    }
+    @IBOutlet weak var timeLabel: UILabel!
+    var time: String {
+        get { return timeLabel.text ?? "" }
+        set { timeLabel.text = newValue }
+    }
+    
+    @IBOutlet weak var emergencyTelNoLabel: UILabel!
+    var emergencyTelNo: String {
+        get { return emergencyTelNoLabel.text ?? "" }
+        set { emergencyTelNoLabel.text = newValue }
+    }
+    @IBOutlet weak var emergencyNameLabel: UILabel!
+    var emergencyName: String {
+        get { return emergencyTelNoLabel.text ?? "" }
+        set { emergencyTelNoLabel.text = newValue }
+    }
+    
+    @IBOutlet weak var detailedBookingView: UIView!
+    
+    @IBOutlet weak var blankBookingView: UIView!
     var trip = Trip()
     var markers: [GMSMarker] = []
     
     var polyLine = GMSPolyline()
-
+    
     
     @IBOutlet weak var originTextField: TextField!
+    var origin: String {
+        get { return originTextField.text ?? "" }
+        set { originTextField.text = newValue }
+    }
     @IBOutlet weak var destinationTextField: TextField!
+    var destination: String {
+        get { return destinationTextField.text ?? "" }
+        set { destinationTextField.text = newValue }
+    }
+    
     
     var selectedTextField = UITextField()
     
     var googleMapsView = GMSMapView()
     var mapView = GMSMapView.map(withFrame: .zero,
                                  camera: GMSCameraPosition())
-
+    
     @IBOutlet weak var viewForMapView: UIView!
     var locationManager = CLLocationManager()
-
-
-
+    
+    
+    
     @IBOutlet weak var accountBarButtonItem: UIBarButtonItem!
     
     
     override func viewDidLoad() {
-        
-  
-        
         markers = [GMSMarker(), GMSMarker()]
         trip.origin = Location()
         trip.destination = Location()
@@ -59,11 +162,10 @@ class BookingViewController: UIViewController {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         locationManager.startMonitoringSignificantLocationChanges()
-
-        
+    
         
     }
-
+    
     @IBAction func leftSideMenuPressed() {
         self.sideViewController()!.toogleLeftViewController()
     }
@@ -79,6 +181,12 @@ class BookingViewController: UIViewController {
         }
     }
     
+    @IBAction func clearLocation(_ sender: UIButton)
+    {
+        origin = ""
+        destination = ""
+        removeMarkerAndRoutingDirection()
+    }
     func setupNavigationBar ()
     {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
@@ -109,8 +217,8 @@ class BookingViewController: UIViewController {
             $0.center.equalTo(mapView.superview!)
         }
     }
-
-
+    
+    
     func setupTextFieldForThisViewController()
     {
         
@@ -118,7 +226,7 @@ class BookingViewController: UIViewController {
         destinationTextField.text = ""
         originTextField.padding = UIEdgeInsets(top: 8, left: 15, bottom: 0, right: 15)
         destinationTextField.padding = UIEdgeInsets(top: 8, left: 15, bottom: 0, right: 15)
-
+        
         
         self.setupTextField(textField: originTextField,
                             placeHolderString: "จุดนัดพบ",
@@ -133,14 +241,13 @@ class BookingViewController: UIViewController {
         destinationTextField.delegate = self
         originTextField.delegate = self
         
-        
     }
-
+    
     func showAutoCompleteViewController()
     {
         let autoCompleteViewController = GMSAutocompleteViewController()
         
-
+        
         
         autoCompleteViewController.delegate = self
         
@@ -160,7 +267,7 @@ class BookingViewController: UIViewController {
         {
             addMarkers()
             newZoom()
-//            focusMapToShowAllMarkers()
+            //            focusMapToShowAllMarkers()
             drawPath()
         }
         
@@ -179,32 +286,31 @@ class BookingViewController: UIViewController {
     func newZoom()
     {
         let update = GMSCameraUpdate.fit(bounds,
-                                               withPadding: 15)
+                                         withPadding: 15)
         mapView.animate(with: update)
     }
     
     
     func addMarker(_ location: Location)
     {
-            let marker = GMSMarker()
-            marker.position = CLLocationCoordinate2D(latitude: location.lat,
-                                                     longitude: location.long)
-            marker.title = location.name
-            marker.map = mapView
-            bounds = bounds.includingCoordinate(marker.position)
-
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: location.lat,
+                                                 longitude: location.long)
+        marker.title = location.name
+        marker.map = mapView
+        bounds = bounds.includingCoordinate(marker.position)
+        
     }
     
     func drawPath()
     {
         let originCoordinate = "\((trip.origin?.lat)!),\((trip.origin?.long)!)"
         let destinationCoordinate = "\((trip.destination?.lat)!),\((trip.destination?.long)!)"
-    
+        
         let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(originCoordinate)&destination=\(destinationCoordinate)&mode=driving&key=\(googleMapAPIKey)"
         
         Alamofire.request(url).responseJSON { response in
-
-            print(response)   // result of response serialization
+            
             
             let json = JSON(data: response.data!)
             let routes = json["routes"].arrayValue
@@ -221,9 +327,56 @@ class BookingViewController: UIViewController {
             }
         }
     }
+    @IBAction func showPicker(_ sender: UIButton) {
+        
+        if (origin != "" && destination != "")
+        {
+            let storyBoard = UIStoryboard(name: "My", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(withIdentifier: "DatePickerViewController") as! DatePickerViewController
+            
+            viewController.handler = { date, time in
+                self.date = date
+                self.time = time
+                self.setDate = true
+            }
+            viewController.dismissHandler = {
+                if (self.setEmergency == false)
+                {
+                    self.showEmergency(UIButton())
+                }
+            }
+            
+            viewController.modalTransitionStyle = .coverVertical
+            self.present(viewController, animated: true, completion: nil)
+        }
+    }
+    @IBAction func showEmergency(_ sender: UIButton)
+    {
+        if (origin != "" && destination != "")
+        {
+            let storyBoard = UIStoryboard(name: "My", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(withIdentifier: "EmergencyViewController") as! EmergencyViewController
+            viewController.handler = { caller in
+                self.emergencyName = caller.name
+                self.emergencyTelNo = caller.phoneNumber
+                self.setEmergency = true
+            }
+            viewController.dismissHandler = {
+                if (self.setDate == false)
+                {
+                    
+                    self.showPicker(UIButton())
+                }
+            }
+            viewController.modalTransitionStyle = .coverVertical
+            self.present(viewController, animated: true, completion: nil)
+        }
+        
+        
+    }
     func isTripCompleted()-> Bool
     {
-
+        
         if (trip.origin?.name != "" && trip.destination?.name != "")
         {
             return true
@@ -245,12 +398,12 @@ extension BookingViewController: GMSAutocompleteViewControllerDelegate
     func viewController(_ viewController: GMSAutocompleteViewController,
                         didAutocompleteWith place: GMSPlace) {
         
-
+        
         
         let camera = GMSCameraPosition.camera(withLatitude: place.coordinate.latitude,
                                               longitude: place.coordinate.longitude,
                                               zoom: 15.0)
-    
+        
         selectedTextField.text = place.name
         
         if (selectedTextField == originTextField)
@@ -259,15 +412,15 @@ extension BookingViewController: GMSAutocompleteViewControllerDelegate
             trip.origin?.long = place.coordinate.longitude
             trip.origin?.name = place.name
             
-            print(trip)
     
+            
         }
         else if (selectedTextField == destinationTextField)
         {
             trip.destination?.lat = place.coordinate.latitude
             trip.destination?.long = place.coordinate.longitude
             trip.destination?.name = place.name
-            print(trip)
+         
         }
         if (isTripCompleted() == true)
         {
@@ -276,6 +429,11 @@ extension BookingViewController: GMSAutocompleteViewControllerDelegate
             reloadMapRoute()
         }
         
+        if (origin != "" && destination != "")
+        {
+            hideBlankContainer()
+ 
+        }
         
         
         self.googleMapsView.camera = camera
@@ -284,11 +442,11 @@ extension BookingViewController: GMSAutocompleteViewControllerDelegate
     func viewController(_ viewController: GMSAutocompleteViewController,
                         didFailAutocompleteWithError error: Error) {
         print("ERROR AUTO COMPLETE \(error)")
-
+        
     }
     func wasCancelled(_ viewController: GMSAutocompleteViewController) {
         self.dismiss(animated: true, completion: nil) // when cancel search
-
+        
     }
 }
 extension BookingViewController: GMSMapViewDelegate
