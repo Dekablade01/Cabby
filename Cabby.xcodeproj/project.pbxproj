@@ -80,6 +80,7 @@
 		9E3A30B61EA9E4EA008CD335 /* CompletedViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A30B51EA9E4EA008CD335 /* CompletedViewViewController.swift */; };
 		9E3A30B81EAA69CD008CD335 /* AddPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */; };
 		9E4756821EABE352001111CC /* WhiteFormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4756811EABE352001111CC /* WhiteFormTextField.swift */; };
+		9E663C8B1EB49F2F00127D28 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E663C8A1EB49F2F00127D28 /* FavouriteViewController.swift */; };
 		9E7CF1A91EAB68C40095B48A /* DBHelvethaicaX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CF1A81EAB68C40095B48A /* DBHelvethaicaX.swift */; };
 		9E7CF1AB1EABB00A0095B48A /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CF1AA1EABB00A0095B48A /* SideMenuViewController.swift */; };
 		9E7CF1AF1EABC38F0095B48A /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CF1AE1EABC38F0095B48A /* Field.swift */; };
@@ -179,6 +180,7 @@
 		9E3A30B51EA9E4EA008CD335 /* CompletedViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedViewViewController.swift; sourceTree = "<group>"; };
 		9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentViewController.swift; sourceTree = "<group>"; };
 		9E4756811EABE352001111CC /* WhiteFormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhiteFormTextField.swift; path = SubClass/WhiteFormTextField.swift; sourceTree = "<group>"; };
+		9E663C8A1EB49F2F00127D28 /* FavouriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		9E7CF1A81EAB68C40095B48A /* DBHelvethaicaX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBHelvethaicaX.swift; path = Extensions/UIFont/DBHelvethaicaX.swift; sourceTree = "<group>"; };
 		9E7CF1AA1EABB00A0095B48A /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		9E7CF1AE1EABC38F0095B48A /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 				9E0463E81EAC84FB007220B9 /* AddEmergencyViewController.swift */,
 				9E0463EE1EAC9030007220B9 /* SignOutViewController.swift */,
 				9E0463F01EAC9284007220B9 /* ContactViewController.swift */,
+				9E663C8A1EB49F2F00127D28 /* FavouriteViewController.swift */,
 			);
 			name = UIViewController;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				9E0463E91EAC84FB007220B9 /* AddEmergencyViewController.swift in Sources */,
 				9E266FD91EACE5B700E0249C /* TimerCollectionViewCell.swift in Sources */,
 				9E8F18531EA77A3900D6E5F8 /* Card.swift in Sources */,
+				9E663C8B1EB49F2F00127D28 /* FavouriteViewController.swift in Sources */,
 				9E37A4581EA5E60000BA2C1D /* RootViewController.swift in Sources */,
 				9E0463ED1EAC8766007220B9 /* Caller.swift in Sources */,
 				9E3A30B81EAA69CD008CD335 /* AddPaymentViewController.swift in Sources */,
