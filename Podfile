@@ -8,6 +8,8 @@ target 'Cabby' do
     pod 'GoogleMaps'
     pod 'GooglePlaces'
     pod 'FormTextField'
+    pod 'SideMenuController'
+
 
     
     # Pods for Cabby

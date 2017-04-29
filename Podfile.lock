@@ -13,6 +13,7 @@ PODS:
   - InputValidator (1.0.2):
     - Validation (~> 1.0.2)
   - LFSideViewController (2.0.0)
+  - SideMenuController (0.2.4)
   - Validation (1.0.2)
 
 DEPENDENCIES:
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
   - LFSideViewController (~> 2.0.0)
+  - SideMenuController
 
 SPEC CHECKSUMS:
   Formatter: 81601aa8bcbbac4cc18f1665913b691930a99470
@@ -28,8 +30,9 @@ SPEC CHECKSUMS:
   GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
   InputValidator: c0ebf4220293ab2be61af9b624d65bdd7b1b85f0
   LFSideViewController: 35c31bb53735f809180518beab09c9e6dc377a77
+  SideMenuController: b463d2b3aa58e2afe57f57a07938fa9a647894ca
   Validation: 76e9cb543542ebc7ebc0aedb7a8a26c29082eaa5
 
-PODFILE CHECKSUM: 6a59c21bcdb7378f53c37efbeea30516a776f3c8
+PODFILE CHECKSUM: 61bdcf0b5479bcd4c91f6a42440f4ee22b19de76
 
 COCOAPODS: 1.2.1
