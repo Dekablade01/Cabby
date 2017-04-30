@@ -18,15 +18,20 @@ class BookingViewController: UIViewController {
     enum Container {
         case blank
         case locationed
-        case complated
+        case completed
+        case none
     }
     
+    @IBAction func openSideBar(_ sender: Any) {
+        self.sideViewController()!.toogleLeftViewController()
+    }
+    @IBOutlet weak var footerView: UIView!
     @IBOutlet weak var locationedContainerView: UIView!
-    let googleMapAPIKey = "AIzaSyAI97m4eAMhz_7-qIoVWo7b-0cA4cnfNic"
+    let googleMapAPIKey = "AIzaSyA37XnM5uAmC2XBVGfhCHCe3ZpW0tdKUxg"
     var isAddedConstraintForDetailedContainerView = false
     var path = GMSMutablePath()
     var bounds = GMSCoordinateBounds()
-    var showingContainer:Container = .blank
+    var showingContainer:Container = .none
     
     @IBOutlet weak var blankBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var detailedBottomConstraint: NSLayoutConstraint!
@@ -50,26 +55,28 @@ class BookingViewController: UIViewController {
             
         }
     }
+    func hideBlankContainer()
+    {
+        if showingContainer == .blank
+        {
+            blankBookingView.transform = self.blankBookingView.transform.translatedBy( x: 0.0, y: 165 )
+        }
+    }
+    func hideLocationContainer()
+    {
+        if showingContainer == .locationed
+        {
+            locationedContainerView.transform = self.locationedContainerView.transform.translatedBy( x: 0.0, y: 165 )
+        }
+    }
     func hideDetailContainer()
     {
-        if showingContainer == .complated
+        if showingContainer == .completed
         {
             detailedBookingView.transform = self.detailedBookingView.transform.translatedBy( x: 0.0, y: 165 )
         }
     }
-    func showDetailedContainer()
-    {
-        if (showingContainer == .complated)
-        {
-            
-        }
-        else
-        {
-            detailedBookingView.transform = self.detailedBookingView.transform.translatedBy( x: 0.0, y: -165 )
-            showingContainer = .complated
-        }
-
-    }
+    
     func showBlankContainer()
     {
         if showingContainer == .blank
@@ -78,17 +85,13 @@ class BookingViewController: UIViewController {
         }
         else
         {
+            hideDetailContainer()
+            hideLocationContainer()
+            
             blankBookingView.transform = self.blankBookingView.transform.translatedBy( x: 0.0, y: -165 )
             showingContainer = .blank
         }
         
-    }
-    func hideBlankContainer()
-    {
-        if showingContainer == .blank
-        {
-            blankBookingView.transform = self.blankBookingView.transform.translatedBy( x: 0.0, y: 165 )
-        }
     }
     func showLocationedContainer()
     {
@@ -98,19 +101,34 @@ class BookingViewController: UIViewController {
         }
         else
         {
-            locationedContainerView.transform = self.locationedContainerView.transform.translatedBy( x: 0.0, y: -165 )
-            
+            hideBlankContainer()
+            hideDetailContainer()
+            locationedContainerView.transform =  self.locationedContainerView.transform.translatedBy( x: 0.0, y: -165 )
             showingContainer = .locationed
+            
         }
         
     }
-    func hideLocationContainer()
+    
+    func showDetailedContainer()
     {
-        if showingContainer == .locationed
+        if (showingContainer == .completed)
         {
-            locationedContainerView.transform = self.locationedContainerView.transform.translatedBy( x: 0.0, y: 165 )
+            
         }
+        else
+        {
+            hideBlankContainer()
+            hideLocationContainer()
+            detailedBookingView.transform = self.detailedBookingView.transform.translatedBy( x: 0.0, y: -165 )
+            showingContainer = .completed
+        }
+
     }
+    
+    
+    
+    
 
     @IBOutlet weak var dateLabel: UILabel!
     var date: String {
@@ -170,6 +188,7 @@ class BookingViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        showBlankContainer()
         markers = [GMSMarker(), GMSMarker()]
         trip.origin = Location()
         trip.destination = Location()
@@ -202,7 +221,11 @@ class BookingViewController: UIViewController {
     {
         origin = ""
         destination = ""
+        setDate = false
+        setEmergency = false
         removeMarkerAndRoutingDirection()
+        showBlankContainer()
+        
     }
     func setupNavigationBar ()
     {
@@ -324,6 +347,7 @@ class BookingViewController: UIViewController {
         let destinationCoordinate = "\((trip.destination?.lat)!),\((trip.destination?.long)!)"
         
         let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(originCoordinate)&destination=\(destinationCoordinate)&mode=driving&key=\(googleMapAPIKey)"
+        print(url)
         
         Alamofire.request(url).responseJSON { response in
             
@@ -353,9 +377,10 @@ class BookingViewController: UIViewController {
             viewController.handler = { date, time in
                 self.date = date
                 self.time = time
-                self.setDate = true
+                
             }
             viewController.dismissHandler = {
+                self.setDate = true
                 if (self.setEmergency == false)
                 {
                     self.showEmergency(UIButton())
@@ -375,12 +400,13 @@ class BookingViewController: UIViewController {
             viewController.handler = { caller in
                 self.emergencyName = caller.name
                 self.emergencyTelNo = caller.phoneNumber
-                self.setEmergency = true
+                
             }
             viewController.dismissHandler = {
+                
+                self.setEmergency = true
                 if (self.setDate == false)
                 {
-                    
                     self.showPicker(UIButton())
                 }
             }
@@ -445,10 +471,12 @@ extension BookingViewController: GMSAutocompleteViewControllerDelegate
             reloadMapRoute()
         }
         
-        if (origin != "" && destination != "")
+        if (origin != "" && destination != "" && showingContainer == .blank)
         {
-            hideBlankContainer()
- 
+            showLocationedContainer()
+        }
+        else if (origin != "" && destination != "" && showingContainer == .completed){
+            
         }
         
         

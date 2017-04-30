@@ -16,7 +16,7 @@ class FavouriteViewController: UIViewController {
         super.viewDidLoad()
 
         
-        var trip1 = Trip()
+        let trip1 = Trip()
         
         trip1.origin = Location()
         trip1.origin?.lat = 13.646307
@@ -30,7 +30,7 @@ class FavouriteViewController: UIViewController {
         trip1.date = "1 May 2017"
         trip1.time = "03 : 30 AM."
         
-        var trip2 = Trip()
+        let trip2 = Trip()
         
         trip2.origin = Location()
         trip2.origin?.lat = 13.719376

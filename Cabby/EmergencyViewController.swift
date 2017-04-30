@@ -30,6 +30,8 @@ class EmergencyViewController: UIViewController {
         self.dismiss(animated: true){
             
         }
+        
+        dismissHandler?()
     }
     
     
