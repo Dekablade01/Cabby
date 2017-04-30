@@ -107,6 +107,7 @@
 		9EB061CB1EB48D580045CE75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB061CA1EB48D580045CE75 /* LaunchScreen.storyboard */; };
 		9EB1C4A21EB4CDE400E8F3C1 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1C4A11EB4CDE400E8F3C1 /* DatePickerViewController.swift */; };
 		9EB1C4A41EB4FFBE00E8F3C1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1C4A31EB4FFBE00E8F3C1 /* EmergencyViewController.swift */; };
+		9EEF38AA1EB6890E00CD5844 /* ConfirmBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF38A91EB6890E00CD5844 /* ConfirmBookingViewController.swift */; };
 		9EF53EFE1EB61F7E003A468D /* FavouriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF53EFD1EB61F7E003A468D /* FavouriteCollectionViewCell.swift */; };
 		9EF53F001EB624C3003A468D /* FavouriteBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF53EFF1EB624C3003A468D /* FavouriteBookingViewController.swift */; };
 		9EF7585C1EA3FC650087AFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7585B1EA3FC650087AFA4 /* AppDelegate.swift */; };
@@ -219,6 +220,7 @@
 		9EB061CA1EB48D580045CE75 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EB1C4A11EB4CDE400E8F3C1 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		9EB1C4A31EB4FFBE00E8F3C1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
+		9EEF38A91EB6890E00CD5844 /* ConfirmBookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmBookingViewController.swift; sourceTree = "<group>"; };
 		9EF53EFD1EB61F7E003A468D /* FavouriteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavouriteCollectionViewCell.swift; path = UICollectionViewCell/FavouriteCollectionViewCell.swift; sourceTree = "<group>"; };
 		9EF53EFF1EB624C3003A468D /* FavouriteBookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteBookingViewController.swift; sourceTree = "<group>"; };
 		9EF758581EA3FC650087AFA4 /* Cabby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cabby.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -397,6 +399,7 @@
 				9EF53EFF1EB624C3003A468D /* FavouriteBookingViewController.swift */,
 				9E50D0E01EB63A72007DC4FB /* HistoryDetailViewController.swift */,
 				9E50D0E21EB676FF007DC4FB /* BookingPaymentViewController.swift */,
+				9EEF38A91EB6890E00CD5844 /* ConfirmBookingViewController.swift */,
 			);
 			name = UIViewController;
 			sourceTree = "<group>";
@@ -698,6 +701,7 @@
 				9E8F18531EA77A3900D6E5F8 /* Card.swift in Sources */,
 				9E663C8B1EB49F2F00127D28 /* FavouriteViewController.swift in Sources */,
 				9E37A4581EA5E60000BA2C1D /* RootViewController.swift in Sources */,
+				9EEF38AA1EB6890E00CD5844 /* ConfirmBookingViewController.swift in Sources */,
 				9E0463ED1EAC8766007220B9 /* Caller.swift in Sources */,
 				9E3A30B81EAA69CD008CD335 /* AddPaymentViewController.swift in Sources */,
 				9E3A30B61EA9E4EA008CD335 /* CompletedViewViewController.swift in Sources */,
