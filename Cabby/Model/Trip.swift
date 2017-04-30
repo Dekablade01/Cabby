@@ -13,5 +13,7 @@ class Trip: Object {
     
     dynamic var origin:Location? = nil
     dynamic var destination:Location? = nil
+    dynamic var date:String = ""
+    dynamic var time:String = ""
 
 }
