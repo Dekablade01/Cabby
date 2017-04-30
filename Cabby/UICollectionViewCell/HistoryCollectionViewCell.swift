@@ -21,7 +21,7 @@ class HistoryCollectionViewCell: UICollectionViewCell {
     }
     var destination: String {
         get { return destinationLabel.text ?? "" }
-        set { originLabel.text = newValue }
+        set { destinationLabel.text = newValue }
     }
     var time: String {
         get { return timeLabel.text ?? "" }

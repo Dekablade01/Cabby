@@ -69,6 +69,9 @@ class FavouriteBookingViewController: UIViewController {
         set { destinationTextField.text = newValue }
     }
     
+    @IBAction func dismissViewController(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     var selectedTextField = UITextField()
     
@@ -106,6 +109,7 @@ class FavouriteBookingViewController: UIViewController {
     
     func setupNavigationBar ()
     {
+        self.navigationItem.leftBarButtonItem = nil
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true

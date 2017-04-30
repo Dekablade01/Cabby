@@ -80,6 +80,7 @@
 		9E3A30B61EA9E4EA008CD335 /* CompletedViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A30B51EA9E4EA008CD335 /* CompletedViewViewController.swift */; };
 		9E3A30B81EAA69CD008CD335 /* AddPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */; };
 		9E4756821EABE352001111CC /* WhiteFormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4756811EABE352001111CC /* WhiteFormTextField.swift */; };
+		9E50D0E11EB63A72007DC4FB /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50D0E01EB63A72007DC4FB /* HistoryDetailViewController.swift */; };
 		9E663C8B1EB49F2F00127D28 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E663C8A1EB49F2F00127D28 /* FavouriteViewController.swift */; };
 		9E663C8D1EB4AB4200127D28 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E663C8C1EB4AB4200127D28 /* HistoryViewController.swift */; };
 		9E663C8F1EB4ABAA00127D28 /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E663C8E1EB4ABAA00127D28 /* HistoryCollectionViewCell.swift */; };
@@ -188,6 +189,7 @@
 		9E3A30B51EA9E4EA008CD335 /* CompletedViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedViewViewController.swift; sourceTree = "<group>"; };
 		9E3A30B71EAA69CD008CD335 /* AddPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentViewController.swift; sourceTree = "<group>"; };
 		9E4756811EABE352001111CC /* WhiteFormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhiteFormTextField.swift; path = SubClass/WhiteFormTextField.swift; sourceTree = "<group>"; };
+		9E50D0E01EB63A72007DC4FB /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
 		9E663C8A1EB49F2F00127D28 /* FavouriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		9E663C8C1EB4AB4200127D28 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		9E663C8E1EB4ABAA00127D28 /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryCollectionViewCell.swift; path = UICollectionViewCell/HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 				9EB1C4A31EB4FFBE00E8F3C1 /* EmergencyViewController.swift */,
 				9EABEB071EB53E0F001A095C /* ViewScheduleViewController.swift */,
 				9EF53EFF1EB624C3003A468D /* FavouriteBookingViewController.swift */,
+				9E50D0E01EB63A72007DC4FB /* HistoryDetailViewController.swift */,
 			);
 			name = UIViewController;
 			sourceTree = "<group>";
@@ -711,6 +714,7 @@
 				9E663C8F1EB4ABAA00127D28 /* HistoryCollectionViewCell.swift in Sources */,
 				9E37A46C1EA60C0D00BA2C1D /* SetupTextField+UIViewController.swift in Sources */,
 				9E0463E71EAC81F0007220B9 /* NewsViewController.swift in Sources */,
+				9E50D0E11EB63A72007DC4FB /* HistoryDetailViewController.swift in Sources */,
 				9E1677671EA78CB300940978 /* CardCollectionViewCell.swift in Sources */,
 				9EF53EFE1EB61F7E003A468D /* FavouriteCollectionViewCell.swift in Sources */,
 				9EF7585C1EA3FC650087AFA4 /* AppDelegate.swift in Sources */,

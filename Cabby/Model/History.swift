@@ -20,6 +20,10 @@ class History: NSObject {
         self.destination = destination
         self.time = time
         self.favoured = favoured
+        
+    }
+    override init() {
+        super.init()
     }
 
 }

@@ -70,13 +70,17 @@ extension FavouriteViewController: UICollectionViewDataSource
         cell.bookHandler = {
             
             let storyboard = UIStoryboard.init(name: "My", bundle: nil)
+            
             let viewController = storyboard.instantiateViewController(withIdentifier: "FavouriteBookingViewController") as! FavouriteBookingViewController
             
+            let navigationController = UINavigationController(rootViewController: viewController)
+            
             viewController.trip = trip
+           
             
-            viewController.modalTransitionStyle = .coverVertical
+            navigationController.modalTransitionStyle = .coverVertical
             
-            self.present(viewController, animated: true, completion: nil)
+            self.present(navigationController, animated: true, completion: nil)
             
         }
         cell.removeHandler = {

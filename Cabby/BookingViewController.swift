@@ -21,13 +21,16 @@ class BookingViewController: UIViewController {
         case complated
     }
     
-    @IBOutlet weak var selectedLocationView: UIView!
+    @IBOutlet weak var locationedContainerView: UIView!
     let googleMapAPIKey = "AIzaSyAI97m4eAMhz_7-qIoVWo7b-0cA4cnfNic"
     var isAddedConstraintForDetailedContainerView = false
     var path = GMSMutablePath()
     var bounds = GMSCoordinateBounds()
     var showingContainer:Container = .blank
     
+    @IBOutlet weak var blankBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var detailedBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var locationedBottomConstraint: NSLayoutConstraint!
     var setDate = false {
         didSet {
             if (setEmergency == true && setDate == true)
@@ -49,51 +52,66 @@ class BookingViewController: UIViewController {
     }
     func hideDetailContainer()
     {
-        
-        self.detailedBookingView.center.y = 749.5
-        
+        if showingContainer == .complated
+        {
+            detailedBookingView.transform = self.detailedBookingView.transform.translatedBy( x: 0.0, y: 165 )
+        }
     }
     func showDetailedContainer()
     {
-        
-        self.detailedBookingView.center.y = 584.5
-        
-        showingContainer = .complated
-        
+        if (showingContainer == .complated)
+        {
+            
+        }
+        else
+        {
+            detailedBookingView.transform = self.detailedBookingView.transform.translatedBy( x: 0.0, y: -165 )
+            showingContainer = .complated
+        }
+
     }
     func showBlankContainer()
     {
-        
-        self.blankBookingView.center.y = 300
-        print(blankBookingView.center.y)
-        showingContainer = .blank
+        if showingContainer == .blank
+        {
+            
+        }
+        else
+        {
+            blankBookingView.transform = self.blankBookingView.transform.translatedBy( x: 0.0, y: -165 )
+            showingContainer = .blank
+        }
         
     }
     func hideBlankContainer()
     {
-
-        self.blankBookingView.center.y = 0
-        print(blankBookingView.center.y)
-
-        
+        if showingContainer == .blank
+        {
+            blankBookingView.transform = self.blankBookingView.transform.translatedBy( x: 0.0, y: 165 )
+        }
     }
     func showLocationedContainer()
     {
-        
-        self.selectedLocationView.center.y = 584.5
-        
-        showingContainer = .locationed
+        if showingContainer == .locationed
+        {
+            
+        }
+        else
+        {
+            locationedContainerView.transform = self.locationedContainerView.transform.translatedBy( x: 0.0, y: -165 )
+            
+            showingContainer = .locationed
+        }
         
     }
     func hideLocationContainer()
     {
-        
-        self.selectedLocationView.center.y = 749.5
-        
+        if showingContainer == .locationed
+        {
+            locationedContainerView.transform = self.locationedContainerView.transform.translatedBy( x: 0.0, y: 165 )
+        }
     }
-    
-    
-    
+
     @IBOutlet weak var dateLabel: UILabel!
     var date: String {
         get { return dateLabel.text ?? "" }
@@ -162,8 +180,7 @@ class BookingViewController: UIViewController {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         locationManager.startMonitoringSignificantLocationChanges()
-    
-        
+
     }
     
     @IBAction func leftSideMenuPressed() {

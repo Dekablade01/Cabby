@@ -14,6 +14,8 @@ class HistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         let history1 = History(origin: "Route66 , RCA",
                                destination: "66 Ingnam house",
                                time: "13 Apr 2017 , 02 : 30 AM.",
@@ -25,7 +27,6 @@ class HistoryViewController: UIViewController {
         
         histories.append(history1)
         histories.append(history2)
-
     }
 
   
@@ -33,8 +34,6 @@ class HistoryViewController: UIViewController {
         
         self.dismiss(animated: true, completion: nil)
     }
-    
-
 
 }
 
@@ -68,5 +67,15 @@ extension HistoryViewController: UICollectionViewDataSource
 
 extension HistoryViewController: UICollectionViewDelegateFlowLayout
 {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyBoard = UIStoryboard.init(name: "My", bundle: nil)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "HistoryDetailViewController") as! HistoryDetailViewController
+        
+        viewController.history = histories[indexPath.item]
+        
+        viewController.modalTransitionStyle = .coverVertical
+        
+        self.present(viewController, animated: true, completion: nil)
+        
+    }
 }
