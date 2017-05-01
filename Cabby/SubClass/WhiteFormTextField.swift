@@ -31,10 +31,22 @@ class WhiteFormTextField: FormTextField {
         layer.borderColor = UIColor.white.cgColor
         
         textColor = UIColor.white
-        activeBorderColor = UIColor.white
-        activeTextColor = UIColor.white
-        inactiveTextColor = UIColor.white
-        inactiveBorderColor = UIColor.white
+        disabledBorderColor = .white
+        validBorderColor = .white
+        activeBorderColor = .white
+        enabledBorderColor = .white
+        invalidBorderColor = .white
+        inactiveBorderColor = .white
+        
+        disabledTextColor = .white
+        validTextColor = .white
+        activeTextColor = .white
+        enabledTextColor = .white
+        invalidTextColor = .white
+        defaultTextColor = .white
+        inactiveTextColor = .white
+        
+
         
     }
     

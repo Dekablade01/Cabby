@@ -1780,17 +1780,23 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favourite-frame" translatesAutoresizingMaskIntoConstraints="NO" id="rQ5-o1-457">
-                                <rect key="frame" x="47" y="420" width="281" height="40"/>
-                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bps-6R-mua" customClass="WhiteFormTextField" customModule="Cabby" customModuleProvider="target">
+                                <rect key="frame" x="47" y="422" width="281" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sxl-iH-vtT"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thai-icon" translatesAutoresizingMaskIntoConstraints="NO" id="rv1-Dz-udn">
-                                <rect key="frame" x="62" y="430" width="22" height="20"/>
+                                <rect key="frame" x="64.5" y="432" width="22" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rv1-Dz-udn" secondAttribute="height" multiplier="41:37" id="dJi-mQ-Le6"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thailand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTS-Re-LoP">
-                                <rect key="frame" x="103.5" y="430" width="68" height="20"/>
+                                <rect key="frame" x="103.5" y="432" width="68" height="20"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1799,35 +1805,34 @@
                         <color key="backgroundColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5k1-WI-SWt" firstAttribute="leading" secondItem="cKb-kd-Zcj" secondAttribute="leading" id="2UN-TP-gne"/>
+                            <constraint firstItem="rv1-Dz-udn" firstAttribute="height" secondItem="bps-6R-mua" secondAttribute="height" multiplier="1:2" id="7MU-Bx-Q0a"/>
                             <constraint firstItem="0it-A2-cgu" firstAttribute="width" secondItem="cKb-kd-Zcj" secondAttribute="width" id="7wi-XZ-sub"/>
                             <constraint firstItem="foW-aa-wBi" firstAttribute="centerX" secondItem="JxS-fd-PBb" secondAttribute="centerX" id="B1a-DT-Kns"/>
-                            <constraint firstItem="rQ5-o1-457" firstAttribute="top" secondItem="5k1-WI-SWt" secondAttribute="bottom" constant="8" id="ByT-wt-64g"/>
+                            <constraint firstItem="vTS-Re-LoP" firstAttribute="leading" secondItem="rv1-Dz-udn" secondAttribute="trailing" constant="17" id="CD3-rZ-13R"/>
                             <constraint firstItem="477-IE-TBX" firstAttribute="centerX" secondItem="JxS-fd-PBb" secondAttribute="centerX" id="Dd4-Nc-yne"/>
                             <constraint firstItem="DYx-tt-Q5j" firstAttribute="centerY" secondItem="9Qx-Je-f6i" secondAttribute="centerY" id="EEP-OL-Fbh"/>
+                            <constraint firstItem="bps-6R-mua" firstAttribute="leading" secondItem="foW-aa-wBi" secondAttribute="leading" id="FFr-PM-Rrm"/>
                             <constraint firstItem="0it-A2-cgu" firstAttribute="height" secondItem="cKb-kd-Zcj" secondAttribute="height" id="FJ6-8d-bQp"/>
-                            <constraint firstItem="vTS-Re-LoP" firstAttribute="centerY" secondItem="rQ5-o1-457" secondAttribute="centerY" id="Fb6-NM-awU"/>
+                            <constraint firstItem="vTS-Re-LoP" firstAttribute="centerY" secondItem="bps-6R-mua" secondAttribute="centerY" id="Fm4-OD-kQ5"/>
                             <constraint firstItem="DYx-tt-Q5j" firstAttribute="leading" secondItem="0it-A2-cgu" secondAttribute="leading" id="Gc1-Se-2HA"/>
                             <constraint firstItem="7ti-Gw-dHv" firstAttribute="top" secondItem="wgs-RY-Mdz" secondAttribute="bottom" constant="30" id="IdQ-2c-bIQ"/>
                             <constraint firstItem="0it-A2-cgu" firstAttribute="centerY" secondItem="cKb-kd-Zcj" secondAttribute="centerY" id="KRH-7M-PNU"/>
                             <constraint firstItem="sP6-fE-SMj" firstAttribute="width" secondItem="JxS-fd-PBb" secondAttribute="width" multiplier="3:4" id="KaI-uD-uvb"/>
                             <constraint firstItem="sP6-fE-SMj" firstAttribute="top" secondItem="477-IE-TBX" secondAttribute="bottom" constant="5" id="KtP-Pp-2wZ"/>
-                            <constraint firstItem="rv1-Dz-udn" firstAttribute="height" secondItem="rQ5-o1-457" secondAttribute="height" multiplier="1:2" id="Mzs-Hv-nku"/>
+                            <constraint firstItem="bps-6R-mua" firstAttribute="height" secondItem="foW-aa-wBi" secondAttribute="height" id="LSc-YV-r8f"/>
+                            <constraint firstItem="rv1-Dz-udn" firstAttribute="centerY" secondItem="bps-6R-mua" secondAttribute="centerY" id="Mlg-Dm-0sl"/>
                             <constraint firstItem="foW-aa-wBi" firstAttribute="top" secondItem="7Cv-42-OxG" secondAttribute="bottom" constant="10" id="Ojc-Ib-LJI"/>
-                            <constraint firstItem="rQ5-o1-457" firstAttribute="leading" secondItem="foW-aa-wBi" secondAttribute="leading" id="Rim-Z5-9Av"/>
                             <constraint firstItem="cKb-kd-Zcj" firstAttribute="width" secondItem="foW-aa-wBi" secondAttribute="width" multiplier="2:5" id="TKq-hm-U15"/>
+                            <constraint firstItem="bps-6R-mua" firstAttribute="top" secondItem="5k1-WI-SWt" secondAttribute="bottom" constant="10" id="TMe-Tm-iH6"/>
                             <constraint firstItem="477-IE-TBX" firstAttribute="width" secondItem="sP6-fE-SMj" secondAttribute="width" multiplier="3:4" id="TNq-RR-cwF"/>
                             <constraint firstItem="foW-aa-wBi" firstAttribute="width" secondItem="sP6-fE-SMj" secondAttribute="width" id="U7U-w5-i1r"/>
                             <constraint firstItem="OC0-GZ-ljh" firstAttribute="top" secondItem="7ti-Gw-dHv" secondAttribute="bottom" constant="80" id="V3h-9I-Jpb"/>
-                            <constraint firstItem="rv1-Dz-udn" firstAttribute="centerY" secondItem="rQ5-o1-457" secondAttribute="centerY" id="WF7-r1-5m2"/>
                             <constraint firstItem="7Cv-42-OxG" firstAttribute="leading" secondItem="OC0-GZ-ljh" secondAttribute="leading" id="Xqr-mr-6de"/>
                             <constraint firstItem="OC0-GZ-ljh" firstAttribute="leading" secondItem="7ti-Gw-dHv" secondAttribute="trailing" id="YKL-ZV-cMK"/>
-                            <constraint firstItem="rQ5-o1-457" firstAttribute="trailing" secondItem="foW-aa-wBi" secondAttribute="trailing" id="ac4-1b-7dO"/>
                             <constraint firstItem="cKb-kd-Zcj" firstAttribute="leading" secondItem="foW-aa-wBi" secondAttribute="leading" id="cnl-jJ-vJh"/>
                             <constraint firstItem="9Qx-Je-f6i" firstAttribute="leading" secondItem="foW-aa-wBi" secondAttribute="leading" id="eK5-XE-P2N"/>
                             <constraint firstItem="5k1-WI-SWt" firstAttribute="top" secondItem="cKb-kd-Zcj" secondAttribute="bottom" constant="20" id="lPL-y5-QOw"/>
-                            <constraint firstItem="rQ5-o1-457" firstAttribute="height" secondItem="foW-aa-wBi" secondAttribute="height" id="lje-Rj-tUv"/>
                             <constraint firstItem="phL-HH-sEI" firstAttribute="top" secondItem="sP6-fE-SMj" secondAttribute="bottom" constant="20" id="mLH-rA-tut"/>
-                            <constraint firstItem="rv1-Dz-udn" firstAttribute="leading" secondItem="rQ5-o1-457" secondAttribute="leading" constant="15" id="njc-Nj-p3w"/>
                             <constraint firstItem="vTS-Re-LoP" firstAttribute="leading" secondItem="5k1-WI-SWt" secondAttribute="trailing" constant="-5" id="o4O-3t-o5Q"/>
                             <constraint firstItem="0it-A2-cgu" firstAttribute="trailing" secondItem="foW-aa-wBi" secondAttribute="trailing" id="oT5-eC-d2g"/>
                             <constraint firstItem="sP6-fE-SMj" firstAttribute="centerX" secondItem="JxS-fd-PBb" secondAttribute="centerX" id="qjE-vy-mCT"/>
@@ -1836,10 +1841,12 @@
                             <constraint firstItem="cKb-kd-Zcj" firstAttribute="top" secondItem="9Qx-Je-f6i" secondAttribute="bottom" constant="10" id="wKz-zg-eSZ"/>
                             <constraint firstItem="7ti-Gw-dHv" firstAttribute="leading" secondItem="JxS-fd-PBb" secondAttribute="leadingMargin" constant="5" id="wVR-mK-K5r"/>
                             <constraint firstItem="7Cv-42-OxG" firstAttribute="top" secondItem="OC0-GZ-ljh" secondAttribute="bottom" constant="40" id="xPh-Hg-rqS"/>
+                            <constraint firstItem="bps-6R-mua" firstAttribute="trailing" secondItem="foW-aa-wBi" secondAttribute="trailing" id="y4u-mf-SEJ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cardNumberTextField" destination="foW-aa-wBi" id="eHA-g4-EIl"/>
+                        <outlet property="countryTextField" destination="bps-6R-mua" id="jsq-mg-tCc"/>
                         <outlet property="cvvTextField" destination="0it-A2-cgu" id="IGS-d3-S5i"/>
                         <outlet property="expireDateTextField" destination="cKb-kd-Zcj" id="5Ew-9q-1oe"/>
                     </connections>

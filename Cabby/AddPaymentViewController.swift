@@ -22,6 +22,8 @@ class AddPaymentViewController: UIViewController
     
     let fields = Field.fields()
 
+    @IBOutlet weak var countryTextField: WhiteFormTextField!
+    
     var cardNumber: String {
         get { return cardNumberTextField.text ?? "" }
         set { cardNumberTextField.text = newValue }
@@ -37,6 +39,7 @@ class AddPaymentViewController: UIViewController
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        countryTextField.isEnabled = false
         let cField = self.fields[4]
         let eField = self.fields[5]
         let vField = self.fields[6]
