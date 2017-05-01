@@ -21,6 +21,7 @@ class DatePickerViewController: UIViewController {
     @IBOutlet weak var wholeView: UIView!
     var showingContainer = false
     
+    @IBOutlet weak var contentContainer: UIView!
     var handler: ((String, String)->())?
     var dismissHandler: (()->())?
     
