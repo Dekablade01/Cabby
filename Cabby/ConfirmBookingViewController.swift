@@ -12,11 +12,23 @@ class ConfirmBookingViewController: UIViewController {
 
     @IBOutlet weak var emergencyView: UIView!
 
+    @IBOutlet weak var originLabel: UILabel!
+    @IBOutlet weak var destinationLabel: UILabel!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBOutlet weak var timeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.emergencyView.backgroundColor = .clear
         
+        originLabel.text = SingletonTrip.trip.origin?.name
         
+        destinationLabel.text = SingletonTrip.trip.destination?.name
+        
+        dateLabel.text = SingletonTrip.trip.date
+        timeLabel.text = SingletonTrip.trip.time
   
     }
 
@@ -24,4 +36,5 @@ class ConfirmBookingViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
 
+    
 }

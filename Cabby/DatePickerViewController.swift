@@ -16,6 +16,11 @@ class DatePickerViewController: UIViewController {
     @IBOutlet weak var datePickerContainerView: UIView!
     @IBOutlet weak var dateLabel: UILabel!
     
+    @IBOutlet weak var headContainer: UIView!
+
+    @IBOutlet weak var wholeView: UIView!
+    var showingContainer = false
+    
     var handler: ((String, String)->())?
     var dismissHandler: (()->())?
     
@@ -42,6 +47,36 @@ class DatePickerViewController: UIViewController {
         setTimeToView(date: date)
     }
     
+    
+    func showPicker()
+    {
+        if showingContainer == true
+        {
+            
+        }
+        else
+        {
+            
+            UIView.animate(withDuration: 0.2)
+            {
+                self.wholeView.transform = self.wholeView.transform.translatedBy( x: 0.0, y: -260 )
+            }
+            showingContainer = true
+        }
+        
+    }
+    
+    func hidePicker()
+    {
+        if showingContainer == true
+        {
+            UIView.animate(withDuration: 0.2){
+                self.wholeView.transform = self.wholeView.transform.translatedBy( x: 0.0, y: 260 )
+            }
+            self.showingContainer = false
+
+        }
+    }
     func getCurrentDate()
     {
         let date = Date()
@@ -65,7 +100,8 @@ class DatePickerViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.datePickerContainerView.center.y += self.containerHeight
+        
+
 
         getCurrentDate()
 
@@ -86,23 +122,12 @@ class DatePickerViewController: UIViewController {
     }
     func showDatePicker()
     {
-        print(datePickerContainerView.center.y)
-        if (datePickerContainerView.center.y >= 700)
-        {
-            UIView.animate(withDuration: 0.2){
-                self.datePickerContainerView.center.y -= self.containerHeight
-                print(self.datePickerContainerView.center.y)
-            }
-        }
+        showPicker()
     }
 
     @IBAction func dismissPicker(_ sender: UIBarButtonItem) {
         
-        UIView.animate(withDuration: 0.2){
-            self.datePickerContainerView.center.y += self.containerHeight
-            print(self.datePickerContainerView.center.y)
-
-        }
+        hidePicker()
     }
     
 }

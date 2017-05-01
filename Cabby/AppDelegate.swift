@@ -14,7 +14,7 @@ import GooglePlaces
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let googleMapAPIKey = "AIzaSyA37XnM5uAmC2XBVGfhCHCe3ZpW0tdKUxg"
+    let googleMapAPIKey = SingletonGoogleMapAPIKey.googleMapAPIKey
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

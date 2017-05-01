@@ -16,15 +16,66 @@ import SwiftyJSON
 
 class ViewScheduleViewController: UIViewController {
     enum Container {
-        case blank
+        case completed
         case locationed
-        case complated
+        case none
     }
     
-    let googleMapAPIKey = "AIzaSyAI97m4eAMhz_7-qIoVWo7b-0cA4cnfNic"
+    @IBOutlet weak var bookingView: UIView!
+    
+    let googleMapAPIKey = SingletonGoogleMapAPIKey.googleMapAPIKey
     var path = GMSPath()
     var bounds = GMSCoordinateBounds()
-    var showingContainer:Container = .blank
+    var showingContainer:Container = .none
+    
+
+    func hideLocationContainer()
+    {
+        if showingContainer == .locationed
+        {
+            locationedContainerView.transform = self.locationedContainerView.transform.translatedBy( x: 0.0, y: 165 )
+        }
+    }
+    func hideDetailContainer()
+    {
+        if showingContainer == .completed
+        {
+            bookingView.transform = self.bookingView.transform.translatedBy( x: 0.0, y: 165 )
+        }
+    }
+    @IBOutlet weak var locationedContainerView: UIView!
+    
+
+    func showLocationedContainer()
+    {
+        if showingContainer == .locationed
+        {
+            
+        }
+        else
+        {
+            hideDetailContainer()
+            locationedContainerView.transform =  self.locationedContainerView.transform.translatedBy( x: 0.0, y: -165 )
+            showingContainer = .locationed
+            
+        }
+        
+    }
+    
+    func showDetailedContainer()
+    {
+        if (showingContainer == .completed)
+        {
+            
+        }
+        else
+        {
+            hideLocationContainer()
+            bookingView.transform = self.bookingView.transform.translatedBy( x: 0.0, y: -165 )
+            showingContainer = .completed
+        }
+        
+    }
     
 
     @IBAction func dismissViewController(_ sender: UIButton) {
@@ -54,7 +105,6 @@ class ViewScheduleViewController: UIViewController {
         set { emergencyTelNoLabel.text = newValue }
     }
     
-    @IBOutlet weak var detailedBookingView: UIView!
     
     var trip = Trip()
     var markers: [GMSMarker] = []
@@ -94,6 +144,7 @@ class ViewScheduleViewController: UIViewController {
     }
 
     override func viewDidLoad() {
+        showLocationedContainer()
         setupNavigationBar()
         removeMarkerAndRoutingDirection()
         originName = trip.origin?.name ?? ""

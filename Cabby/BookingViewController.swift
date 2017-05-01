@@ -27,7 +27,7 @@ class BookingViewController: UIViewController {
     }
     @IBOutlet weak var footerView: UIView!
     @IBOutlet weak var locationedContainerView: UIView!
-    let googleMapAPIKey = "AIzaSyA37XnM5uAmC2XBVGfhCHCe3ZpW0tdKUxg"
+    let googleMapAPIKey = SingletonGoogleMapAPIKey.googleMapAPIKey
     var isAddedConstraintForDetailedContainerView = false
     var path = GMSMutablePath()
     var bounds = GMSCoordinateBounds()
@@ -125,10 +125,6 @@ class BookingViewController: UIViewController {
         }
 
     }
-    
-    
-    
-    
 
     @IBOutlet weak var dateLabel: UILabel!
     var date: String {
@@ -200,6 +196,9 @@ class BookingViewController: UIViewController {
         locationManager.startUpdatingLocation()
         locationManager.startMonitoringSignificantLocationChanges()
 
+    }
+    @IBAction func createTrip(_ sender: UIButton) {
+        SingletonTrip.trip = trip
     }
     
     @IBAction func leftSideMenuPressed() {
@@ -375,6 +374,8 @@ class BookingViewController: UIViewController {
             let viewController = storyBoard.instantiateViewController(withIdentifier: "DatePickerViewController") as! DatePickerViewController
             
             viewController.handler = { date, time in
+                self.trip.date = date
+                self.trip.time = time 
                 self.date = date
                 self.time = time
                 

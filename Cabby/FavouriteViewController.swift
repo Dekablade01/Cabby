@@ -75,6 +75,8 @@ extension FavouriteViewController: UICollectionViewDataSource
             
             let navigationController = UINavigationController(rootViewController: viewController)
             
+            navigationController.isNavigationBarHidden = true
+            
             viewController.trip = trip
            
             

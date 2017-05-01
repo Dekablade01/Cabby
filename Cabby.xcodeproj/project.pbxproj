@@ -103,10 +103,15 @@
 		9E8DF8571EA7B97E00ECACB3 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8DF8561EA7B97E00ECACB3 /* SwiftyJSON.framework */; };
 		9E8F18531EA77A3900D6E5F8 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8F18521EA77A3900D6E5F8 /* Card.swift */; };
 		9EABEB081EB53E0F001A095C /* ViewScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABEB071EB53E0F001A095C /* ViewScheduleViewController.swift */; };
+		9EAE6BC31EB77E8E00074A90 /* BookedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE6BC21EB77E8E00074A90 /* BookedViewController.swift */; };
+		9EAE6BC51EB77E8E00074A90 /* SingletonTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE6BC41EB77E8E00074A90 /* SingletonTrip.swift */; };
+		9EAE6BC71EB77E8E00074A90 /* SingletonGoogleMapAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE6BC61EB77E8E00074A90 /* SingletonGoogleMapAPIKey.swift */; };
+		9EAE6BC91EB77E8E00074A90 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE6BC81EB77E8E00074A90 /* NotificationViewController.swift */; };
 		9EB061C91EB48C720045CE75 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB061C81EB48C720045CE75 /* SideMenu.storyboard */; };
 		9EB061CB1EB48D580045CE75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB061CA1EB48D580045CE75 /* LaunchScreen.storyboard */; };
 		9EB1C4A21EB4CDE400E8F3C1 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1C4A11EB4CDE400E8F3C1 /* DatePickerViewController.swift */; };
 		9EB1C4A41EB4FFBE00E8F3C1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB1C4A31EB4FFBE00E8F3C1 /* EmergencyViewController.swift */; };
+		9EEC0D0A1EB734020017BF04 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC0D091EB734020017BF04 /* SummaryViewController.swift */; };
 		9EEF38AA1EB6890E00CD5844 /* ConfirmBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF38A91EB6890E00CD5844 /* ConfirmBookingViewController.swift */; };
 		9EF53EFE1EB61F7E003A468D /* FavouriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF53EFD1EB61F7E003A468D /* FavouriteCollectionViewCell.swift */; };
 		9EF53F001EB624C3003A468D /* FavouriteBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF53EFF1EB624C3003A468D /* FavouriteBookingViewController.swift */; };
@@ -216,10 +221,15 @@
 		9E8DF8561EA7B97E00ECACB3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		9E8F18521EA77A3900D6E5F8 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
 		9EABEB071EB53E0F001A095C /* ViewScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewScheduleViewController.swift; sourceTree = "<group>"; };
+		9EAE6BC21EB77E8E00074A90 /* BookedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookedViewController.swift; sourceTree = "<group>"; };
+		9EAE6BC41EB77E8E00074A90 /* SingletonTrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonTrip.swift; sourceTree = "<group>"; };
+		9EAE6BC61EB77E8E00074A90 /* SingletonGoogleMapAPIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonGoogleMapAPIKey.swift; sourceTree = "<group>"; };
+		9EAE6BC81EB77E8E00074A90 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		9EB061C81EB48C720045CE75 /* SideMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
 		9EB061CA1EB48D580045CE75 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EB1C4A11EB4CDE400E8F3C1 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		9EB1C4A31EB4FFBE00E8F3C1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
+		9EEC0D091EB734020017BF04 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		9EEF38A91EB6890E00CD5844 /* ConfirmBookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmBookingViewController.swift; sourceTree = "<group>"; };
 		9EF53EFD1EB61F7E003A468D /* FavouriteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavouriteCollectionViewCell.swift; path = UICollectionViewCell/FavouriteCollectionViewCell.swift; sourceTree = "<group>"; };
 		9EF53EFF1EB624C3003A468D /* FavouriteBookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteBookingViewController.swift; sourceTree = "<group>"; };
@@ -400,6 +410,9 @@
 				9E50D0E01EB63A72007DC4FB /* HistoryDetailViewController.swift */,
 				9E50D0E21EB676FF007DC4FB /* BookingPaymentViewController.swift */,
 				9EEF38A91EB6890E00CD5844 /* ConfirmBookingViewController.swift */,
+				9EAE6BC21EB77E8E00074A90 /* BookedViewController.swift */,
+				9EAE6BC81EB77E8E00074A90 /* NotificationViewController.swift */,
+				9EEC0D091EB734020017BF04 /* SummaryViewController.swift */,
 			);
 			name = UIViewController;
 			sourceTree = "<group>";
@@ -461,6 +474,8 @@
 				9EF758671EA3FC650087AFA4 /* Info.plist */,
 				9E7CF1B01EABCC2B0095B48A /* UICollectionViewCell */,
 				9E7CF1AE1EABC38F0095B48A /* Field.swift */,
+				9EAE6BC41EB77E8E00074A90 /* SingletonTrip.swift */,
+				9EAE6BC61EB77E8E00074A90 /* SingletonGoogleMapAPIKey.swift */,
 			);
 			path = Cabby;
 			sourceTree = "<group>";
@@ -683,6 +698,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EAE6BC91EB77E8E00074A90 /* NotificationViewController.swift in Sources */,
 				9E7CF1AB1EABB00A0095B48A /* SideMenuViewController.swift in Sources */,
 				9E50D0E31EB676FF007DC4FB /* BookingPaymentViewController.swift in Sources */,
 				9E0463EB1EAC86C1007220B9 /* EmergencyCollectionViewCell.swift in Sources */,
@@ -701,12 +717,15 @@
 				9E8F18531EA77A3900D6E5F8 /* Card.swift in Sources */,
 				9E663C8B1EB49F2F00127D28 /* FavouriteViewController.swift in Sources */,
 				9E37A4581EA5E60000BA2C1D /* RootViewController.swift in Sources */,
+				9EAE6BC71EB77E8E00074A90 /* SingletonGoogleMapAPIKey.swift in Sources */,
+				9EAE6BC51EB77E8E00074A90 /* SingletonTrip.swift in Sources */,
 				9EEF38AA1EB6890E00CD5844 /* ConfirmBookingViewController.swift in Sources */,
 				9E0463ED1EAC8766007220B9 /* Caller.swift in Sources */,
 				9E3A30B81EAA69CD008CD335 /* AddPaymentViewController.swift in Sources */,
 				9E3A30B61EA9E4EA008CD335 /* CompletedViewViewController.swift in Sources */,
 				9E819FEF1EA4073F00792638 /* TextField.swift in Sources */,
 				9E0463F11EAC9284007220B9 /* ContactViewController.swift in Sources */,
+				9EAE6BC31EB77E8E00074A90 /* BookedViewController.swift in Sources */,
 				9EB1C4A21EB4CDE400E8F3C1 /* DatePickerViewController.swift in Sources */,
 				9EB1C4A41EB4FFBE00E8F3C1 /* EmergencyViewController.swift in Sources */,
 				9E0463F31EACAF24007220B9 /* NewsCollectionViewCell.swift in Sources */,
@@ -714,6 +733,7 @@
 				9E37A4701EA6216800BA2C1D /* PaymentViewController.swift in Sources */,
 				9E0463F51EACB0B4007220B9 /* News.swift in Sources */,
 				9EF7585E1EA3FC650087AFA4 /* LoginViewController.swift in Sources */,
+				9EEC0D0A1EB734020017BF04 /* SummaryViewController.swift in Sources */,
 				9E7CF1A91EAB68C40095B48A /* DBHelvethaicaX.swift in Sources */,
 				9E0463E51EAC05B6007220B9 /* EmergenyCallListViewController.swift in Sources */,
 				9E37A4601EA5F65500BA2C1D /* BookingViewController.swift in Sources */,

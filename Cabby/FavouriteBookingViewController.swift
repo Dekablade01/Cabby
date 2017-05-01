@@ -16,15 +16,46 @@ import SwiftyJSON
 
 class FavouriteBookingViewController: UIViewController {
     enum Container {
-        case blank
+        case none
         case locationed
-        case complated
+        case completed
     }
     
-    let googleMapAPIKey = "AIzaSyAI97m4eAMhz_7-qIoVWo7b-0cA4cnfNic"
+    var setDate = false {
+        didSet {
+            if (setEmergency == true && setDate == true)
+            {
+                hideLocationContainer()
+                showDetailedContainer()
+            }
+        }
+    }
+    var setEmergency = false {
+        didSet {
+            if (setEmergency == true && setDate == true)
+            {
+                hideLocationContainer()
+                showDetailedContainer()
+            }
+            
+        }
+    }
+    @IBAction func createTrip(_ sender: Any) {
+        
+        SingletonTrip.trip = trip
+    }
+    var origin:String {
+        return originTextField.text ?? ""
+    }
+    
+    var destination: String {
+        return destinationTextField.text ?? ""
+    }
+    
+    let googleMapAPIKey = SingletonGoogleMapAPIKey.googleMapAPIKey
     var path = GMSPath()
     var bounds = GMSCoordinateBounds()
-    var showingContainer:Container = .blank
+    var showingContainer:Container = .none
     
 
     
@@ -49,6 +80,105 @@ class FavouriteBookingViewController: UIViewController {
         get { return emergencyTelNoLabel.text ?? "" }
         set { emergencyTelNoLabel.text = newValue }
     }
+    func hideLocationContainer()
+    {
+        if showingContainer == .locationed
+        {
+            locationedContainerView.transform = self.locationedContainerView.transform.translatedBy( x: 0.0, y: 165 )
+        }
+    }
+    func hideDetailContainer()
+    {
+        if showingContainer == .completed
+        {
+            bookingView.transform = self.bookingView.transform.translatedBy( x: 0.0, y: 165 )
+        }
+    }
+    @IBOutlet weak var locationedContainerView: UIView!
+    
+    
+    @IBOutlet weak var bookingView: UIView!
+    func showLocationedContainer()
+    {
+        if showingContainer == .locationed
+        {
+            
+        }
+        else
+        {
+            hideDetailContainer()
+            locationedContainerView.transform =  self.locationedContainerView.transform.translatedBy( x: 0.0, y: -165 )
+            showingContainer = .locationed
+            
+        }
+        
+    }
+    @IBAction func showPicker(_ sender: Any) {
+        
+        if (origin != "" && destination != "")
+        {
+            let storyBoard = UIStoryboard(name: "My", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(withIdentifier: "DatePickerViewController") as! DatePickerViewController
+            
+            viewController.handler = { date, time in
+                self.trip.date = date
+                self.trip.time = time
+                self.date = date
+                self.time = time
+                
+            }
+            viewController.dismissHandler = {
+                self.setDate = true
+                if (self.setEmergency == false)
+                {
+                    self.showEmergency(UIButton())
+                }
+            }
+            
+            viewController.modalTransitionStyle = .coverVertical
+            self.present(viewController, animated: true, completion: nil)
+        }
+    }
+
+    @IBAction func showEmergency(_ sender: Any) {
+        if (origin != "" && destination != "")
+        {
+            let storyBoard = UIStoryboard(name: "My", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(withIdentifier: "EmergencyViewController") as! EmergencyViewController
+            viewController.handler = { caller in
+                self.emergencyName = caller.name
+                self.emergencyTelNo = caller.phoneNumber
+                
+            }
+            viewController.dismissHandler = {
+                
+                self.setEmergency = true
+                if (self.setDate == false)
+                {
+                    self.showPicker(UIButton())
+                }
+            }
+            viewController.modalTransitionStyle = .coverVertical
+            self.present(viewController, animated: true, completion: nil)
+        }
+        
+        
+    }
+    func showDetailedContainer()
+    {
+        if (showingContainer == .completed)
+        {
+            
+        }
+        else
+        {
+            hideLocationContainer()
+            bookingView.transform = self.bookingView.transform.translatedBy( x: 0.0, y: -165 )
+            showingContainer = .completed
+        }
+        
+    }
+    
     
     @IBOutlet weak var detailedBookingView: UIView!
     
@@ -184,11 +314,14 @@ class FavouriteBookingViewController: UIViewController {
     func newZoom()
     {
         
-        for index in 1...path.count() {
-            
-            bounds = bounds.includingCoordinate(path.coordinate(at: index))
+        if path.count() > 0
+        {
+            for index in 1...path.count() {
+                
+                bounds = bounds.includingCoordinate(path.coordinate(at: index))
+            }
+            mapView.animate(with: GMSCameraUpdate.fit(bounds))
         }
-        mapView.animate(with: GMSCameraUpdate.fit(bounds))
         
     }
     
@@ -212,24 +345,29 @@ class FavouriteBookingViewController: UIViewController {
         let destinationCoordinate = "\((trip.destination?.lat)!),\((trip.destination?.long)!)"
         
         let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(originCoordinate)&destination=\(destinationCoordinate)&mode=driving&key=\(googleMapAPIKey)"
-        
+        print(url)
         Alamofire.request(url).responseJSON { response in
             
             
             let json = JSON(data: response.data!)
             let routes = json["routes"].arrayValue
             
+            print(routes)
+            
             for route in routes
             {
                 let routeOverviewPolyline = route["overview_polyline"].dictionary
                 let points = routeOverviewPolyline?["points"]?.stringValue
                 let path = GMSPath.init(fromEncodedPath: points!)
+                
                 self.path = path ?? GMSPath()
                 self.polyLine = GMSPolyline.init(path: path)
                 self.polyLine.strokeWidth = 3.0
                 self.polyLine.strokeColor = #colorLiteral(red: 0.3019607843, green: 0.6274509804, blue: 0.9960784314, alpha: 1)
                 self.polyLine.map = self.mapView
             }
+            
+            
             self.newZoom()
         }
     }
