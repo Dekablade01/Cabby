@@ -14,7 +14,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: TextField!
     let whiteColor: UIColor = .white
 
+    @IBOutlet weak var facebookButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var googleButton: UIButton!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -38,6 +40,11 @@ class LoginViewController: UIViewController {
     
     func setupButtonView()
     {
+        facebookButton.imageView?.contentMode = .scaleAspectFit
+        googleButton.imageView?.contentMode = .scaleAspectFit
+        let edge:CGFloat = 15
+        facebookButton.imageEdgeInsets = UIEdgeInsetsMake(edge, edge, edge, edge)
+        googleButton.imageEdgeInsets = UIEdgeInsetsMake(edge, edge, edge, edge)
         loginButton.titleEdgeInsets.bottom = 0
         loginButton.titleEdgeInsets.top = 0
         loginButton.titleEdgeInsets.left = 0

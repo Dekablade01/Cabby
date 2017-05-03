@@ -7,14 +7,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Montserrat-Light.otf">
             <string>Montserrat-Light</string>
-        </array>
-        <array key="Montserrat-Regular.otf">
-            <string>Montserrat-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -136,7 +134,7 @@
                                     <constraint firstAttribute="width" constant="79" id="Zv1-tl-1wL"/>
                                     <constraint firstAttribute="width" secondItem="5ja-I6-T4R" secondAttribute="height" multiplier="1:1" id="esI-nO-3j6"/>
                                 </constraints>
-                                <state key="normal" image="facebook-logo-in-circular-button-outlined-social-symbol"/>
+                                <state key="normal" image="facebook" backgroundImage="circle"/>
                                 <connections>
                                     <action selector="pressFacebookHandler:" destination="m1H-9i-xj4" eventType="touchUpInside" id="Net-3Y-MWN"/>
                                 </connections>
@@ -147,7 +145,7 @@
                                     <constraint firstAttribute="width" secondItem="T2M-Al-eau" secondAttribute="height" multiplier="1:1" id="hpf-uf-Iq7"/>
                                     <constraint firstAttribute="width" constant="79" id="wds-yv-pnf"/>
                                 </constraints>
-                                <state key="normal" image="google-plus"/>
+                                <state key="normal" image="google-plus" backgroundImage="circle"/>
                                 <connections>
                                     <action selector="pressGoogleHandler:" destination="m1H-9i-xj4" eventType="touchUpInside" id="PNh-Bb-tdC"/>
                                 </connections>
@@ -175,12 +173,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-in-to-applicaiton-label" translatesAutoresizingMaskIntoConstraints="NO" id="nIH-2T-tke">
                                 <rect key="frame" x="59" y="137" width="257" height="51"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icT-td-7wX">
-                                <rect key="frame" x="126.5" y="83.5" width="123.5" height="43.5"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="36"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-label-1" translatesAutoresizingMaskIntoConstraints="NO" id="lWP-0a-H3e">
+                                <rect key="frame" x="123" y="91" width="128.5" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lWP-0a-H3e" secondAttribute="height" multiplier="293:82" id="646-Zl-Cee"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -198,22 +196,23 @@
                             <constraint firstItem="yxD-o1-s9k" firstAttribute="centerY" secondItem="5ja-I6-T4R" secondAttribute="centerY" id="BES-SG-m3n"/>
                             <constraint firstItem="F6D-wr-ym3" firstAttribute="top" secondItem="DOD-94-m2s" secondAttribute="bottom" constant="14" id="D4N-Rv-4FD"/>
                             <constraint firstItem="N3n-8P-pXS" firstAttribute="centerY" secondItem="6b7-oy-Hl6" secondAttribute="centerY" id="Exs-hw-9BQ"/>
-                            <constraint firstItem="nIH-2T-tke" firstAttribute="top" secondItem="icT-td-7wX" secondAttribute="bottom" constant="10" id="J1V-ju-SKC"/>
                             <constraint firstItem="eyx-jr-n1w" firstAttribute="leading" secondItem="pvp-R5-lHc" secondAttribute="leading" id="Jzq-YW-ypz"/>
                             <constraint firstItem="5ja-I6-T4R" firstAttribute="top" secondItem="nIH-2T-tke" secondAttribute="bottom" constant="30" id="MoY-ae-9sm"/>
                             <constraint firstAttribute="trailing" secondItem="eyx-jr-n1w" secondAttribute="trailing" id="RUP-oN-Pq5"/>
                             <constraint firstItem="aE4-k1-IQW" firstAttribute="centerX" secondItem="pvp-R5-lHc" secondAttribute="centerX" id="U44-fq-Nuu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F6D-wr-ym3" secondAttribute="trailing" constant="43" id="UTl-tA-M9N"/>
+                            <constraint firstItem="nIH-2T-tke" firstAttribute="top" secondItem="lWP-0a-H3e" secondAttribute="bottom" constant="10" id="Un9-1r-mZD"/>
                             <constraint firstItem="DOD-94-m2s" firstAttribute="height" secondItem="F6D-wr-ym3" secondAttribute="height" id="YPL-Yr-b5d"/>
                             <constraint firstItem="c4k-W1-1JZ" firstAttribute="top" secondItem="eyx-jr-n1w" secondAttribute="bottom" id="Ycx-ZM-Dgy"/>
+                            <constraint firstItem="lWP-0a-H3e" firstAttribute="centerX" secondItem="pvp-R5-lHc" secondAttribute="centerX" id="YsI-hX-0N6"/>
                             <constraint firstItem="yxD-o1-s9k" firstAttribute="centerX" secondItem="pvp-R5-lHc" secondAttribute="centerX" id="Zk3-21-kok"/>
-                            <constraint firstItem="icT-td-7wX" firstAttribute="centerX" secondItem="pvp-R5-lHc" secondAttribute="centerX" id="Zrq-SZ-41X"/>
                             <constraint firstItem="eyx-jr-n1w" firstAttribute="top" secondItem="pvp-R5-lHc" secondAttribute="top" id="afa-0l-9mn"/>
                             <constraint firstItem="6b7-oy-Hl6" firstAttribute="top" secondItem="XDz-S4-kbW" secondAttribute="bottom" id="b2I-MF-geN"/>
                             <constraint firstItem="T2M-Al-eau" firstAttribute="leading" secondItem="yxD-o1-s9k" secondAttribute="trailing" constant="25" id="bHI-TI-zxf"/>
                             <constraint firstItem="6b7-oy-Hl6" firstAttribute="leading" secondItem="x1a-sJ-9bR" secondAttribute="leading" id="bQi-Vu-Ioa"/>
                             <constraint firstItem="x1a-sJ-9bR" firstAttribute="trailing" secondItem="F6D-wr-ym3" secondAttribute="trailing" id="bzr-Rk-wV2"/>
                             <constraint firstItem="DOD-94-m2s" firstAttribute="top" secondItem="5ja-I6-T4R" secondAttribute="bottom" constant="53" id="cIZ-ec-NXF"/>
+                            <constraint firstItem="lWP-0a-H3e" firstAttribute="width" secondItem="nIH-2T-tke" secondAttribute="width" multiplier="1:2" id="ciJ-aI-nik"/>
                             <constraint firstItem="6b7-oy-Hl6" firstAttribute="top" secondItem="x1a-sJ-9bR" secondAttribute="bottom" constant="14" id="g4S-t8-KvN"/>
                             <constraint firstItem="DOD-94-m2s" firstAttribute="leading" secondItem="F6D-wr-ym3" secondAttribute="leading" id="ijE-Fr-BF1"/>
                             <constraint firstItem="x1a-sJ-9bR" firstAttribute="leading" secondItem="F6D-wr-ym3" secondAttribute="leading" id="j8Z-2n-qE3"/>
@@ -227,6 +226,8 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="facebookButton" destination="5ja-I6-T4R" id="ydW-Jb-sUJ"/>
+                        <outlet property="googleButton" destination="T2M-Al-eau" id="K8o-zi-1vj"/>
                         <outlet property="loginButton" destination="x1a-sJ-9bR" id="Zrn-Fl-GgF"/>
                         <outlet property="passwordTextField" destination="F6D-wr-ym3" id="QM6-PE-eSp"/>
                         <outlet property="usernameTextField" destination="DOD-94-m2s" id="1vO-8V-TV8"/>
@@ -239,9 +240,11 @@
     </scenes>
     <resources>
         <image name="black-button-with-shadow" width="519" height="101"/>
-        <image name="facebook-logo-in-circular-button-outlined-social-symbol" width="192" height="192"/>
-        <image name="google-plus" width="192" height="192"/>
+        <image name="circle" width="161" height="161"/>
+        <image name="facebook" width="42" height="91"/>
+        <image name="google-plus" width="106" height="67"/>
         <image name="login-bg" width="750" height="1332"/>
+        <image name="login-label-1" width="292" height="81"/>
         <image name="sign-in-to-applicaiton-label" width="465" height="51"/>
     </resources>
 </document>
