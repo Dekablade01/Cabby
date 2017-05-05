@@ -23,7 +23,7 @@ class BookedViewController: UIViewController {
     var polyLine = GMSPolyline()
     var bounds = GMSCoordinateBounds()
 
-    @IBOutlet weak var originTextField: TextField!
+    @IBOutlet weak var originTextField: BlackFormTextField!
     var originName: String {
         set { originTextField.text = newValue }
         get { return originTextField.text ?? "" }
@@ -33,7 +33,7 @@ class BookedViewController: UIViewController {
     @IBOutlet weak var viewForMapView: UIView!
 
     
-    @IBOutlet weak var destinationTextField: TextField!
+    @IBOutlet weak var destinationTextField: BlackFormTextField!
     var destinationName: String {
         set { destinationTextField.text = newValue }
         get { return destinationTextField.text ?? "" }

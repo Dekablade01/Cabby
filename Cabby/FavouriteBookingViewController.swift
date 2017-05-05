@@ -188,12 +188,12 @@ class FavouriteBookingViewController: UIViewController {
     var polyLine = GMSPolyline()
     
     
-    @IBOutlet weak var originTextField: TextField!
+    @IBOutlet weak var originTextField: BlackFormTextField!
     var originName: String {
         get { return originTextField.text ?? "" }
         set { originTextField.text = newValue }
     }
-    @IBOutlet weak var destinationTextField: TextField!
+    @IBOutlet weak var destinationTextField: BlackFormTextField!
     var destinationName: String {
         get { return destinationTextField.text ?? "" }
         set { destinationTextField.text = newValue }

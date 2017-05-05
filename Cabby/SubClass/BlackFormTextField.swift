@@ -27,7 +27,7 @@ class BlackFormTextField: FormTextField {
     
     private func commonInit()
     {
-        layer.borderWidth = 1
+        layer.borderWidth = 0.5
         layer.borderColor = UIColor.black.cgColor
         
         textColor = UIColor.black

@@ -22,6 +22,18 @@ class BookingViewController: UIViewController {
         case none
     }
     
+    @IBOutlet weak var blankTimeButton: UIButton!
+
+    @IBOutlet weak var blankEmergencyButton: UIButton!
+    
+    
+    func setupButton()
+    {
+        let blankEdge:CGFloat = 4
+        blankTimeButton.imageEdgeInsets = UIEdgeInsetsMake(blankEdge, blankEdge, blankEdge, blankEdge)
+        blankEmergencyButton.imageEdgeInsets = UIEdgeInsetsMake(blankEdge, blankEdge, blankEdge, blankEdge)
+    }
+    
     @IBAction func openSideBar(_ sender: Any) {
         self.sideViewController()!.toogleLeftViewController()
     }
@@ -157,12 +169,12 @@ class BookingViewController: UIViewController {
     var polyLine = GMSPolyline()
     
     
-    @IBOutlet weak var originTextField: TextField!
+    @IBOutlet weak var originTextField: BlackFormTextField!
     var origin: String {
         get { return originTextField.text ?? "" }
         set { originTextField.text = newValue }
     }
-    @IBOutlet weak var destinationTextField: TextField!
+    @IBOutlet weak var destinationTextField: BlackFormTextField!
     var destination: String {
         get { return destinationTextField.text ?? "" }
         set { destinationTextField.text = newValue }
@@ -184,6 +196,7 @@ class BookingViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        setupButton()
         showBlankContainer()
         markers = [GMSMarker(), GMSMarker()]
         trip.origin = Location()
