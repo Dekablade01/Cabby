@@ -47,6 +47,7 @@ class BookedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTextFieldForThisViewController()
         createNotificationViewController()
         
         self.becomeFirstResponder()
@@ -75,6 +76,27 @@ class BookedViewController: UIViewController {
         removeMarkerAndRoutingDirection()
         addMarkers()
         drawPath()
+    }
+    func setupTextFieldForThisViewController()
+    {
+        
+        originTextField.text = ""
+        originTextField.isEnabled = false
+        destinationTextField.text = ""
+        destinationTextField.isEnabled = false
+        originTextField.padding = UIEdgeInsets(top: 8, left: 15, bottom: 0, right: 15)
+        destinationTextField.padding = UIEdgeInsets(top: 8, left: 15, bottom: 0, right: 15)
+        
+        
+        self.setupTextField(textField: originTextField,
+                            placeHolderString: "จุดนัดพบ",
+                            placeHolderColor: .black,
+                            borderColor: .black, borderWidth: 1.0)
+        
+        self.setupTextField(textField: destinationTextField,
+                            placeHolderString: "จุดหมายปลายทาง",
+                            placeHolderColor: .black,
+                            borderColor: .black, borderWidth: 1.0)
     }
     
     func createNotificationViewController()

@@ -224,6 +224,7 @@ class FavouriteBookingViewController: UIViewController {
     
     override func viewDidLoad() {
         setupNavigationBar()
+        setupTextFieldForThisViewController()
         removeMarkerAndRoutingDirection()
         originName = trip.origin?.name ?? ""
         destinationName = trip.destination?.name ?? ""
@@ -274,9 +275,12 @@ class FavouriteBookingViewController: UIViewController {
     {
         
         originTextField.text = ""
+        originTextField.isEnabled = false
+        
         destinationTextField.text = ""
-        originTextField.padding = UIEdgeInsets(top: 8, left: 15, bottom: 0, right: 15)
-        destinationTextField.padding = UIEdgeInsets(top: 8, left: 15, bottom: 0, right: 15)
+        destinationTextField.isEnabled = false
+        originTextField.padding = UIEdgeInsets(top: 10, left: 15, bottom: 0, right: 15)
+        destinationTextField.padding = UIEdgeInsets(top: 10 , left: 15, bottom: 0, right: 15)
         
         
         self.setupTextField(textField: originTextField,

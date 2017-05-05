@@ -112,12 +112,12 @@ class ViewScheduleViewController: UIViewController {
     var polyLine = GMSPolyline()
     
     
-    @IBOutlet weak var originTextField: TextField!
+    @IBOutlet weak var originTextField: BlackFormTextField!
     var originName: String {
         get { return originTextField.text ?? "" }
         set { originTextField.text = newValue }
     }
-    @IBOutlet weak var destinationTextField: TextField!
+    @IBOutlet weak var destinationTextField: BlackFormTextField!
     var destinationName: String {
         get { return destinationTextField.text ?? "" }
         set { destinationTextField.text = newValue }
@@ -145,6 +145,7 @@ class ViewScheduleViewController: UIViewController {
 
     override func viewDidLoad() {
         showLocationedContainer()
+        setupTextFieldForThisViewController()
         setupNavigationBar()
         removeMarkerAndRoutingDirection()
         originName = trip.origin?.name ?? ""
@@ -195,6 +196,8 @@ class ViewScheduleViewController: UIViewController {
     {
         
         originTextField.text = ""
+        originTextField.isEnabled = false
+        destinationTextField.isEnabled = false
         destinationTextField.text = ""
         originTextField.padding = UIEdgeInsets(top: 8, left: 15, bottom: 0, right: 15)
         destinationTextField.padding = UIEdgeInsets(top: 8, left: 15, bottom: 0, right: 15)
