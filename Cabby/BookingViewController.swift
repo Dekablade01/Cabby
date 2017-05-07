@@ -25,14 +25,25 @@ class BookingViewController: UIViewController {
     @IBOutlet weak var blankTimeButton: UIButton!
 
     @IBOutlet weak var blankEmergencyButton: UIButton!
+
+    @IBOutlet weak var locaionedTimerButton: UIButton!
     
+    @IBOutlet weak var locationedEmergencyButton: UIButton!
     
     func setupButton()
     {
-        let blankEdge:CGFloat = 4
-        blankTimeButton.imageEdgeInsets = UIEdgeInsetsMake(blankEdge, blankEdge, blankEdge, blankEdge)
-        blankEmergencyButton.imageEdgeInsets = UIEdgeInsetsMake(blankEdge, blankEdge, blankEdge, blankEdge)
+        let inset:CGFloat = 5
+        setButtonInset(for: blankEmergencyButton, to: inset)
+        setButtonInset(for: blankTimeButton, to: inset)
+        setButtonInset(for: locaionedTimerButton, to: inset)
+        setButtonInset(for: locationedEmergencyButton, to: inset)
+        
     }
+    func setButtonInset(for button: UIButton, to inset: CGFloat)
+    {
+        button.imageEdgeInsets = UIEdgeInsetsMake(inset, inset, inset, inset)
+    }
+    
     
     @IBAction func openSideBar(_ sender: Any) {
         self.sideViewController()!.toogleLeftViewController()

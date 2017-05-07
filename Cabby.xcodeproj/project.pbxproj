@@ -83,6 +83,7 @@
 		9E4E70421EBA477300E7A0D9 /* BlackFormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4E70411EBA477300E7A0D9 /* BlackFormTextField.swift */; };
 		9E50D0E11EB63A72007DC4FB /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50D0E01EB63A72007DC4FB /* HistoryDetailViewController.swift */; };
 		9E50D0E31EB676FF007DC4FB /* BookingPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50D0E21EB676FF007DC4FB /* BookingPaymentViewController.swift */; };
+		9E63233D1EBF098C00685D0E /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63233C1EBF098C00685D0E /* UserProfileViewController.swift */; };
 		9E663C8B1EB49F2F00127D28 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E663C8A1EB49F2F00127D28 /* FavouriteViewController.swift */; };
 		9E663C8D1EB4AB4200127D28 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E663C8C1EB4AB4200127D28 /* HistoryViewController.swift */; };
 		9E663C8F1EB4ABAA00127D28 /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E663C8E1EB4ABAA00127D28 /* HistoryCollectionViewCell.swift */; };
@@ -200,6 +201,7 @@
 		9E4E70411EBA477300E7A0D9 /* BlackFormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlackFormTextField.swift; path = SubClass/BlackFormTextField.swift; sourceTree = "<group>"; };
 		9E50D0E01EB63A72007DC4FB /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
 		9E50D0E21EB676FF007DC4FB /* BookingPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingPaymentViewController.swift; sourceTree = "<group>"; };
+		9E63233C1EBF098C00685D0E /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		9E663C8A1EB49F2F00127D28 /* FavouriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		9E663C8C1EB4AB4200127D28 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		9E663C8E1EB4ABAA00127D28 /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryCollectionViewCell.swift; path = UICollectionViewCell/HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 				9EAE6BC21EB77E8E00074A90 /* BookedViewController.swift */,
 				9EAE6BC81EB77E8E00074A90 /* NotificationViewController.swift */,
 				9EEC0D091EB734020017BF04 /* SummaryViewController.swift */,
+				9E63233C1EBF098C00685D0E /* UserProfileViewController.swift */,
 			);
 			name = UIViewController;
 			sourceTree = "<group>";
@@ -702,6 +705,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EAE6BC91EB77E8E00074A90 /* NotificationViewController.swift in Sources */,
+				9E63233D1EBF098C00685D0E /* UserProfileViewController.swift in Sources */,
 				9E7CF1AB1EABB00A0095B48A /* SideMenuViewController.swift in Sources */,
 				9E50D0E31EB676FF007DC4FB /* BookingPaymentViewController.swift in Sources */,
 				9E0463EB1EAC86C1007220B9 /* EmergencyCollectionViewCell.swift in Sources */,
